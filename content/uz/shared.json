@@ -1,0 +1,55 @@
+{
+  "exam": {
+    "eyebrow": "Imtihonlar",
+    "title": "Darslar onlayn. Imtihon Pearson tasdiqlagan markazda.",
+    "body": "Darslaringiz onlayn oʻtadi. Imtihonlar esa Pearson Edexcel tasdiqlagan jismoniy markazlarda, qogʻozda topshiriladi. Oʻquvchimiz imtihonga xususiy nomzod (private candidate) sifatida kiradi. Qaysi markazda va qaysi sessiyada topshirishni oʻquvchining shahri, fanlari va hujjat topshirish muddatlariga qarab biz rejalashtiramiz. Markaz tanlash, roʻyxatdan oʻtish, muddatlarni kuzatish va natijalar bizning masʼuliyatimizda. Ota-ona markaz qidirmaydi, oʻrinlarni kuzatmaydi.",
+    "extended": "Imtihonlarimiz Pearson Edexcel tasdiqlagan hamkor markazimiz (Istanbul, markaz raqami 91667) va Oʻzbekistondagi tasdiqlangan markazlar orqali tashkil etiladi.",
+    "notes": [
+      "Imtihon toʻlovi markazga toʻlanadi. U paketingizga kiradimi yoki yoʻqmi, taklifda yoziladi.",
+      "Har bir fan va boʻlim (unit) har sessiyada ochilmaydi. Rejani shunga qarab tuzamiz."
+    ],
+    "sessionsLabel": "Sessiyalar",
+    "sessions": "International A-Level: oktyabr, yanvar, may–iyun · International GCSE: noyabr, may–iyun",
+    "link": "Imtihon jarayoni qanday?"
+  },
+  "admissionNote": "Qabul shartlari universitet, yoʻnalish va yilga qarab farq qiladi. Shuning uchun har bir oʻquvchining rejasini uning maqsadidan kelib chiqib tuzamiz.",
+  "countryNote": "Shartlar universitet va yilga qarab oʻzgaradi. Hujjat topshirishdan oldin amaldagi shartlarni birga tekshiramiz.",
+  "cta": {
+    "title": "Birinchi qadam: bepul konsultatsiya.",
+    "body": "Formani toʻldiring, maslahatchimiz sizga Telegram yoki telefon orqali bogʻlansin. Birinchi suhbatda maqsadingiz, mos yoʻl va sizga mos paketni aniqlaymiz."
+  },
+  "weekly": {
+    "eyebrow": "Haftalik tartib",
+    "title": "Maktab bilan birga: kechqurun va dam olish kunlari",
+    "intro": "Darslar maktab vaqtidan tashqari, kechqurun va dam olish kunlari oʻtadi. Dasturni oʻquvchining maktab jadvaliga qarab tuzamiz.",
+    "caption": "Namuna haftalik tartib: A-Level, 3 fan",
+    "columns": ["Kun", "Jonli dars", "Izoh"],
+    "rows": [
+      ["Dushanba", "1-fan (90 daqiqa)", "Kechqurun"],
+      ["Seshanba", "2-fan (90 daqiqa)", "Kechqurun"],
+      ["Payshanba", "3-fan (90 daqiqa)", "Kechqurun"],
+      ["Shanba", "Savol-javob va sinov imtihoni (ikki haftada bir)", "Dam olish kuni"],
+      ["Yakshanba", "Mustaqil ishlash, uy vazifasi", "Dam olish kuni"]
+    ],
+    "tableNote": "Namuna. Aniq vaqtlar guruh va fanlarga qarab belgilanadi.",
+    "reportTitle": "Har hafta ota-onaga yozma hisobot",
+    "reportBody": "Har hafta oʻquvchiga va ota-onaga qisqa yozma hisobot yuboriladi: oʻtilgan mavzular, sinov natijalari va keyingi hafta rejasi.",
+    "reportLabel": "Namuna",
+    "report": [
+      { "label": "Oʻtilgan mavzular", "value": "Matematika: differensiallash · Fizika: harakat qonunlari" },
+      { "label": "Sinov natijasi", "value": "Matematika P1 sinovi: 68% (oldingi: 61%)" },
+      { "label": "Keyingi hafta", "value": "Integrallash, fizika amaliy mashgʻuloti" }
+    ],
+    "reportNote": "Toʻqima maʼlumotlar bilan tayyorlangan namuna."
+  },
+  "whyALevel": {
+    "eyebrow": "A-Level afzalliklari",
+    "title": "Nega aynan A-Level?",
+    "items": [
+      { "title": "Foundation yiliga hojat yoʻq", "body": "Oddiy maktab attestati bilan Britaniyaning koʻpchilik universitetlari avval bir yillik foundation, yaʼni tayyorlov kursini talab qiladi. A-Level bilan esa birdaniga bakalavriatning birinchi kursiga hujjat topshirasiz." },
+      { "title": "Bir yil vaqt va pulni tejaysiz", "body": "Foundation — bu chet elda bir yillik oʻqish toʻlovi va yashash xarajatlari. A-Levelga esa uyingizdan chiqmay, oʻz shahringizda tayyorlanasiz." },
+      { "title": "Germaniya va Italiyaga yoʻl ochiq", "body": "Fanlarni toʻgʻri tanlasangiz, Germaniyada Studienkollegsiz, Italiyada esa foundationsiz oʻqishga hujjat topshirish imkoniyati paydo boʻladi." },
+      { "title": "Qulay imtihon tizimi", "body": "Imtihonlar yiliga uch marta boʻladi: oktyabr, yanvar va may–iyun. Bahongizni oshirmoqchi boʻlsangiz, butun yilni emas, faqat bitta boʻlimni qayta topshirasiz." }
+    ]
+  }
+}

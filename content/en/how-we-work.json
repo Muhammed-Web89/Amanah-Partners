@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "How we work: from the first conversation to campus",
+    "description": "Six steps: free consultation, level assessment, subject strategy, online teaching, Pearson exams and university applications, visa and settling in."
+  },
+  "header": {
+    "eyebrow": "How we work",
+    "title": "Every student is a project of their own",
+    "lede": "Six steps from the first conversation to campus. At each step you know in advance what happens, what we need from you and how long it takes."
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Six steps",
+      "variant": "detailed",
+      "items": [
+        {
+          "title": "Free consultation and goal analysis",
+          "body": "An online conversation about the student's goal, current school and year, and the family's priorities. There is no charge.",
+          "details": [
+            { "label": "What we need from you", "text": "Fill in the form and choose a convenient time." },
+            { "label": "How long it takes", "text": "One conversation." }
+          ]
+        },
+        {
+          "title": "English and academic level assessment",
+          "body": "We assess the student's level and share the result in writing. It becomes clear which programme to start and at what pace.",
+          "details": [
+            { "label": "What we need from you", "text": "Take an online level test." },
+            { "label": "What you get", "text": "A written level report." }
+          ]
+        },
+        {
+          "title": "Subject, country and course strategy",
+          "body": "We set the target subject, country and a university shortlist (Safe / Target / Reach), and the A-Level combination to match. You receive an offer and a written contract at this step.",
+          "details": [
+            { "label": "What we need from you", "text": "Discuss the shortlist and subjects as a family, and read the contract." },
+            { "label": "What you get", "text": "University shortlist, subject plan, offer and contract." }
+          ]
+        },
+        {
+          "title": "Online teaching and weekly monitoring",
+          "body": "Live lessons, mentoring by professors, mock exams and a weekly report for parents.",
+          "details": [
+            { "label": "What we need from you", "text": "Attend lessons, do the homework and study independently." },
+            { "label": "What you get", "text": "A written report every week." }
+          ]
+        },
+        {
+          "title": "Pearson exams and university applications",
+          "body": "Exam registration and follow-up. Personal statement, references, UCAS / Common App / European applications and scholarship research.",
+          "details": [
+            { "label": "What we need from you", "text": "Provide documents on time and work with us on your personal statement." },
+            { "label": "What you get", "text": "Exam registration confirmation and submitted applications." }
+          ]
+        },
+        {
+          "title": "From offer to arrival",
+          "body": "Checking visa and financial documents, visa interview practice, halls or accommodation, travel and pre-arrival information.",
+          "details": [
+            { "label": "What we need from you", "text": "Prepare your visa documents and take part in interview practice." },
+            { "label": "What you get", "text": "A complete visa file and a settling-in plan." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam",
+      "id": "imtihon",
+      "extended": true
+    },
+    {
+      "type": "steps",
+      "title": "The exam process in five steps",
+      "variant": "detailed",
+      "items": [
+        { "title": "Subject and unit codes are set", "body": "We choose the target exam series." },
+        { "title": "A suitable centre is chosen", "body": "We confirm that the centre accepts private candidates." },
+        { "title": "Registration", "body": "Registration is completed before the final deadline. The confirmation is checked." },
+        { "title": "Exam day briefing", "body": "Address, photo ID and timings." },
+        { "title": "Results and certificate", "body": "Following up results, planning resits if needed, and handing over the certificate." }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Common mistakes",
+      "items": [
+        "Missing the registration deadline",
+        "Choosing the wrong subject combination",
+        "Planning the language test too late"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "What do you receive in writing?",
+      "items": ["Level report", "Offer", "Contract", "Weekly report", "Exam registration confirmation"]
+    },
+    { "type": "cta" }
+  ]
+}

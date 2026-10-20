@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Biz haqimizda",
+    "description": "Amanah Partners Oʻzbekistondagi oʻquvchilar va oilalar uchun xalqaro taʼlim yoʻlini boshidan oxirigacha boshqaradigan jamoa."
+  },
+  "header": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Farzandingizning kelajagi bizga omonat.",
+    "lede": "Amanah Partners Oʻzbekistondagi oʻquvchilar va ularning oilalari uchun xalqaro taʼlim yoʻlini boshidan oxirigacha boshqaradigan jamoa."
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Biz kimmiz?",
+      "paragraphs": [
+        "Darslar, imtihon, universitetga hujjat topshirish va viza jarayonlarini bitta jamoada olib boramiz. Ota-ona har bosqichda kim bilan gaplashishni biladi."
+      ]
+    },
+    {
+      "type": "text",
+      "verify": "faydalanName",
+      "paragraphs": [
+        "Amanah Partners Turkiyada xuddi shu model bilan ishlaydigan Faydalan Academy bilan birga harakat qiladi. Darslar, professorlar mentorligi, Pearson tasdiqlagan imtihon markazi bilan hamkorlik va xalqaro hujjat topshirish tarmogʻi umumiy. Oʻzbekistondagi oʻquvchilar uchun esa oʻzbek va rus tilida gaplashadigan alohida jamoa bor."
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Nima qilamiz?",
+      "items": ["A-Level va IGCSE tayyorgarligi", "Pearson imtihonlarini tashkil etish", "Universitetga hujjat topshirish", "Viza va joylashish"]
+    },
+    {
+      "type": "text",
+      "title": "Har bir oʻquvchi alohida loyiha",
+      "paragraphs": ["Oʻquvchining shaxsiyati, akademik maqsadlari, koʻnikmalari va xalqaro karyerasi birga rejalashtiriladi."]
+    },
+    {
+      "type": "cards",
+      "title": "Jamoamiz",
+      "intro": "Jamoamiz 50 ga yaqin universitet bilan ishlagan va yuzlab oʻquvchilarga maslahat bergan. Jamoada 10 yildan ortiq tajribaga ega maslahatchilar va oʻquvchilarga mentorlik qiladigan professorlar bor.",
+      "columns": 3,
+      "items": [
+        { "title": "Akademik maslahat", "body": "Yoʻnalish, fanlar va universitetlar strategiyasi." },
+        { "title": "Professor mentorlar", "body": "Akademik yoʻnalish va universitetga tayyorgarlikda mentorlik." },
+        { "title": "Imtihonlarni muvofiqlashtirish", "body": "Markaz, roʻyxatdan oʻtish, muddatlar va natijalar." },
+        { "title": "Hujjat topshirish va viza", "body": "Arizalar, shaxsiy bayonot, viza hujjatlari va suhbat mashqi." },
+        { "title": "Oʻquvchi va ota-ona bilan aloqa", "body": "Haftalik hisobot va savollarga javob." }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Ish tamoyillarimiz",
+      "columns": 4,
+      "items": [
+        { "title": "Shaffoflik", "body": "Narx, muddat va jarayon oldindan aytiladi." },
+        { "title": "Yozma majburiyat", "body": "Kelishilgan hamma narsa shartnomada." },
+        { "title": "Maxfiylik", "body": "Maʼlumotlaringiz faqat konsultatsiya va xizmat uchun ishlatiladi." },
+        { "title": "Muntazam hisobot", "body": "Har hafta yozma hisobot." }
+      ]
+    },
+    { "type": "cta" }
+  ]
+}

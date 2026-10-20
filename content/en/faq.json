@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Frequently asked questions",
+    "description": "Answers to questions about A-Levels, Pearson exams, university admission, visas, fees and payment."
+  },
+  "header": {
+    "eyebrow": "Questions",
+    "title": "Frequently asked questions",
+    "lede": "Can't find your answer? Message us on Telegram."
+  },
+  "categories": [
+    {
+      "id": "general",
+      "title": "General",
+      "items": [
+        { "id": "what", "q": "What is Amanah Partners?", "a": "An international education consultancy that handles A-Level preparation, exam organisation, university applications and visas for students in Uzbekistan, all with one team.", "aVerified": "An international education consultancy that handles A-Level preparation, exam organisation, university applications and visas for students in Uzbekistan, all with one team. We work together with Faydalan Academy, which runs the same model in Türkiye.", "verify": "faydalanName" },
+        { "id": "where", "q": "Do you only work with students in Tashkent?", "a": "No. Lessons are online, so we work with students from anywhere in Uzbekistan, from neighbouring countries and from Uzbek families living abroad." }
+      ]
+    },
+    {
+      "id": "programs",
+      "title": "Programmes",
+      "items": [
+        { "id": "school", "q": "Can I take A-Levels without leaving my school?", "a": "Yes. Lessons are in the evenings and at weekends, and we plan the timetable around your school calendar. You prepare for A-Levels while finishing your school certificate.", "link": { "label": "The A-Level programme", "href": "/programs/a-level" } },
+        { "id": "language", "q": "What language are the lessons in?", "a": "English. Advice and communication with parents are in Uzbek and Russian." },
+        { "id": "howMany", "q": "How many A-Levels should I take?", "a": "Most universities ask for 3 A-Levels. Depending on your target degree we may suggest a fourth." },
+        { "id": "igcse", "q": "What is the difference between IGCSE and A-Level?", "a": "IGCSE is the foundation stage (usually ages 14–16); A-Level is the advanced stage used for university applications (ages 16–19). IGCSE on its own is not a university entry qualification.", "link": { "label": "The IGCSE and A-Level route", "href": "/programs/igcse-a-level" } }
+      ]
+    },
+    {
+      "id": "exams",
+      "title": "Exams",
+      "items": [
+        { "id": "online", "q": "Are the exams online?", "a": "No. Lessons are online, but exams are taken on paper at physical centres approved by Pearson Edexcel. We handle choosing the centre, registration and follow-up.", "aVerified": "No. Lessons are online, but exams are taken on paper at physical centres approved by Pearson Edexcel. Our exams are organised through our Pearson Edexcel-approved partner centre (Istanbul, centre number 91667) and approved centres in Uzbekistan. We handle choosing the centre, registration and follow-up.", "verify": "centre91667", "link": { "label": "The exam process", "href": "/how-we-work" } },
+        { "id": "when", "q": "When are the exams?", "a": "International A-Level has three series a year: October, January and May–June. IGCSE has November and May–June." },
+        { "id": "resit", "q": "Can I improve my grade?", "a": "Yes. IAL is modular, so you can resit just the unit you need." },
+        { "id": "cambridge", "q": "What is the difference between Cambridge and Pearson Edexcel?", "a": "Both are separate UK-based exam boards, and both are recognised by universities. Pearson IAL's advantages are its unit-based (modular) structure and three exam series a year. Preparation must match the syllabus of the board whose exams you sit." }
+      ]
+    },
+    {
+      "id": "admission",
+      "title": "University admission",
+      "items": [
+        { "id": "countries", "q": "Which countries can I apply to with A-Levels?", "a": "Universities in the UK, USA, Canada, Germany, Italy, the Netherlands and many other countries recognise A-Levels. Each university sets the subjects and grades it needs.", "link": { "label": "Destinations", "href": "/destinations" } },
+        { "id": "attestat", "q": "Can I go straight to a UK university with my Uzbek school certificate?", "a": "Most universities require a one-year foundation first. With A-Levels you can apply to an undergraduate degree without one.", "link": { "label": "United Kingdom", "href": "/destinations/uk" } },
+        { "id": "guarantee", "q": "Do you guarantee admission?", "a": "The university makes the admission decision, and no consultancy can guarantee it. Our job is to prepare the strongest possible application to the university you want: the right subjects, the right exam plan and a strong file." }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Visa",
+      "items": [
+        { "id": "visa", "q": "Do you issue the visa?", "a": "The visa is issued by the consulate of the country concerned. We prepare and check your file from start to finish and make sure you go into the interview having practised." }
+      ]
+    },
+    {
+      "id": "fees",
+      "title": "Fees and payment",
+      "items": [
+        { "id": "price", "q": "How much does it cost?", "a": "Fees depend on the destination, university and number of subjects. In a free consultation we work out the right package and price. Our prices are fair and transparent, and we never charge anything that is not in the contract.", "link": { "label": "Fees", "href": "/fees" } },
+        { "id": "free", "q": "Is the first consultation free?", "a": "Yes, it is free." },
+        { "id": "refund", "q": "Can I get a refund?", "a": "Refund terms are set out in the contract and on the Refund policy page.", "link": { "label": "Refund policy", "href": "/refunds" } }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "items": [
+        { "id": "accounts", "q": "Which accounts are officially yours?", "a": "They are listed on the Official accounts page. Do not make payments to any account that is not on that list.", "link": { "label": "Official accounts", "href": "/official-accounts" } },
+        { "id": "data", "q": "How is my personal data protected?", "a": "This is explained in our Privacy policy. Your details are used only for the advice process.", "link": { "label": "Privacy policy", "href": "/privacy" } }
+      ]
+    }
+  ]
+}

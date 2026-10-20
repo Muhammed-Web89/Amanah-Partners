@@ -1,0 +1,136 @@
+{
+  "index": {
+    "meta": {
+      "title": "Davlatlar: A-Level bilan qayerda oʻqish mumkin?",
+      "description": "Buyuk Britaniya, AQSh, Germaniya, Italiya, Niderlandiya va Kanada: Oʻzbekistondagi oʻquvchi uchun A-Level bilan qabul yoʻllari."
+    },
+    "header": {
+      "eyebrow": "Davlatlar",
+      "title": "A-Level bilan qayerga?",
+      "lede": "Har bir davlatning qabul yoʻli boshqacha. Quyida Oʻzbekistondagi oʻquvchi uchun umumiy yoʻlni topasiz; aniq shartlar har yili yangilanadi."
+    }
+  },
+  "countries": {
+    "uk": {
+      "meta": { "title": "Buyuk Britaniya: A-Level bilan foundationsiz bakalavriat", "description": "Oʻzbek attestati bilan koʻpchilik Britaniya universitetlari foundation talab qiladi. A-Level bilan UCAS orqali bakalavriatga toʻgʻridan-toʻgʻri hujjat topshiring." },
+      "header": { "eyebrow": "Davlatlar", "title": "Buyuk Britaniya", "lede": "A-Level bilan bir yilni va Britaniyadagi bir yillik xarajatni tejang.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "Faqat attestat", "value": "Koʻpchilik universitetlar avval bir yillik foundation talab qiladi (masalan: Edinburgh, Cardiff, Nottingham)." },
+          { "label": "A-Level bilan", "value": "Foundationsiz 1-kursga toʻgʻridan-toʻgʻri hujjat topshirish mumkin (masalan: Queen Mary, Liverpool)." },
+          { "label": "Ariza", "value": "UCAS orqali." },
+          { "label": "Tibbiyot", "value": "UCAT talab qilinadi." }
+        ] },
+        { "type": "text", "title": "Til talabi", "paragraphs": ["Koʻpchilik universitetlar IELTS yoki unga teng ingliz tili sertifikatini talab qiladi. Kerakli ball yoʻnalishga qarab farq qiladi."] },
+        { "type": "faq", "title": "Savollar", "items": [
+          { "q": "Attestat bilan toʻgʻridan-toʻgʻri Britaniyaga kirsa boʻladimi?", "a": "Koʻpchilik universitetlar avval foundation yilini talab qiladi. A-Level bilan foundationsiz bakalavriatga hujjat topshirasiz." },
+          { "q": "Nechta A-Level kerak?", "a": "Odatda 3 ta. Kerakli fan va baholarni universitet va yoʻnalish belgilaydi." },
+          { "q": "Qachon hujjat topshiriladi?", "a": "UCAS muddatlari universitet va yoʻnalishga qarab farq qiladi; imtihon rejasini shu muddatlarga qarab tuzamiz." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "University of Edinburgh: Uzbekistan", "url": "https://www.ed.ac.uk/studying/international/country/asia/central-west-asia/uzbekistan" },
+          { "title": "Cardiff University: Uzbekistan", "url": "https://www.cardiff.ac.uk/study/international/your-country/asia/uzbekistan/entry-requirements-uzbekistan" },
+          { "title": "Queen Mary University of London: Uzbekistan", "url": "https://qmul.ac.uk/international-students/regions/turkey-caucasus-and-central-asia/entry-requirements/uzbekistan" },
+          { "title": "University of Liverpool: Uzbekistan", "url": "https://www.liverpool.ac.uk/international/countries/uzbekistan.php" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "usa": {
+      "meta": { "title": "AQSh: SAT va A-Level bilan kuchli ariza", "description": "AQSh universitetlariga attestat bilan hujjat topshirish mumkin; nufuzli universitetlarning koʻpchiligi SAT/ACTni qayta talab qilmoqda. A-Level arizani kuchaytiradi." },
+      "header": { "eyebrow": "Davlatlar", "title": "AQSh", "lede": "SAT va A-Level: AQShga arizangiz uchun kuchli kombinatsiya.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "Attestat", "value": "Attestat bilan hujjat topshirish mumkin. Nufuzli universitetlarning koʻpchiligi SAT/ACTni qayta majburiy qildi." },
+          { "label": "A-Level bilan", "value": "Arizani akademik jihatdan kuchaytiradi. Baʼzi universitetlar xalqaro nomzodlardan A-Level natijalarini muqobil sifatida qabul qiladi." },
+          { "label": "Ariza", "value": "Common App orqali; grant qidirish muhim." }
+        ] },
+        { "type": "faq", "title": "Savollar", "items": [
+          { "q": "A-Level SAT oʻrnini bosadimi?", "a": "Umumiy qoida sifatida yoʻq. Baʼzi universitetlar istisno qiladi, shuning uchun har bir universitet siyosatini alohida tekshiramiz." },
+          { "q": "Grant olish mumkinmi?", "a": "Grantlar universitet va oilaning moliyaviy holatiga bogʻliq. Grant qidirish hujjat topshirish xizmatimizga kiradi." },
+          { "q": "Til sertifikati kerakmi?", "a": "Koʻpchilik universitetlar TOEFL yoki IELTS talab qiladi." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "SAT/ACT policies at selective colleges, 2026–27 (umumiy manba; rasmiy sahifalardan tekshiriladi)", "url": "https://gradpilot.com/news/sat-act-required-top-colleges-2026-2027" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "germany": {
+      "meta": { "title": "Germaniya: Studienkollegsiz A-Level yoʻli", "description": "Kamida C bahoga ega 3 ta A-Level (ikkitasi A roʻyxatidan) bilan Germaniyada oliy taʼlimga toʻgʻridan-toʻgʻri kirish huquqi. Pearson IAL ham shu qoidalar bilan baholanadi." },
+      "header": { "eyebrow": "Davlatlar", "title": "Germaniya", "lede": "Toʻgʻri fanlar tanlovi bilan Studienkollegsiz Germaniyada bakalavriat.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "Faqat attestat", "value": "Odatda avval Studienkolleg (1 yil, nemis tilida) yoki Oʻzbekistonda universitetda oʻqigan boʻlish kerak." },
+          { "label": "A-Level bilan", "value": "Kamida C bahoga ega 3 ta A-Level (ikkitasi til, matematika, tabiiy fanlar, iqtisodiyot kabi “A roʻyxati” fanlaridan) bilan oliy taʼlimga toʻgʻridan-toʻgʻri kirish huquqi." },
+          { "label": "Tibbiyot", "value": "3 ta fan matematika va tabiiy fanlar guruhidan boʻlishi kerak." },
+          { "label": "Pearson IAL", "value": "Xuddi shu qoidalar bilan baholanadi." },
+          { "label": "Yakuniy qaror", "value": "Tan olish organi (uni-assist / ZAB) qaror qiladi. Shuning uchun fanlar boshidan toʻgʻri tanlanishi kerak." }
+        ] },
+        { "type": "faq", "title": "Savollar", "items": [
+          { "q": "Nemis tilini bilish shartmi?", "a": "Nemis tilidagi dasturlar uchun ha. Ingliz tilidagi dasturlar ham bor; til talabi dasturga bogʻliq." },
+          { "q": "Qaysi fanlar “A roʻyxati”ga kiradi?", "a": "Til, matematika, tabiiy fanlar, iqtisodiyot kabi fanlar. Aniq kombinatsiyani yoʻnalishingizga qarab birga tekshiramiz." },
+          { "q": "Studienkolleg butunlay kerak emasmi?", "a": "Shartlar bajarilsa, kerak emas. Yakuniy qaror tan olish organiga tegishli." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "DAAD: GCE A-Level in Germany", "url": "https://www.daad.de/en/studying-in-germany/requirements/gce/" },
+          { "title": "Pearson: Germany relaxes admission requirements for UK qualifications", "url": "https://pearson.com/international-schools/international-schools-blog/2021/10/germany-relaxes-admission-requirements-for-uk.html" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "italy": {
+      "meta": { "title": "Italiya: 12 yillik talab va A-Level yechimi", "description": "Italiyada bakalavriat uchun kamida 12 yillik taʼlim talab qilinadi; Oʻzbekistonda maktab 11 yil. 3 xil A-Level bu talabni bajaradigan yoʻllardan biri. IMAT ham bor." },
+      "header": { "eyebrow": "Davlatlar", "title": "Italiya", "lede": "11 yillik maktabni A-Level bilan toʻldiring va Italiyaning ingliz tilidagi dasturlariga toʻgʻridan-toʻgʻri hujjat topshiring.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "Talab", "value": "Bakalavriat uchun kamida 12 yillik taʼlim. Oʻzbekistonda maktab 11 yil." },
+          { "label": "A-Level bilan", "value": "3 xil A-Level bu talabni bajaradigan yoʻllardan biri. Universitetlar qoʻshimcha shart qoʻyishi mumkin." },
+          { "label": "Tibbiyot", "value": "Ingliz tilidagi tibbiyot, stomatologiya va veterinariya uchun IMAT (Vazirlik oʻtkazadi, sentabr oxiri)." }
+        ] },
+        { "type": "faq", "title": "Savollar", "items": [
+          { "q": "Foundation kerakmi?", "a": "3 xil A-Level bilan 12 yillik talab bajarilsa, foundation kerak boʻlmasligi mumkin. Universitet shartlarini birga tekshiramiz." },
+          { "q": "Italyan tilini bilish kerakmi?", "a": "Ingliz tilidagi dasturlar uchun shart emas." },
+          { "q": "IMAT qachon?", "a": "Odatda sentabr oxirida. Aniq sanalar har yili eʼlon qilinadi." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "Italiya konsulligi: Foreign academic qualifications", "url": "https://conschicago.esteri.it/wp-content/uploads/2023/08/Foreign-academic-qualifications.pdf" },
+          { "title": "Studiare in Italia", "url": "https://www.studiare-in-italia.it" },
+          { "title": "Università di Bologna: IMAT 2026", "url": "https://corsi.unibo.it/singlecycle/VeterinaryMedicine/notice-board/imat-2026" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "netherlands": {
+      "meta": { "title": "Niderlandiya: ingliz tilidagi bakalavriat va A-Level", "description": "Niderlandiyada ingliz tilidagi bakalavriat dasturlari keng tarqalgan. Arizalar dastur boʻyicha baholanadi; A-Level attestatga nisbatan ancha kuchli kirish yoʻli." },
+      "header": { "eyebrow": "Davlatlar", "title": "Niderlandiya", "lede": "Ingliz tilidagi bakalavriat dasturlariga A-Level bilan hujjat topshirish.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "Dasturlar", "value": "Ingliz tilidagi bakalavriat dasturlari keng tarqalgan." },
+          { "label": "Baholash", "value": "Arizalar dastur boʻyicha baholanadi; A-Level attestatga nisbatan ancha kuchli kirish yoʻli." },
+          { "label": "Shartlar", "value": "Dastur sahifasidan birga tekshiramiz." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Örnek üniversite koşulları doğrulanınca eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "canada": {
+      "meta": { "title": "Kanada: A-Level bilan universitetga", "description": "A-Level Toronto va McGill kabi Kanada universitetlarida tan olinadigan kirish malakasi. Hujjat universitet yoki viloyat boʻyicha topshiriladi." },
+      "header": { "eyebrow": "Davlatlar", "title": "Kanada", "lede": "A-Level bilan Toronto, McGill kabi universitetlarga hujjat topshirish.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Oʻzbekistondagi oʻquvchi uchun yoʻl", "rows": [
+          { "label": "A-Level", "value": "Toronto va McGill kabi universitetlarda tan olinadigan kirish malakasi." },
+          { "label": "Ariza", "value": "Universitet yoki viloyat boʻyicha (masalan: OUAC)." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Güncel kabul koşulları doğrulanınca kaynaklarıyla eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    }
+  }
+}

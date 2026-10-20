@@ -1,0 +1,60 @@
+{
+  "draftNotice": "Taslak — hukuki onay bekleniyor. Bu metin avukat onayından geçmeden canlıya alınmaz (plan v2 §16, Kapı 1).",
+  "pages": {
+    "privacy": {
+      "meta": { "title": "Maxfiylik siyosati", "description": "Qanday maʼlumotlarni yigʻamiz, nima uchun, qancha saqlaymiz va sizning huquqlaringiz." },
+      "header": { "eyebrow": "Huquqiy maʼlumotlar", "title": "Maxfiylik siyosati va shaxsiy maʼlumotlar", "lede": "Bu sahifa konsultatsiya formasi orqali bergan maʼlumotlaringiz qanday ishlatilishini tushuntiradi." },
+      "sections": [
+        { "title": "Qanday maʼlumotlarni yigʻamiz?", "paragraphs": ["Konsultatsiya formasidagi maʼlumotlar: oʻquvchining ismi, sinfi, 18 yoshga toʻlganligi, qiziqqan dastur, maqsadli davlat, formani kim toʻldirgani, ota-onaning ismi va telefoni (18 yoshdan kichiklar uchun), Telegram yoki telefon, shahar va xabar."] },
+        { "title": "Nima uchun?", "paragraphs": ["Faqat siz bilan bogʻlanish va bepul konsultatsiyani oʻtkazish uchun. Maʼlumotlar sotilmaydi va reklama uchun ishlatilmaydi."] },
+        { "title": "Qayerda va qancha saqlanadi?", "paragraphs": ["Maʼlumotlar Yevropa Ittifoqidagi serverda shifrlangan holda saqlanadi. Saqlash muddati: [KARAR — avukat onayı bekleniyor]."] },
+        { "title": "18 yoshdan kichiklar", "paragraphs": ["Oʻquvchi 18 yoshdan kichik boʻlsa, ota-onasi yoki vasiysining roziligi talab qilinadi."] },
+        { "title": "Huquqlaringiz", "paragraphs": ["Maʼlumotlaringizni koʻrish, tuzatish yoki oʻchirishni soʻrashingiz mumkin. Murojaat uchun aloqa: [KARAR — kurumsal e-posta]."] },
+        { "title": "Cookie va analitika", "paragraphs": ["Saytda cookie ishlatmaydigan analitika vositasi qoʻllaniladi. Batafsil: Cookie siyosati."] }
+      ]
+    },
+    "terms": {
+      "meta": { "title": "Foydalanish shartlari", "description": "Amanah Partners saytidan foydalanish shartlari." },
+      "header": { "eyebrow": "Huquqiy maʼlumotlar", "title": "Foydalanish shartlari" },
+      "sections": [
+        { "title": "Sayt maʼlumotlari", "paragraphs": ["Saytdagi maʼlumotlar umumiy tanishtirish uchun. Universitetlarning qabul shartlari oʻzgarishi mumkin; hujjat topshirishdan oldin rasmiy manbalardan tekshiriladi."] },
+        { "title": "Kafolat yoʻq", "paragraphs": ["Qabul qarorini universitet, vizani konsullik beradi. Amanah Partners natijani kafolatlamaydi."] },
+        { "title": "Javobgarlik chegaralari", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "service-agreement": {
+      "meta": { "title": "Xizmat shartnomasi", "description": "Xizmat shartnomasining asosiy bandlari: qamrov, toʻlov va bekor qilish." },
+      "header": { "eyebrow": "Huquqiy maʼlumotlar", "title": "Xizmat shartnomasi: qisqacha", "lede": "Toʻliq matn imzolashdan oldin yozma ravishda beriladi." },
+      "sections": [
+        { "title": "Xizmat qamrovi", "paragraphs": ["Paketga kiradigan va kirmaydigan xizmatlar shartnomada aniq yoziladi."] },
+        { "title": "Toʻlov", "paragraphs": ["Taklif → shartnoma → toʻlov rejasi. Boʻlib toʻlash: [KARAR 6]."] },
+        { "title": "Bekor qilish va masofaviy sotuv", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "refunds": {
+      "meta": { "title": "Qaytarish shartlari", "description": "Toʻlovni qaytarish shartlari." },
+      "header": { "eyebrow": "Huquqiy maʼlumotlar", "title": "Qaytarish shartlari" },
+      "sections": [
+        { "title": "Umumiy qoida", "paragraphs": ["Qaytarish shartlari har bir shartnomada yozma ravishda koʻrsatiladi."] },
+        { "title": "Davrlar boʻyicha qaytarish", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "cookies": {
+      "meta": { "title": "Cookie siyosati", "description": "Saytda qanday cookie va brauzer xotirasi ishlatiladi." },
+      "header": { "eyebrow": "Huquqiy maʼlumotlar", "title": "Cookie siyosati" },
+      "sections": [
+        { "title": "Qanday cookie ishlatiladi?", "paragraphs": ["NEXT_LOCALE: tanlagan tilingizni eslab qolish uchun (zarur, funksional). Boshqa cookie ishlatilmaydi."] },
+        { "title": "Brauzer xotirasi", "paragraphs": ["Tungi rejim tanlovingiz brauzeringizda (localStorage) saqlanadi va serverga yuborilmaydi."] },
+        { "title": "Analitika", "paragraphs": ["Cookie ishlatmaydigan va shaxsiy maʼlumot yigʻmaydigan analitika vositasi qoʻllaniladi. Shuning uchun cookie banneri koʻrsatilmaydi."] }
+      ]
+    },
+    "official-accounts": {
+      "meta": { "title": "Rasmiy sahifalar", "description": "Amanah Partnersning rasmiy hisoblari roʻyxati va soxta hisoblardan ogohlantirish." },
+      "header": { "eyebrow": "Xavfsizlik", "title": "Rasmiy sahifalarimiz", "lede": "Faqat shu roʻyxatdagi hisoblar Amanah Partnersga tegishli. Roʻyxatda boʻlmagan hisoblarga toʻlov qilmang va shaxsiy maʼlumot bermang." },
+      "sections": [
+        { "title": "Rasmiy hisoblar", "paragraphs": ["[KARAR 3 — Telegram destek, Telegram kanal ve diğer hesaplar doğrulanınca listelenecek]"] },
+        { "title": "Toʻlovlar", "paragraphs": ["Toʻlov faqat imzolangan shartnomadagi rekvizitlar boʻyicha qabul qilinadi."] }
+      ]
+    }
+  }
+}

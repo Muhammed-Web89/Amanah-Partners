@@ -1,0 +1,211 @@
+@import 'tailwindcss';
+@import './tokens.css';
+@config '../../tailwind.config.js';
+
+/* Karanlık mod: <html class="dark"> — token'lar tokens.css içinde değişir */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Buzlu cam yüzeyler (tasarım01 §1). backdrop-filter yoksa düz zemine düşer: okunabilirlik önce gelir.
+   Fotoğraf üzerine binen camda --glass-fill: var(--glass-bg-strong) kullanılır (koyu/açık fotoğraf alanında da ≥ 4.5:1). */
+@utility glass {
+  background: var(--glass-fill, var(--glass-bg));
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 0 1px var(--glass-edge), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+@utility glass-bar {
+  background: var(--glass-bg-strong);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* tasarım06: belirgin cam — degrade dolgu, parlak üst kenar, güçlü bulanıklık ve derin gölge */
+@utility glass-strong {
+  background: linear-gradient(135deg, var(--glass-strong-from), var(--glass-strong-to));
+  border: 1px solid var(--glass-border);
+  box-shadow: inset 0 1px 0 var(--glass-highlight), 0 0 0 1px var(--glass-edge), var(--glass-depth);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  backdrop-filter: blur(28px) saturate(180%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* Seyahat rotası çizgileri: kesik çizgi çok yavaş akar */
+@keyframes dash-flow {
+  to { stroke-dashoffset: -400; }
+}
+@utility animate-dash {
+  animation: dash-flow 40s linear infinite;
+}
+
+/* tasarım04: "kareli defter" — sabit ince ızgara (32 px). Kenarlarda yumuşakça kaybolur. */
+@utility bg-notebook {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: center top;
+  mask-image: linear-gradient(to bottom, transparent, #000 6rem, #000 calc(100% - 6rem), transparent);
+}
+
+/* Yoğun buzlu cam, çok şeffaf: arkadaki ızgara camın içinden kırılarak görünür */
+@utility glass-thin {
+  background: var(--glass-thin);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 0 1px var(--glass-edge), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  backdrop-filter: blur(16px) saturate(170%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* Hero arka planı: çok yavaş pastel lekeler ve süzülen eğitim simgeleri. Yalnızca transform: GPU'da, yeniden boyama yok. */
+@keyframes drift-a {
+  to { transform: translate3d(12%, 8%, 0) scale(1.15); }
+}
+@keyframes drift-b {
+  to { transform: translate3d(-10%, 12%, 0) scale(0.9); }
+}
+@keyframes drift-c {
+  to { transform: translate3d(8%, -10%, 0) scale(1.1); }
+}
+@keyframes float-y {
+  to { transform: translate3d(0, -28px, 0) rotate(8deg); }
+}
+/* "Yoʻlingiz" kutusu: açılışta aşağıdan süzülür */
+@keyframes rise-in {
+  from { opacity: 0; transform: translate3d(0, 40px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+@utility animate-drift-a {
+  animation: drift-a 36s ease-in-out infinite alternate;
+}
+@utility animate-drift-b {
+  animation: drift-b 44s ease-in-out infinite alternate;
+}
+@utility animate-drift-c {
+  animation: drift-c 52s ease-in-out infinite alternate;
+}
+@utility animate-float {
+  animation: float-y 14s ease-in-out infinite alternate;
+}
+@utility animate-rise-in {
+  animation: rise-in 900ms var(--ease-out) 250ms both;
+}
+
+/* Sayfa kabı: mobilde 16 px, masaüstünde 32 px kenar; içerik ~1200 px */
+@utility container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 75rem;
+  padding-inline: 1rem;
+
+  @media (width >= 64rem) {
+    padding-inline: 2rem;
+  }
+}
+
+/* "A-Level", "UCAT/IMAT" gibi terimler satır sonunda bölünmez */
+@utility nobr {
+  white-space: nowrap;
+}
+
+/* Büyük harf etiket (kayıt defteri dili): "DARSLAR", "IMTIHON" */
+@utility label-caps {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Form: öğrenci 18 yaş ve üstüyse veli alanları gizlenir (JavaScript gerekmez) */
+.consultation-form:has(#age-adult:checked) .minor-only {
+  display: none;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+
+    @media (width >= 64rem) {
+      scroll-padding-top: 8rem;
+    }
+  }
+
+  body {
+    @apply bg-paper font-sans text-base text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif font-semibold text-ink;
+    text-wrap: balance;
+    /* Uzun Rusça/Özbekçe kelimeler dar ekranda taşmasın */
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  h4 {
+    @apply font-sans font-semibold text-ink;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  a {
+    @apply text-link underline decoration-1 underline-offset-[0.2em] transition-colors duration-fast hover:text-ink;
+  }
+
+  table,
+  time,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    @apply rounded-sm outline-2 outline-offset-2 outline-focus;
+  }
+
+  ::selection {
+    @apply bg-accent-soft text-ink;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

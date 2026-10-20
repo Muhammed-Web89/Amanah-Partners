@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Hamkorlar: umumiy hamkorlik tarmogʻimiz",
+    "description": "Amanah Partners va Faydalan Academyning umumiy hamkorlik tarmogʻi: xalqaro taʼlim platformalari, til maktablari va imtihon markazi."
+  },
+  "header": {
+    "eyebrow": "Hamkorlar",
+    "title": "Umumiy hamkorlik tarmogʻimiz",
+    "lede": "Faydalan Academy bilan umumiy tarmogʻimizdagi tashkilotlar. Logotiplar ruxsatsiz ishlatilmaydi; faqat nomlar keltiriladi."
+  },
+  "blocks": [
+    {
+      "type": "ledger",
+      "rows": [
+        { "label": "Xalqaro taʼlim va ariza platformalari", "value": "Kaplan International Pathways, Dukes Education, ApplyBoard, Minerva Virtual Academy" },
+        { "label": "Til va yozgi maktablar", "value": "BSC Education, CELT, SAMIAD, The Language Gallery, DID Deutsch-Institut" },
+        { "label": "Imtihon va taʼlim markazi", "value": "ABC Horizon (Istanbul, Pearson Edexcel tasdiqlagan markaz raqami 91667)" }
+      ]
+    },
+    { "type": "cta" }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "index": {
+    "meta": {
+      "title": "Страны: где можно учиться с A-Level?",
+      "description": "Великобритания, США, Германия, Италия, Нидерланды и Канада: пути поступления с A-Level для учеников из Узбекистана."
+    },
+    "header": {
+      "eyebrow": "Страны",
+      "title": "Куда можно поступить с A-Level?",
+      "lede": "В каждой стране свой путь поступления. Ниже — общая схема для ученика из Узбекистана; точные требования обновляются каждый год."
+    }
+  },
+  "countries": {
+    "uk": {
+      "meta": { "title": "Великобритания: бакалавриат с A-Level без foundation", "description": "С узбекским аттестатом большинство британских университетов требуют foundation. С A-Level вы подаёте документы через UCAS сразу на бакалавриат." },
+      "header": { "eyebrow": "Страны", "title": "Великобритания", "lede": "С A-Level вы экономите год и годовые расходы на жизнь в Великобритании.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "Только аттестат", "value": "Большинство университетов сначала требуют годичный foundation (например: Edinburgh, Cardiff, Nottingham)." },
+          { "label": "С A-Level", "value": "Можно поступать сразу на 1 курс без foundation (например: Queen Mary, Liverpool)." },
+          { "label": "Подача", "value": "Через UCAS." },
+          { "label": "Медицина", "value": "Требуется UCAT." }
+        ] },
+        { "type": "text", "title": "Языковые требования", "paragraphs": ["Большинство университетов требуют IELTS или равноценный сертификат по английскому. Нужный балл зависит от направления."] },
+        { "type": "faq", "title": "Вопросы", "items": [
+          { "q": "Можно ли поступить в Великобританию сразу с аттестатом?", "a": "Большинство университетов сначала требуют год foundation. С A-Level вы поступаете на бакалавриат без foundation." },
+          { "q": "Сколько нужно A-Level?", "a": "Обычно три. Нужные предметы и оценки определяют университет и направление." },
+          { "q": "Когда подавать документы?", "a": "Сроки UCAS зависят от университета и направления; план экзаменов мы строим под эти сроки." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "University of Edinburgh: Uzbekistan", "url": "https://www.ed.ac.uk/studying/international/country/asia/central-west-asia/uzbekistan" },
+          { "title": "Cardiff University: Uzbekistan", "url": "https://www.cardiff.ac.uk/study/international/your-country/asia/uzbekistan/entry-requirements-uzbekistan" },
+          { "title": "Queen Mary University of London: Uzbekistan", "url": "https://qmul.ac.uk/international-students/regions/turkey-caucasus-and-central-asia/entry-requirements/uzbekistan" },
+          { "title": "University of Liverpool: Uzbekistan", "url": "https://www.liverpool.ac.uk/international/countries/uzbekistan.php" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "usa": {
+      "meta": { "title": "США: сильная заявка с SAT и A-Level", "description": "В университеты США можно подавать с аттестатом; большинство престижных университетов снова требуют SAT/ACT. A-Level усиливает заявку." },
+      "header": { "eyebrow": "Страны", "title": "США", "lede": "SAT и A-Level — сильная комбинация для вашей заявки в США.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "Аттестат", "value": "Подавать документы с аттестатом можно. Большинство престижных университетов снова сделали SAT/ACT обязательными." },
+          { "label": "С A-Level", "value": "Академически усиливает заявку. Некоторые университеты принимают результаты A-Level от иностранных кандидатов как альтернативу." },
+          { "label": "Подача", "value": "Через Common App; важен поиск грантов." }
+        ] },
+        { "type": "faq", "title": "Вопросы", "items": [
+          { "q": "Заменяет ли A-Level SAT?", "a": "Как правило, нет. Некоторые университеты делают исключения, поэтому политику каждого университета мы проверяем отдельно." },
+          { "q": "Можно ли получить грант?", "a": "Гранты зависят от университета и финансового положения семьи. Поиск грантов входит в нашу услугу по поступлению." },
+          { "q": "Нужен ли языковой сертификат?", "a": "Большинство университетов требуют TOEFL или IELTS." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "SAT/ACT policies at selective colleges, 2026–27 (обзорный источник; сверяется с официальными страницами)", "url": "https://gradpilot.com/news/sat-act-required-top-colleges-2026-2027" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "germany": {
+      "meta": { "title": "Германия: путь с A-Level без Studienkolleg", "description": "С тремя A-Level с оценкой не ниже C (два из «списка A») — прямое право на высшее образование в Германии. Pearson IAL оценивается по тем же правилам." },
+      "header": { "eyebrow": "Страны", "title": "Германия", "lede": "С правильным выбором предметов — бакалавриат в Германии без Studienkolleg.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "Только аттестат", "value": "Обычно нужен сначала Studienkolleg (1 год, на немецком) или учёба в университете в Узбекистане." },
+          { "label": "С A-Level", "value": "Три A-Level с оценкой не ниже C (два из предметов «списка A»: язык, математика, естественные науки, экономика и др.) дают прямое право на высшее образование." },
+          { "label": "Медицина", "value": "Все 3 предмета должны быть из группы математики и естественных наук." },
+          { "label": "Pearson IAL", "value": "Оценивается по тем же правилам." },
+          { "label": "Окончательное решение", "value": "Принимает орган признания (uni-assist / ZAB). Поэтому предметы нужно выбрать правильно с самого начала." }
+        ] },
+        { "type": "faq", "title": "Вопросы", "items": [
+          { "q": "Нужно ли знать немецкий?", "a": "Для программ на немецком — да. Есть и программы на английском; языковые требования зависят от программы." },
+          { "q": "Какие предметы входят в «список A»?", "a": "Язык, математика, естественные науки, экономика и др. Точную комбинацию мы проверяем вместе под ваше направление." },
+          { "q": "Studienkolleg точно не нужен?", "a": "Если условия выполнены — не нужен. Окончательное решение за органом признания." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "DAAD: GCE A-Level in Germany", "url": "https://www.daad.de/en/studying-in-germany/requirements/gce/" },
+          { "title": "Pearson: Germany relaxes admission requirements for UK qualifications", "url": "https://pearson.com/international-schools/international-schools-blog/2021/10/germany-relaxes-admission-requirements-for-uk.html" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "italy": {
+      "meta": { "title": "Италия: требование 12 лет и решение через A-Level", "description": "Для бакалавриата в Италии нужно не менее 12 лет обучения; школа в Узбекистане — 11 лет. Три разных A-Level — один из путей выполнить это требование. Есть и IMAT." },
+      "header": { "eyebrow": "Страны", "title": "Италия", "lede": "Дополните 11 лет школы с A-Level и поступайте напрямую на англоязычные программы в Италии.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "Требование", "value": "Для бакалавриата — не менее 12 лет обучения. Школа в Узбекистане — 11 лет." },
+          { "label": "С A-Level", "value": "Три разных A-Level — один из путей выполнить это требование. Университеты могут ставить дополнительные условия." },
+          { "label": "Медицина", "value": "IMAT для медицины, стоматологии и ветеринарии на английском (проводит Министерство, конец сентября)." }
+        ] },
+        { "type": "faq", "title": "Вопросы", "items": [
+          { "q": "Нужен ли foundation?", "a": "Если с тремя разными A-Level требование 12 лет выполнено, foundation может не понадобиться. Требования университета проверим вместе." },
+          { "q": "Нужно ли знать итальянский?", "a": "Для программ на английском — нет." },
+          { "q": "Когда IMAT?", "a": "Обычно в конце сентября. Точные даты объявляются каждый год." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "Консульство Италии: Foreign academic qualifications", "url": "https://conschicago.esteri.it/wp-content/uploads/2023/08/Foreign-academic-qualifications.pdf" },
+          { "title": "Studiare in Italia", "url": "https://www.studiare-in-italia.it" },
+          { "title": "Università di Bologna: IMAT 2026", "url": "https://corsi.unibo.it/singlecycle/VeterinaryMedicine/notice-board/imat-2026" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "netherlands": {
+      "meta": { "title": "Нидерланды: бакалавриат на английском с A-Level", "description": "В Нидерландах много программ бакалавриата на английском. Заявки оцениваются по программе; A-Level — гораздо более сильный путь, чем аттестат." },
+      "header": { "eyebrow": "Страны", "title": "Нидерланды", "lede": "Поступление с A-Level на англоязычные программы бакалавриата.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "Программы", "value": "Много программ бакалавриата на английском." },
+          { "label": "Оценка", "value": "Заявки оцениваются по программе; A-Level — гораздо более сильный путь, чем аттестат." },
+          { "label": "Условия", "value": "Проверяем вместе на странице программы." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Örnek üniversite koşulları doğrulanınca eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "canada": {
+      "meta": { "title": "Канада: в университет с A-Level", "description": "A-Level — признанная квалификация для поступления в университеты Канады, например Toronto и McGill. Документы подаются в университет или через провинциальную систему." },
+      "header": { "eyebrow": "Страны", "title": "Канада", "lede": "С A-Level — в такие университеты, как Toronto и McGill.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "Путь для ученика из Узбекистана", "rows": [
+          { "label": "A-Level", "value": "Признанная квалификация для поступления в такие университеты, как Toronto и McGill." },
+          { "label": "Подача", "value": "В университет или через провинциальную систему (например: OUAC)." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Güncel kabul koşulları doğrulanınca kaynaklarıyla eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    }
+  }
+}

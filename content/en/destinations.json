@@ -1,0 +1,136 @@
+{
+  "index": {
+    "meta": {
+      "title": "Destinations: where can you study with A-Levels?",
+      "description": "UK, USA, Germany, Italy, the Netherlands and Canada: A-Level admission routes for students from Uzbekistan."
+    },
+    "header": {
+      "eyebrow": "Destinations",
+      "title": "Where can A-Levels take you?",
+      "lede": "Every country has its own admission route. Below is the general picture for a student from Uzbekistan; exact requirements are updated every year."
+    }
+  },
+  "countries": {
+    "uk": {
+      "meta": { "title": "United Kingdom: an undergraduate degree with A-Levels, no foundation year", "description": "With an Uzbek school certificate most UK universities require a foundation year. With A-Levels you apply through UCAS straight to an undergraduate degree." },
+      "header": { "eyebrow": "Destinations", "title": "United Kingdom", "lede": "With A-Levels you save a year and a year of living costs in the UK.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "School certificate only", "value": "Most universities require a one-year foundation first (for example: Edinburgh, Cardiff, Nottingham)." },
+          { "label": "With A-Levels", "value": "You can apply directly to the first year without a foundation year (for example: Queen Mary, Liverpool)." },
+          { "label": "Application", "value": "Through UCAS." },
+          { "label": "Medicine", "value": "UCAT is required." }
+        ] },
+        { "type": "text", "title": "Language requirements", "paragraphs": ["Most universities ask for IELTS or an equivalent English certificate. The score you need depends on the subject."] },
+        { "type": "faq", "title": "Questions", "items": [
+          { "q": "Can I go straight to a UK university with my school certificate?", "a": "Most universities require a foundation year first. With A-Levels you can apply to an undergraduate degree without one." },
+          { "q": "How many A-Levels do I need?", "a": "Usually three. The university and subject decide which subjects and grades are needed." },
+          { "q": "When do I apply?", "a": "UCAS deadlines vary by university and subject; we plan your exams around them." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "University of Edinburgh: Uzbekistan", "url": "https://www.ed.ac.uk/studying/international/country/asia/central-west-asia/uzbekistan" },
+          { "title": "Cardiff University: Uzbekistan", "url": "https://www.cardiff.ac.uk/study/international/your-country/asia/uzbekistan/entry-requirements-uzbekistan" },
+          { "title": "Queen Mary University of London: Uzbekistan", "url": "https://qmul.ac.uk/international-students/regions/turkey-caucasus-and-central-asia/entry-requirements/uzbekistan" },
+          { "title": "University of Liverpool: Uzbekistan", "url": "https://www.liverpool.ac.uk/international/countries/uzbekistan.php" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "usa": {
+      "meta": { "title": "USA: a strong application with SAT and A-Levels", "description": "You can apply to US universities with a school certificate; most selective universities require SAT/ACT again. A-Levels strengthen your application." },
+      "header": { "eyebrow": "Destinations", "title": "USA", "lede": "SAT plus A-Levels: a strong combination for your US application.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "School certificate", "value": "You can apply with your school certificate. Most selective universities have made SAT/ACT required again." },
+          { "label": "With A-Levels", "value": "Strengthens your application academically. Some universities accept A-Level results from international applicants as an alternative." },
+          { "label": "Application", "value": "Through Common App; scholarship research matters." }
+        ] },
+        { "type": "faq", "title": "Questions", "items": [
+          { "q": "Do A-Levels replace the SAT?", "a": "As a general rule, no. Some universities make exceptions, so we check each university's policy separately." },
+          { "q": "Can I get a scholarship?", "a": "Scholarships depend on the university and the family's financial situation. Scholarship research is part of our application service." },
+          { "q": "Do I need an English certificate?", "a": "Most universities ask for TOEFL or IELTS." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "SAT/ACT policies at selective colleges, 2026–27 (summary source; checked against official pages)", "url": "https://gradpilot.com/news/sat-act-required-top-colleges-2026-2027" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "germany": {
+      "meta": { "title": "Germany: an A-Level route without a Studienkolleg", "description": "Three A-Levels at grade C or above (two from the 'A list') give direct access to higher education in Germany. Pearson IAL is assessed under the same rules." },
+      "header": { "eyebrow": "Destinations", "title": "Germany", "lede": "With the right subject choice, an undergraduate degree in Germany without a Studienkolleg.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "School certificate only", "value": "Usually requires a Studienkolleg first (1 year, in German) or prior study at a university in Uzbekistan." },
+          { "label": "With A-Levels", "value": "Three A-Levels at grade C or above (two from 'A list' subjects such as languages, maths, sciences or economics) give direct access to higher education." },
+          { "label": "Medicine", "value": "All 3 subjects must come from the maths and science group." },
+          { "label": "Pearson IAL", "value": "Assessed under the same rules." },
+          { "label": "Final decision", "value": "Made by the recognition body (uni-assist / ZAB). That is why subjects must be chosen correctly from the start." }
+        ] },
+        { "type": "faq", "title": "Questions", "items": [
+          { "q": "Do I need to speak German?", "a": "For German-taught programmes, yes. There are also English-taught programmes; language requirements depend on the programme." },
+          { "q": "Which subjects are on the 'A list'?", "a": "Languages, maths, sciences, economics and similar subjects. We check the exact combination for your degree with you." },
+          { "q": "Is a Studienkolleg definitely not needed?", "a": "If the conditions are met, no. The final decision rests with the recognition body." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "DAAD: GCE A-Level in Germany", "url": "https://www.daad.de/en/studying-in-germany/requirements/gce/" },
+          { "title": "Pearson: Germany relaxes admission requirements for UK qualifications", "url": "https://pearson.com/international-schools/international-schools-blog/2021/10/germany-relaxes-admission-requirements-for-uk.html" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "italy": {
+      "meta": { "title": "Italy: the 12-year requirement and the A-Level solution", "description": "Undergraduate study in Italy requires at least 12 years of schooling; school in Uzbekistan lasts 11 years. Three different A-Levels are one way to meet the requirement. IMAT is also available." },
+      "header": { "eyebrow": "Destinations", "title": "Italy", "lede": "Complete your 11 years of school with A-Levels and apply directly to English-taught degrees in Italy.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "Requirement", "value": "At least 12 years of schooling for an undergraduate degree. School in Uzbekistan lasts 11 years." },
+          { "label": "With A-Levels", "value": "Three different A-Levels are one of the ways to meet this requirement. Universities may set additional conditions." },
+          { "label": "Medicine", "value": "IMAT for English-taught medicine, dentistry and veterinary medicine (run by the Ministry, late September)." }
+        ] },
+        { "type": "faq", "title": "Questions", "items": [
+          { "q": "Do I need a foundation year?", "a": "If three different A-Levels meet the 12-year requirement, you may not need one. We check the university's requirements with you." },
+          { "q": "Do I need to speak Italian?", "a": "Not for English-taught programmes." },
+          { "q": "When is the IMAT?", "a": "Usually in late September. Exact dates are announced each year." }
+        ] },
+        { "type": "sources", "items": [
+          { "title": "Italian Consulate: Foreign academic qualifications", "url": "https://conschicago.esteri.it/wp-content/uploads/2023/08/Foreign-academic-qualifications.pdf" },
+          { "title": "Studiare in Italia", "url": "https://www.studiare-in-italia.it" },
+          { "title": "Università di Bologna: IMAT 2026", "url": "https://corsi.unibo.it/singlecycle/VeterinaryMedicine/notice-board/imat-2026" }
+        ] },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "netherlands": {
+      "meta": { "title": "Netherlands: English-taught degrees with A-Levels", "description": "English-taught bachelor's programmes are common in the Netherlands. Applications are assessed per programme; A-Levels are a much stronger route than a school certificate." },
+      "header": { "eyebrow": "Destinations", "title": "Netherlands", "lede": "Apply to English-taught bachelor's programmes with A-Levels.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "Programmes", "value": "English-taught bachelor's programmes are common." },
+          { "label": "Assessment", "value": "Applications are assessed per programme; A-Levels are a much stronger route than a school certificate." },
+          { "label": "Requirements", "value": "We check them with you on the programme's page." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Örnek üniversite koşulları doğrulanınca eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    },
+    "canada": {
+      "meta": { "title": "Canada: university entry with A-Levels", "description": "A-Levels are a recognised entry qualification at Canadian universities such as Toronto and McGill. Applications go to the university or through a provincial system." },
+      "header": { "eyebrow": "Destinations", "title": "Canada", "lede": "Apply to universities such as Toronto and McGill with A-Levels.", "updated": "2026-10-19" },
+      "blocks": [
+        { "type": "ledger", "title": "The route for a student from Uzbekistan", "rows": [
+          { "label": "A-Levels", "value": "A recognised entry qualification at universities such as Toronto and McGill." },
+          { "label": "Application", "value": "Directly to the university or through a provincial system (for example: OUAC)." }
+        ] },
+        { "type": "notice", "tone": "pending", "code": "TEYİT 8", "text": "Güncel kabul koşulları doğrulanınca kaynaklarıyla eklenecek." },
+        { "type": "countryNote" },
+        { "type": "cta" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "exam": {
+    "eyebrow": "Exams",
+    "title": "Lessons online. Exams at a Pearson-approved centre.",
+    "body": "Your lessons take place online. Exams are taken on paper at physical centres approved by Pearson Edexcel. Our students sit the exams as private candidates. We plan which centre and which series to use around the student's city, subjects and application deadlines. Choosing the centre, registering, tracking deadlines and following up on results are our responsibility, so parents do not have to search for a centre or chase places.",
+    "extended": "Our exams are organised through our Pearson Edexcel-approved partner centre (Istanbul, centre number 91667) and approved centres in Uzbekistan.",
+    "notes": [
+      "The exam fee is paid to the centre. Your offer states whether it is included in your package.",
+      "Not every subject and unit is available in every series. We plan around this."
+    ],
+    "sessionsLabel": "Exam series",
+    "sessions": "International A-Level: October, January, May–June · International GCSE: November, May–June",
+    "link": "How does the exam process work?"
+  },
+  "admissionNote": "Entry requirements vary by university, subject and year. That's why we build each student's plan around their goal.",
+  "countryNote": "Requirements vary by university and year. Before you apply, we check the current requirements with you.",
+  "cta": {
+    "title": "The first step is a free consultation.",
+    "body": "Fill in the form and an adviser will contact you on Telegram or by phone. In the first conversation we clarify your goal, the right route and a package that suits you."
+  },
+  "weekly": {
+    "eyebrow": "Weekly schedule",
+    "title": "Alongside school: evenings and weekends",
+    "intro": "Lessons take place outside school hours, in the evenings and at weekends. We plan the timetable around the student's school calendar.",
+    "caption": "Sample weekly schedule: A-Level, 3 subjects",
+    "columns": ["Day", "Live lesson", "Note"],
+    "rows": [
+      ["Monday", "Subject 1 (90 minutes)", "Evening"],
+      ["Tuesday", "Subject 2 (90 minutes)", "Evening"],
+      ["Thursday", "Subject 3 (90 minutes)", "Evening"],
+      ["Saturday", "Q&A and mock exam (every two weeks)", "Weekend"],
+      ["Sunday", "Independent study, homework", "Weekend"]
+    ],
+    "tableNote": "Sample only. Exact times depend on the group and subjects.",
+    "reportTitle": "A written report for parents every week",
+    "reportBody": "Every week the student and parents receive a short written report: topics covered, mock exam results and next week's plan.",
+    "reportLabel": "Sample",
+    "report": [
+      { "label": "Topics covered", "value": "Maths: differentiation · Physics: laws of motion" },
+      { "label": "Mock result", "value": "Maths P1 mock: 68% (previous: 61%)" },
+      { "label": "Next week", "value": "Integration, physics practical" }
+    ],
+    "reportNote": "Sample prepared with fictional data."
+  },
+  "whyALevel": {
+    "eyebrow": "A-Level advantages",
+    "title": "Why A-Level?",
+    "items": [
+      { "title": "No foundation year", "body": "With an Uzbek school certificate, most UK universities ask for a one-year foundation first. With A-Levels you apply straight to an undergraduate degree." },
+      { "title": "Save a year and its costs", "body": "A foundation year means a year of tuition and living costs abroad. You prepare for A-Levels from home, in your own city." },
+      { "title": "A direct route to Germany and Italy", "body": "With the right combination of subjects you can apply in Germany without a Studienkolleg and in Italy without a foundation year." },
+      { "title": "A flexible exam system", "body": "Exams run three times a year: October, January and May–June. To raise a grade you resit one unit, not the whole year." }
+    ]
+  }
+}

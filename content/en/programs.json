@@ -1,0 +1,246 @@
+{
+  "index": {
+    "meta": {
+      "title": "Programmes: A-Level, IGCSE, SAT, IELTS, UCAT/IMAT",
+      "description": "Pearson Edexcel International A-Level, the IGCSE and A-Level route, and preparation for SAT, IELTS/TOEFL, UCAT/IMAT and portfolios. One team on every route."
+    },
+    "header": {
+      "eyebrow": "Programmes",
+      "title": "A route for your goal, with one team on every route",
+      "lede": "Our main programmes are Pearson Edexcel International A-Level and the IGCSE + A-Level route. Additional preparation complements them depending on your destination and subject."
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "title": "Main programmes",
+        "columns": 2,
+        "items": [
+          { "eyebrow": "Ages 16–18 · ~2 years", "title": "A-Level", "body": "3 (or 4 if needed) International A-Level subjects chosen for your target degree. For applying straight to an undergraduate degree.", "href": "/programs/a-level", "link": "The A-Level programme" },
+          { "eyebrow": "Ages 14–15 · ~4 years", "title": "IGCSE and A-Level", "body": "A solid foundation with International GCSEs first, then International A-Levels. For families who want to start early and plan long-term.", "href": "/programs/igcse-a-level", "link": "The IGCSE and A-Level route" }
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Additional preparation",
+        "columns": 3,
+        "items": [
+          { "title": "SAT", "body": "SAT preparation for applications to US universities.", "href": "/programs/sat", "link": "Read more" },
+          { "title": "IELTS / TOEFL", "body": "Preparation for universities' language requirements and academic English.", "href": "/programs/ielts-toefl", "link": "Read more" },
+          { "title": "Medicine: UCAT and IMAT", "body": "UCAT for medicine in the UK, IMAT for English-taught medicine in Italy.", "href": "/programs/medicine-ucat-imat", "link": "Read more" },
+          { "title": "AP / IB tutoring", "body": "Topic tutoring and exam support for students taking AP or IB.", "href": "/programs/ap-ib", "link": "Read more" },
+          { "title": "Architecture and design portfolio", "body": "Portfolio preparation for art, design and architecture courses.", "href": "/programs/portfolio", "link": "Read more" },
+          { "title": "BTEC", "body": "A practical, project-based route: business, IT, engineering.", "href": "/programs/btec", "link": "Read more", "verify": "btec" }
+        ]
+      },
+      {
+        "type": "table",
+        "title": "The two main routes compared",
+        "caption": "Comparison of the IGCSE and A-Level route and the direct A-Level route",
+        "columns": ["", "IGCSE and A-Level", "Straight to A-Level"],
+        "rows": [
+          ["Age", "14–15", "16–18"],
+          ["Typical length", "~4 years (2 + 2)", "~2 years (may be shorter depending on the student's level)"],
+          ["Number of subjects", "IGCSE: 5–7 · A-Level: 3", "3 A-Levels (4 if needed)"],
+          ["Exam series", "IGCSE: November, May–June · IAL: October, January, May–June", "October, January, May–June"],
+          ["Goal", "A solid foundation and strong universities", "Direct entry to an undergraduate degree"]
+        ]
+      },
+      {
+        "type": "finder",
+        "title": "Which route suits you?",
+        "intro": "Three questions. Each answer takes you to the right page.",
+        "questions": [
+          {
+            "q": "How old are you?",
+            "options": [
+              { "label": "14–15", "href": "/programs/igcse-a-level" },
+              { "label": "16–18", "href": "/programs/a-level" }
+            ]
+          },
+          {
+            "q": "Which school year are you in?",
+            "options": [
+              { "label": "Grade 8–9", "href": "/programs/igcse-a-level" },
+              { "label": "Grade 10–11", "href": "/programs/a-level" },
+              { "label": "I have finished school", "href": "/programs/a-level" }
+            ]
+          },
+          {
+            "q": "Where do you want to study?",
+            "options": [
+              { "label": "UK, Germany, Italy, Netherlands, Canada", "href": "/programs/a-level" },
+              { "label": "USA", "href": "/programs/sat" },
+              { "label": "Medicine", "href": "/programs/medicine-ucat-imat" }
+            ]
+          }
+        ],
+        "outro": "Still not sure? We will work it out together in a free consultation."
+      },
+      { "type": "cta" }
+    ]
+  },
+  "pages": {
+    "a-level": {
+      "meta": {
+        "title": "Pearson Edexcel International A-Level: online preparation",
+        "description": "Pearson Edexcel International A-Levels without leaving your school. Subjects for your degree, live online lessons, exams at a Pearson-approved centre and university applications."
+      },
+      "header": {
+        "eyebrow": "Main programme · Ages 16–18",
+        "title": "Pearson Edexcel International A-Level",
+        "lede": "Stay at your school and prepare to apply straight to a university abroad with three A-Level subjects."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "title": "What is the programme?",
+          "paragraphs": [
+            "Pearson Edexcel International Advanced Level (IAL) is an international A-Level qualification awarded by UK-based Pearson Edexcel. It is taken subject by subject, has a modular structure and is recognised by universities around the world.",
+            "Every IAL subject except Law is modular: each unit is assessed by its own exam. To raise a grade, you resit only the unit you need."
+          ]
+        },
+        { "type": "why" },
+        {
+          "type": "cards",
+          "title": "Subjects for your degree",
+          "intro": "The subject combination is set by your target university's entry requirements. We plan your route together in the first conversation.",
+          "columns": 2,
+          "items": [
+            { "eyebrow": "Engineering", "title": "Maths, Further Maths, Physics", "body": "Plus Chemistry or Computer Science." },
+            { "eyebrow": "Medicine and health", "title": "Biology, Chemistry + Maths or Physics", "body": "Plus UCAT or IMAT preparation." },
+            { "eyebrow": "Business and economics", "title": "Economics, Maths + Business or Accounting", "body": "Chosen according to university requirements." },
+            { "eyebrow": "Law and social sciences", "title": "English, History, Economics or Psychology", "body": "Chosen according to university requirements." }
+          ],
+          "note": "The list of subjects offered is being confirmed.",
+          "verify": "courseList"
+        },
+        { "type": "weekly" },
+        {
+          "type": "text",
+          "title": "Exam plan",
+          "paragraphs": [
+            "There are three series a year: October, January and May–June. We plan the order of units backwards from your application deadlines, because your results need to be ready in time for your university application."
+          ]
+        },
+        { "type": "exam" },
+        {
+          "type": "list",
+          "title": "Next step: university",
+          "items": [
+            "UK: applying through UCAS",
+            "USA: Common App and SAT",
+            "Europe: universities in Germany, Italy and the Netherlands"
+          ],
+          "link": { "label": "Routes by country", "href": "/destinations" }
+        },
+        { "type": "cta" }
+      ]
+    },
+    "igcse-a-level": {
+      "meta": {
+        "title": "The IGCSE and A-Level route: for ages 14–15",
+        "description": "Pearson Edexcel International GCSEs first, then International A-Levels. Alongside school, with a long-term plan. Exam series: November and May–June."
+      },
+      "header": {
+        "eyebrow": "Main programme · Ages 14–15",
+        "title": "The IGCSE and A-Level route",
+        "lede": "Start in grade 8 or 9: build a foundation in the British system with International GCSEs, then prepare for university with International A-Levels."
+      },
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "How does the route work?",
+          "variant": "compact",
+          "items": [
+            { "title": "International GCSE", "body": "About 2 years. Maths, English, sciences and optional subjects." },
+            { "title": "International A-Level", "body": "About 2 years. 3 subjects for your target degree." },
+            { "title": "University", "body": "Apply to an undergraduate degree with your A-Level results." }
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Who is it for?",
+          "paragraphs": [
+            "Students who want to start early and strengthen their academic foundation in English. School continues as normal: lessons are in the evenings and at weekends."
+          ]
+        },
+        {
+          "type": "ledger",
+          "title": "Key facts",
+          "rows": [
+            { "label": "Length", "value": "~2 years of IGCSE + ~2 years of A-Level" },
+            { "label": "IGCSE subjects", "value": "5–7 subjects: maths, English, sciences and optional subjects" },
+            { "label": "IGCSE series", "value": "November, May–June" },
+            { "label": "A-Level series", "value": "October, January, May–June" }
+          ],
+          "note": "The list of IGCSE subjects offered is being confirmed.",
+          "verify": "courseList"
+        },
+        {
+          "type": "text",
+          "title": "What does IGCSE give you?",
+          "paragraphs": [
+            "IGCSE on its own is not a university entry qualification. It prepares you for A-Levels and strengthens your university application.",
+            "After IGCSE, A-Level subjects are chosen for your target degree."
+          ],
+          "link": { "label": "The A-Level programme", "href": "/programs/a-level" }
+        },
+        { "type": "weekly" },
+        { "type": "exam" },
+        { "type": "cta" }
+      ]
+    },
+    "sat": {
+      "meta": { "title": "SAT preparation for US universities", "description": "SAT preparation for applications to US universities: mock exams and score tracking. Together with A-Levels, a strong application." },
+      "header": { "eyebrow": "Additional preparation", "title": "SAT", "lede": "SAT preparation for applications to US universities: mock exams and score tracking." },
+      "blocks": [
+        { "type": "text", "title": "Why SAT?", "paragraphs": ["Most selective US universities have made SAT/ACT scores required again. A-Levels strengthen an application academically, but they do not replace the SAT.", "That is why we plan SAT and A-Levels together for students aiming at the USA."] },
+        { "type": "list", "title": "What's included", "items": ["Starting level assessment", "Lessons for the Math and Reading & Writing sections", "Regular mock exams and score tracking", "Choosing a test date that fits your application deadlines"] },
+        { "type": "cta" }
+      ]
+    },
+    "ielts-toefl": {
+      "meta": { "title": "IELTS and TOEFL preparation", "description": "IELTS and TOEFL preparation for universities' language requirements, mock exams and academic English." },
+      "header": { "eyebrow": "Additional preparation", "title": "IELTS / TOEFL", "lede": "Preparation for universities' language requirements and academic English." },
+      "blocks": [
+        { "type": "text", "title": "Who is it for?", "paragraphs": ["Most universities abroad ask for an English language certificate. The score you need depends on the university and subject; we plan around your target."] },
+        { "type": "list", "title": "What's included", "items": ["Level assessment and target score", "All four skills: reading, listening, writing, speaking", "Mock exams", "Academic English alongside your A-Level lessons"] },
+        { "type": "cta" }
+      ]
+    },
+    "medicine-ucat-imat": {
+      "meta": { "title": "Preparing for medicine: UCAT and IMAT", "description": "UCAT for medicine in the UK, IMAT for English-taught medicine, dentistry and veterinary medicine in Italy. A plan built around A-Level Biology and Chemistry." },
+      "header": { "eyebrow": "Additional preparation", "title": "Medicine: UCAT and IMAT", "lede": "Admissions tests for medicine, planned together with A-Level Biology and Chemistry." },
+      "blocks": [
+        { "type": "ledger", "title": "Which test, where?", "rows": [{ "label": "United Kingdom", "value": "UCAT for medicine" }, { "label": "Italy", "value": "IMAT for English-taught medicine, dentistry and veterinary medicine (run by the Ministry, late September)" }] },
+        { "type": "text", "title": "How do we prepare?", "paragraphs": ["We link UCAT or IMAT preparation with your A-Level Biology and Chemistry lessons in one plan. Test dates and application deadlines are planned together."] },
+        { "type": "cta" }
+      ]
+    },
+    "ap-ib": {
+      "meta": { "title": "AP and IB tutoring", "description": "Topic tutoring and exam support for students taking AP or IB." },
+      "header": { "eyebrow": "Additional preparation", "title": "AP / IB tutoring", "lede": "Topic tutoring and exam support for students taking AP or IB at their own school." },
+      "blocks": [
+        { "type": "text", "title": "Who is this for?", "paragraphs": ["This is a support service, not a main programme. The student continues with AP or IB at their own school, and we help with difficult subjects and exam preparation."] },
+        { "type": "cta" }
+      ]
+    },
+    "portfolio": {
+      "meta": { "title": "Architecture and design portfolio", "description": "Portfolio preparation for applications to art, design and architecture courses." },
+      "header": { "eyebrow": "Additional preparation", "title": "Architecture and design portfolio", "lede": "Portfolio preparation for applications to art, design and architecture courses." },
+      "blocks": [
+        { "type": "list", "title": "What's included", "items": ["Reviewing the portfolio requirements of your target universities", "Selecting work and developing projects", "Portfolio structure and presentation", "A plan built around application deadlines"] },
+        { "type": "cta" }
+      ]
+    },
+    "btec": {
+      "verify": "btec",
+      "meta": { "title": "BTEC", "description": "A practical, project-based route: business, IT and engineering." },
+      "header": { "eyebrow": "Additional preparation", "title": "BTEC", "lede": "A practical, project-based route: business, IT and engineering." },
+      "blocks": [
+        { "type": "text", "title": "How does BTEC work?", "paragraphs": ["BTEC is assessed by an approved centre. That is why this programme is offered only through our partner centre, once its scope has been confirmed."] },
+        { "type": "cta" }
+      ]
+    }
+  }
+}

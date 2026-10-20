@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "title": "Amanah Partners — Pearson A-Level and university preparation",
+    "description": "Stay at your school, earn Pearson Edexcel International A-Levels and apply to the university you want. Lessons, exams, applications and visa with one team."
+  },
+  "hero": {
+    "eyebrow": "Pearson Edexcel International A-Level · Ages 14–18",
+    "title": "Stay at your school. Earn Pearson Edexcel International A-Levels. Reach the university you've been dreaming of.",
+    "subtitle": "Live online lessons with experienced teachers, exams at Pearson-approved centres, and full support from application to visa, all with one team.",
+    "secondary": "Explore programmes",
+    "routeLabel": "5 steps to university",
+    "route": [
+      "Online lessons",
+      "Pearson exams",
+      "Applications",
+      "Visa",
+      "Student life"
+    ],
+    "routeSteps": [
+      "You study your A-Level subjects in live online lessons with experienced teachers. Lessons run after school, in the evenings and at weekends, so there is no need to leave your school. Regular mock exams track your progress, and parents get a written report every week.",
+      "The exams are not online: you sit them on paper at Pearson-approved centres. We choose the centre and the session, handle your registration and keep track of every deadline. There are three sessions a year: October, January and May–June.",
+      "Together we build a list of universities that fit your grades and goals. We prepare your personal statement, references and applications with you. The university makes the admission decision; we work to make your application as strong as it can be.",
+      "Once your offer arrives, we gather your student visa documents together and check the financial paperwork. Before the embassy interview, you do a practice interview with us. The consulate decides; we make sure nothing is missing.",
+      "We help you find a dormitory or other housing, book your travel and get ready to leave. That way you arrive in a new city calm and settle into your studies from day one."
+    ]
+  },
+  "trust": [
+    {
+      "text": "Partnership with a Pearson Edexcel-approved exam centre",
+      "verify": "centre91667"
+    },
+    {
+      "text": "Mentoring by professors"
+    },
+    {
+      "text": "A team that has worked with nearly 50 universities"
+    },
+    {
+      "text": "Free consultation · Written contract"
+    }
+  ],
+  "audience": {
+    "eyebrow": "Who is it for?",
+    "title": "Choose a programme by age",
+    "cards": [
+      {
+        "eyebrow": "Ages 14–15 (grades 8–9)",
+        "title": "IGCSE and A-Level",
+        "body": "For students who want to start early. About 2 years of IGCSEs build a solid base in English and core subjects, followed by 2 years of A-Levels. You stay at your own school throughout.",
+        "href": "/programs/igcse-a-level",
+        "link": "Learn more"
+      },
+      {
+        "eyebrow": "Ages 16–18",
+        "title": "Straight to A-Level",
+        "body": "For students who want to get to university sooner. We choose 3 subjects for your future degree and prepare you to apply for a bachelor's in about 2 years. Depending on your level, it can take less.",
+        "href": "/programs/a-level",
+        "link": "Learn more"
+      }
+    ],
+    "moreLabel": "Additional courses:",
+    "more": [
+      {
+        "label": "SAT",
+        "href": "/programs/sat"
+      },
+      {
+        "label": "IELTS/TOEFL",
+        "href": "/programs/ielts-toefl"
+      },
+      {
+        "label": "UCAT/IMAT",
+        "href": "/programs/medicine-ucat-imat"
+      },
+      {
+        "label": "Portfolio",
+        "href": "/programs/portfolio"
+      }
+    ]
+  },
+  "model": {
+    "eyebrow": "Who does what?",
+    "title": "You focus on studying. We handle the rest.",
+    "caption": "Services and who delivers them",
+    "columns": [
+      "Service",
+      "Who delivers it?",
+      "How does it work?"
+    ],
+    "rows": [
+      {
+        "service": "Online lessons and mentoring",
+        "who": "Amanah Partners",
+        "whoVerified": "Amanah Partners (shared teaching infrastructure with Faydalan Academy)",
+        "verifyWho": "faydalanName",
+        "how": "Live lessons with experienced teachers, mentoring by professors, weekly academic monitoring."
+      },
+      {
+        "service": "Exams",
+        "who": "Pearson Edexcel-approved centres",
+        "whoVerified": "Pearson Edexcel-approved centres: our partner centre in Istanbul (no. 91667) and approved centres in Uzbekistan",
+        "verifyWho": "centre91667",
+        "how": "The student sits the official series as a private candidate. We handle registration and follow-up."
+      },
+      {
+        "service": "University applications and visa",
+        "who": "Amanah Partners",
+        "how": "University shortlist, personal statement, UCAS/Common App, scholarship research, visa documents and interview practice."
+      }
+    ]
+  },
+  "compare": {
+    "eyebrow": "What's different?",
+    "title": "Why Amanah Partners?",
+    "intro": "Because lessons, exams, applications and visa are handled by one team. At every stage parents know who to talk to.",
+    "caption": "Comparison of service models",
+    "columns": [
+      "",
+      "Tutoring-only courses",
+      "Consultancy-only firms",
+      "Amanah Partners"
+    ],
+    "rows": [
+      [
+        "Live online A-Level lessons",
+        "yes",
+        "no",
+        "yes"
+      ],
+      [
+        "Study plan and weekly monitoring",
+        "yes",
+        "yes",
+        "yes"
+      ],
+      [
+        "Mentoring by professors",
+        "no",
+        "no",
+        "yes"
+      ],
+      [
+        "Exam registration and centre coordination",
+        "no",
+        "no",
+        "yes"
+      ],
+      [
+        "University applications",
+        "no",
+        "yes",
+        "yes"
+      ],
+      [
+        "Visa and settling-in support",
+        "no",
+        "yes",
+        "yes"
+      ],
+      [
+        "Communication in Uzbek and Russian",
+        "varies",
+        "varies",
+        "yes"
+      ]
+    ],
+    "note": "The table compares typical service models; it does not describe any specific organisation or all organisations."
+  },
+  "steps": {
+    "eyebrow": "How we work",
+    "title": "Six steps from the first conversation to campus",
+    "items": [
+      "Free consultation and goal analysis",
+      "English and academic level assessment",
+      "Subject, country and course strategy",
+      "Online teaching and weekly monitoring",
+      "Pearson exams and university applications",
+      "From offer to arrival: visa, accommodation, travel"
+    ],
+    "link": "Each step in detail"
+  },
+  "countries": {
+    "eyebrow": "Destinations",
+    "title": "Where can A-Levels take you?",
+    "items": [
+      {
+        "href": "/destinations/uk",
+        "name": "United Kingdom",
+        "text": "Apply straight to an undergraduate degree with A-Levels, without a foundation year (UCAS)."
+      },
+      {
+        "href": "/destinations/usa",
+        "name": "USA",
+        "text": "SAT plus A-Levels for a strong Common App application."
+      },
+      {
+        "href": "/destinations/germany",
+        "name": "Germany",
+        "text": "The right combination of 3 A-Levels can let you apply without a Studienkolleg."
+      },
+      {
+        "href": "/destinations/italy",
+        "name": "Italy",
+        "text": "Meet the 12-year schooling requirement with A-Levels; English-taught degrees and IMAT."
+      },
+      {
+        "href": "/destinations/netherlands",
+        "name": "Netherlands",
+        "text": "Apply to English-taught bachelor's programmes with A-Levels."
+      },
+      {
+        "href": "/destinations/canada",
+        "name": "Canada",
+        "text": "Apply to universities such as Toronto and McGill with A-Levels."
+      }
+    ],
+    "updated": "2026-10-19"
+  },
+  "universities": {
+    "eyebrow": "Universities",
+    "title": "Universities our students have gone on to",
+    "list": [
+      "University College London (UCL) · United Kingdom",
+      "King’s College London · United Kingdom",
+      "Queen Mary University of London · United Kingdom",
+      "University of Toronto · Canada",
+      "RWTH Aachen · Germany",
+      "University of Duisburg-Essen · Germany",
+      "Sapienza University of Rome · Italy",
+      "University of Padova · Italy"
+    ],
+    "note": "Some of the universities where applications and admissions were handled through our shared education network (Amanah Partners and Faydalan Academy)."
+  },
+  "price": {
+    "eyebrow": "Fees",
+    "title": "Fair prices, clear terms.",
+    "body": "Every student's goal is different, and so is our package. You pay only for the services you need. Fees depend on the destination, university and number of subjects; in the first conversation we put together a package that fits your budget. We never charge anything that is not in the contract.",
+    "button": "Find out the price in a free consultation",
+    "link": "Packages and what they include"
+  },
+  "team": {
+    "eyebrow": "Team",
+    "title": "Our company is new. Our experience is not.",
+    "body": "Our team has worked with nearly 50 universities and advised hundreds of students. It includes advisers with over 10 years of experience and professors who mentor our students.",
+    "points": [
+      "Mentoring by professors",
+      "Advisers who speak Uzbek, Russian and English",
+      "Team members in Türkiye and Uzbekistan"
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Frequently asked questions",
+    "all": "All questions"
+  },
+  "guides": {
+    "eyebrow": "Guides",
+    "title": "Latest guides",
+    "all": "All guides"
+  }
+}

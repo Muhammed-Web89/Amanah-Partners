@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Koʻp beriladigan savollar",
+    "description": "A-Level, Pearson imtihonlari, universitetga qabul, viza, narx va toʻlov haqida savollarga javoblar."
+  },
+  "header": {
+    "eyebrow": "Savollar",
+    "title": "Koʻp beriladigan savollar",
+    "lede": "Javobini topa olmagan savolingizni bizga Telegram orqali yozing."
+  },
+  "categories": [
+    {
+      "id": "general",
+      "title": "Umumiy",
+      "items": [
+        { "id": "what", "q": "Amanah Partners nima?", "a": "Oʻzbekistondagi oʻquvchilar uchun A-Level tayyorgarligi, imtihonlarni tashkil etish, universitetga hujjat topshirish va viza jarayonlarini bitta jamoada boshqaradigan xalqaro taʼlim maslahat kompaniyasi.", "aVerified": "Oʻzbekistondagi oʻquvchilar uchun A-Level tayyorgarligi, imtihonlarni tashkil etish, universitetga hujjat topshirish va viza jarayonlarini bitta jamoada boshqaradigan xalqaro taʼlim maslahat kompaniyasi. Turkiyada xuddi shu model bilan ishlaydigan Faydalan Academy bilan birga harakat qiladi.", "verify": "faydalanName" },
+        { "id": "where", "q": "Faqat Toshkentda xizmat koʻrsatasizmi?", "a": "Yoʻq. Darslar onlayn boʻlgani uchun Oʻzbekistonning istalgan joyidan, qoʻshni davlatlardan va xorijda yashayotgan oʻzbek oilalaridan oʻquvchilarni qabul qilamiz." }
+      ]
+    },
+    {
+      "id": "programs",
+      "title": "Dasturlar",
+      "items": [
+        { "id": "school", "q": "Maktabni tark etmasdan A-Level olsam boʻladimi?", "a": "Ha. Darslar kechqurun va dam olish kunlari oʻtadi; dasturni maktab jadvalingizga qarab tuzamiz. Attestatingizni olayotganda A-Levelga ham tayyorlanasiz.", "link": { "label": "A-Level dasturi", "href": "/programs/a-level" } },
+        { "id": "language", "q": "Darslar qaysi tilda?", "a": "Ingliz tilida. Maslahat va ota-ona bilan muloqot oʻzbek va rus tilida olib boriladi." },
+        { "id": "howMany", "q": "Nechta A-Level fani olishim kerak?", "a": "Koʻpchilik universitetlar 3 ta A-Level talab qiladi. Maqsadli yoʻnalishga qarab 4-fanni tavsiya qilishimiz mumkin." },
+        { "id": "igcse", "q": "A-Level va IGCSE farqi nima?", "a": "IGCSE boshlangʻich bosqich (odatda 14–16 yosh); A-Level universitetga hujjat topshirishda ishlatiladigan yuqori bosqich (16–19 yosh). IGCSE oʻz-oʻzidan universitetga kirish malakasi emas.", "link": { "label": "IGCSE va A-Level yoʻli", "href": "/programs/igcse-a-level" } }
+      ]
+    },
+    {
+      "id": "exams",
+      "title": "Imtihonlar",
+      "items": [
+        { "id": "online", "q": "Imtihonlar onlaynmi?", "a": "Yoʻq. Darslar onlayn, imtihonlar esa Pearson Edexcel tasdiqlagan jismoniy markazlarda, qogʻozda topshiriladi. Markaz tanlash, roʻyxatdan oʻtish va kuzatishni biz qilamiz.", "aVerified": "Yoʻq. Darslar onlayn, imtihonlar esa Pearson Edexcel tasdiqlagan jismoniy markazlarda, qogʻozda topshiriladi. Imtihonlarimiz Pearson Edexcel tasdiqlagan hamkor markazimiz (Istanbul, markaz raqami 91667) va Oʻzbekistondagi tasdiqlangan markazlar orqali tashkil etiladi. Markaz tanlash, roʻyxatdan oʻtish va kuzatishni biz qilamiz.", "verify": "centre91667", "link": { "label": "Imtihon jarayoni", "href": "/how-we-work" } },
+        { "id": "when", "q": "Imtihonlar qachon?", "a": "International A-Level uchun yilda uchta sessiya: oktyabr, yanvar, may–iyun. IGCSE uchun noyabr va may–iyun." },
+        { "id": "resit", "q": "Bahoni oshirish mumkinmi?", "a": "Ha. IAL modulli: faqat kerakli boʻlimni qayta topshirishingiz mumkin." },
+        { "id": "cambridge", "q": "Cambridge va Pearson Edexcel farqi nima?", "a": "Ikkalasi ham Buyuk Britaniyada joylashgan, alohida imtihon kengashlari va universitetlar tomonidan tan olinadi. Pearson IALning afzalligi: boʻlimlar boʻyicha (modulli) tuzilma va yilda uchta imtihon sessiyasi. Tayyorgarlik topshiriladigan kengash dasturiga toʻliq mos boʻlishi kerak." }
+      ]
+    },
+    {
+      "id": "admission",
+      "title": "Universitetga qabul",
+      "items": [
+        { "id": "countries", "q": "A-Level bilan qaysi davlatlarga hujjat topshirsam boʻladi?", "a": "Buyuk Britaniya, AQSh, Kanada, Germaniya, Italiya, Niderlandiya va boshqa koʻplab davlatlarda universitetlar A-Levelni tan oladi. Kerakli fanlar va baholarni universitet belgilaydi.", "link": { "label": "Davlatlar", "href": "/destinations" } },
+        { "id": "attestat", "q": "Oʻzbek attestati bilan toʻgʻridan-toʻgʻri Britaniyaga kirsa boʻladimi?", "a": "Koʻpchilik universitetlar avval bir yillik foundation talab qiladi. A-Level bilan foundationsiz bakalavriatga hujjat topshirishingiz mumkin.", "link": { "label": "Buyuk Britaniya", "href": "/destinations/uk" } },
+        { "id": "guarantee", "q": "Qabulni kafolatlaysizmi?", "a": "Qabul qarorini universitet qabul qiladi; hech bir maslahat kompaniyasi buni kafolatlay olmaydi. Bizning ishimiz: orzuingizdagi universitet uchun eng kuchli arizani tayyorlash. Toʻgʻri fanlar, toʻgʻri imtihon rejasi va kuchli hujjatlar." }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Viza",
+      "items": [
+        { "id": "visa", "q": "Vizani siz berasizmi?", "a": "Vizani tegishli davlat konsulligi beradi. Biz hujjatlaringizni boshidan oxirigacha tayyorlaymiz, tekshiramiz va suhbatga mashq bilan kirishingizni taʼminlaymiz." }
+      ]
+    },
+    {
+      "id": "fees",
+      "title": "Narx va toʻlov",
+      "items": [
+        { "id": "price", "q": "Narxlar qancha?", "a": "Narx maqsadli davlat, universitet va fanlar soniga qarab oʻzgaradi. Bepul konsultatsiyada sizga mos paket va narxni aniqlaymiz. Narxlarimiz hamyonbop va shaffof; shartnomada yozilmagan hech qanday toʻlov talab qilinmaydi.", "link": { "label": "Narxlar", "href": "/fees" } },
+        { "id": "free", "q": "Birinchi konsultatsiya pullikmi?", "a": "Yoʻq, bepul." },
+        { "id": "refund", "q": "Pulni qaytarib olish mumkinmi?", "a": "Qaytarish shartlari shartnomada va “Qaytarish shartlari” sahifasida yozilgan.", "link": { "label": "Qaytarish shartlari", "href": "/refunds" } }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Xavfsizlik",
+      "items": [
+        { "id": "accounts", "q": "Rasmiy hisoblaringiz qaysilar?", "a": "Ular “Rasmiy sahifalar” sahifasida keltirilgan. Bu roʻyxatda boʻlmagan hisoblarga toʻlov qilmang.", "link": { "label": "Rasmiy sahifalar", "href": "/official-accounts" } },
+        { "id": "data", "q": "Shaxsiy maʼlumotlarim qanday himoyalanadi?", "a": "Maxfiylik siyosatida tushuntirilgan. Maʼlumotlaringiz faqat maslahat jarayoni uchun ishlatiladi.", "link": { "label": "Maxfiylik siyosati", "href": "/privacy" } }
+      ]
+    }
+  ]
+}

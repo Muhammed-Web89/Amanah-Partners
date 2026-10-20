@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Contact: book a free consultation",
+    "description": "Fill in the form or message us on Telegram. The first consultation is free."
+  },
+  "header": {
+    "eyebrow": "Contact",
+    "title": "Book a free consultation",
+    "lede": "Fill in the form or message us on Telegram. In the first conversation we clarify your goal, the right route and package."
+  },
+  "aside": {
+    "telegramTitle": "Message us on Telegram",
+    "telegramBody": "If you have a question, write to us directly. Our account for messages:",
+    "locationTitle": "Where are we?",
+    "locationBody": "Our team is based in Türkiye and Uzbekistan. Lessons and consultations take place online.",
+    "hoursTitle": "Working hours",
+    "hoursNote": "Tashkent time (UTC+5)",
+    "officialTitle": "Stay safe",
+    "officialBody": "Only contact and pay us through our official accounts.",
+    "officialLink": "List of official accounts"
+  },
+  "faqTitle": "Quick questions",
+  "faqIds": ["school", "online", "countries", "price", "guarantee"]
+}

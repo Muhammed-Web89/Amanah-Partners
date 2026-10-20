@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Aloqa: bepul konsultatsiyaga yozilish",
+    "description": "Formani toʻldiring yoki bizga Telegram orqali yozing. Birinchi konsultatsiya bepul."
+  },
+  "header": {
+    "eyebrow": "Aloqa",
+    "title": "Bepul konsultatsiyaga yoziling",
+    "lede": "Formani toʻldiring yoki bizga Telegram orqali yozing. Birinchi suhbatda maqsadingiz, mos yoʻl va paketni aniqlaymiz."
+  },
+  "aside": {
+    "telegramTitle": "Telegram orqali yozish",
+    "telegramBody": "Savolingiz boʻlsa, toʻgʻridan-toʻgʻri yozing. Bu yozishma uchun hisobimiz:",
+    "locationTitle": "Qayerdamiz?",
+    "locationBody": "Jamoamiz Turkiya va Oʻzbekistonda. Darslar va konsultatsiyalar onlayn.",
+    "hoursTitle": "Ish vaqti",
+    "hoursNote": "Toshkent vaqti (UTC+5)",
+    "officialTitle": "Ehtiyot boʻling",
+    "officialBody": "Faqat rasmiy hisoblarimizga murojaat qiling va toʻlov qiling.",
+    "officialLink": "Rasmiy sahifalar roʻyxati"
+  },
+  "faqTitle": "Qisqa savollar",
+  "faqIds": ["school", "online", "countries", "price", "guarantee"]
+}

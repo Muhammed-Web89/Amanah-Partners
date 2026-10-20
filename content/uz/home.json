@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "title": "Amanah Partners — Pearson A-Level va xorijiy universitetga tayyorgarlik",
+    "description": "Maktabingizni tark etmasdan Pearson Edexcel International A-Level oling va orzuingizdagi universitetga hujjat topshiring. Darslar, imtihon, hujjatlar va viza bitta jamoada."
+  },
+  "hero": {
+    "eyebrow": "Pearson Edexcel International A-Level · 14–18 yosh",
+    "title": "Maktabingizda oʻqishni davom ettiring. Pearson Edexcel International A-Level bilan orzuingizdagi universitetga yoʻl oching.",
+    "subtitle": "Tajribali oʻqituvchilar bilan jonli onlayn darslar, Pearson tasdiqlagan markazlarda imtihon va hujjat topshirishdan vizagacha toʻliq hamrohlik. Barchasi bitta jamoada.",
+    "secondary": "Dasturlar bilan tanishing",
+    "routeLabel": "Universitetgacha 5 qadam",
+    "route": [
+      "Onlayn darslar",
+      "Pearson imtihonlari",
+      "Hujjat topshirish",
+      "Viza",
+      "Talabalik hayoti"
+    ],
+    "routeSteps": [
+      "A-Level fanlarini tajribali oʻqituvchilar bilan jonli onlayn darslarda oʻqiysiz. Darslar maktabdan keyin, kechqurun va dam olish kunlari boʻladi, shuning uchun maktabni tashlash shart emas. Muntazam sinov imtihonlari oʻtkaziladi, ota-onaga esa har hafta natijalar haqida hisobot yuboriladi.",
+      "Imtihonlar onlayn emas: ular Pearson tasdiqlagan markazlarda, qogʻozda topshiriladi. Qaysi markazda va qaysi sessiyada topshirishni biz rejalashtiramiz, roʻyxatdan oʻtkazish va muddatlarni ham oʻzimiz kuzatamiz. Yiliga uchta sessiya bor: oktyabr, yanvar va may–iyun.",
+      "Baholaringiz va maqsadingizga qarab universitetlar roʻyxatini birga tuzamiz. Motivatsion xat, tavsiyanomalar va arizalarni birga tayyorlaymiz. Qabul qarorini universitet chiqaradi, biz esa arizangiz iloji boricha kuchli boʻlishi uchun ishlaymiz.",
+      "Taklif xati kelgach, talaba vizasi uchun hujjatlarni birga yigʻamiz va moliyaviy hujjatlarni tekshiramiz. Elchixonadagi suhbatdan oldin sinov suhbati oʻtkazamiz. Qarorni konsullik chiqaradi, biz esa hech narsa yetishmay qolmasligini nazorat qilamiz.",
+      "Yotoqxona yoki turar joy topish, yoʻl chiptasi va joʻnab ketishdan oldingi tayyorgarlikda ham yordam beramiz. Shunda yangi shaharga xotirjam borasiz va birinchi kundanoq oʻqishga kirishib ketasiz."
+    ]
+  },
+  "trust": [
+    {
+      "text": "Pearson Edexcel tasdiqlagan imtihon markazi bilan hamkorlik",
+      "verify": "centre91667"
+    },
+    {
+      "text": "Professorlar mentorligi"
+    },
+    {
+      "text": "50 ga yaqin universitet bilan ishlagan jamoa"
+    },
+    {
+      "text": "Bepul konsultatsiya · Shartnoma asosida ishlaymiz"
+    }
+  ],
+  "audience": {
+    "eyebrow": "Kimlar uchun?",
+    "title": "Yoshingizga mos dasturni tanlang",
+    "cards": [
+      {
+        "eyebrow": "14–15 yosh (8–9-sinf)",
+        "title": "IGCSE va A-Level",
+        "body": "Ertaroq boshlamoqchi boʻlganlar uchun. Avval taxminan 2 yil IGCSE orqali ingliz tili va asosiy fanlardan mustahkam poydevor qoʻyasiz, keyin 2 yil A-Level oʻqiysiz. Maktabdagi oʻqishingiz esa davom etaveradi.",
+        "href": "/programs/igcse-a-level",
+        "link": "Batafsil"
+      },
+      {
+        "eyebrow": "16–18 yosh",
+        "title": "Toʻgʻridan-toʻgʻri A-Level",
+        "body": "Universitetga tezroq kirmoqchi boʻlganlar uchun. Kelajakdagi yoʻnalishingizga qarab 3 ta fan tanlaymiz va taxminan 2 yilda bakalavriatga hujjat topshirishga tayyorlaymiz. Bilim darajangizga qarab bu muddat qisqarishi mumkin.",
+        "href": "/programs/a-level",
+        "link": "Batafsil"
+      }
+    ],
+    "moreLabel": "Qoʻshimcha kurslar:",
+    "more": [
+      {
+        "label": "SAT",
+        "href": "/programs/sat"
+      },
+      {
+        "label": "IELTS/TOEFL",
+        "href": "/programs/ielts-toefl"
+      },
+      {
+        "label": "UCAT/IMAT",
+        "href": "/programs/medicine-ucat-imat"
+      },
+      {
+        "label": "Portfolio",
+        "href": "/programs/portfolio"
+      }
+    ]
+  },
+  "model": {
+    "eyebrow": "Kim nimani olib boradi?",
+    "title": "Siz faqat oʻqing, qolganini biz hal qilamiz.",
+    "caption": "Xizmatlar va ularni kim olib borishi",
+    "columns": [
+      "Xizmat",
+      "Kim olib boradi?",
+      "Qanday ishlaydi?"
+    ],
+    "rows": [
+      {
+        "service": "Onlayn darslar va mentorlik",
+        "who": "Amanah Partners",
+        "whoVerified": "Amanah Partners (Faydalan Academy bilan umumiy taʼlim infratuzilmasi)",
+        "verifyWho": "faydalanName",
+        "how": "Tajribali oʻqituvchilar bilan jonli darslar, professorlar bilan mentorlik, haftalik akademik nazorat."
+      },
+      {
+        "service": "Imtihon",
+        "who": "Pearson Edexcel tasdiqlagan markazlar",
+        "whoVerified": "Pearson Edexcel tasdiqlagan markazlar: Istanbuldagi hamkor markazimiz (raqam 91667) va Oʻzbekistondagi tasdiqlangan markazlar",
+        "verifyWho": "centre91667",
+        "how": "Oʻquvchi rasmiy sessiyaga xususiy nomzod sifatida kiradi. Roʻyxatdan oʻtkazish va kuzatishni biz qilamiz."
+      },
+      {
+        "service": "Universitetga hujjat topshirish va viza",
+        "who": "Amanah Partners",
+        "how": "Universitetlar roʻyxati, shaxsiy bayonot, UCAS/Common App, grant qidirish, viza hujjatlari va suhbat mashqi."
+      }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Farq nimada?",
+    "title": "Nega aynan Amanah Partners?",
+    "intro": "Chunki darslar, imtihon, hujjatlar va viza bitta jamoada. Ota-ona har bosqichda kim bilan gaplashishni biladi.",
+    "caption": "Xizmat modellarini taqqoslash",
+    "columns": [
+      "",
+      "Faqat dars beradigan kurslar",
+      "Faqat konsalting kompaniyalari",
+      "Amanah Partners"
+    ],
+    "rows": [
+      [
+        "Jonli onlayn A-Level darslari",
+        "yes",
+        "no",
+        "yes"
+      ],
+      [
+        "Oʻqish rejasi va haftalik nazorat",
+        "yes",
+        "yes",
+        "yes"
+      ],
+      [
+        "Professorlar mentorligi",
+        "no",
+        "no",
+        "yes"
+      ],
+      [
+        "Imtihonga roʻyxatdan oʻtish va markaz bilan ishlash",
+        "no",
+        "no",
+        "yes"
+      ],
+      [
+        "Universitetga hujjat topshirish",
+        "no",
+        "yes",
+        "yes"
+      ],
+      [
+        "Viza va joylashishda yordam",
+        "no",
+        "yes",
+        "yes"
+      ],
+      [
+        "Oʻzbek va rus tilida muloqot",
+        "farq qiladi",
+        "farq qiladi",
+        "yes"
+      ]
+    ],
+    "note": "Jadval namunaviy xizmat modellarini taqqoslaydi; muayyan tashkilotni yoki barcha tashkilotlarni tavsiflamaydi."
+  },
+  "steps": {
+    "eyebrow": "Qanday ishlaymiz",
+    "title": "Birinchi suhbatdan kampusgacha olti qadam",
+    "items": [
+      "Bepul konsultatsiya va maqsad tahlili",
+      "Ingliz tili va akademik darajani aniqlash",
+      "Yoʻnalish, davlat va fanlar strategiyasi",
+      "Onlayn taʼlim va haftalik nazorat",
+      "Pearson imtihonlari va universitetga hujjat topshirish",
+      "Qabuldan joylashishgacha: viza, turar joy, safar"
+    ],
+    "link": "Har bir qadam batafsil"
+  },
+  "countries": {
+    "eyebrow": "Davlatlar",
+    "title": "A-Level bilan qayerga?",
+    "items": [
+      {
+        "href": "/destinations/uk",
+        "name": "Buyuk Britaniya",
+        "text": "A-Level bilan foundation yilisiz bakalavriatga toʻgʻridan-toʻgʻri hujjat topshirish (UCAS)."
+      },
+      {
+        "href": "/destinations/usa",
+        "name": "AQSh",
+        "text": "SAT va A-Level bilan kuchli Common App arizasi."
+      },
+      {
+        "href": "/destinations/germany",
+        "name": "Germaniya",
+        "text": "Toʻgʻri 3 ta A-Level kombinatsiyasi bilan Studienkollegsiz hujjat topshirish imkoniyati."
+      },
+      {
+        "href": "/destinations/italy",
+        "name": "Italiya",
+        "text": "12 yillik taʼlim talabini A-Level bilan bajaring; ingliz tilidagi dasturlar va IMAT."
+      },
+      {
+        "href": "/destinations/netherlands",
+        "name": "Niderlandiya",
+        "text": "Ingliz tilidagi bakalavriat dasturlariga A-Level bilan hujjat topshirish."
+      },
+      {
+        "href": "/destinations/canada",
+        "name": "Kanada",
+        "text": "A-Level bilan Toronto, McGill kabi universitetlarga hujjat topshirish."
+      }
+    ],
+    "updated": "2026-10-19"
+  },
+  "universities": {
+    "eyebrow": "Universitetlar",
+    "title": "Oʻquvchilarimiz yoʻl olgan universitetlar",
+    "list": [
+      "University College London (UCL) · Buyuk Britaniya",
+      "King’s College London · Buyuk Britaniya",
+      "Queen Mary University of London · Buyuk Britaniya",
+      "University of Toronto · Kanada",
+      "RWTH Aachen · Germaniya",
+      "University of Duisburg-Essen · Germaniya",
+      "Sapienza University of Rome · Italiya",
+      "University of Padova · Italiya"
+    ],
+    "note": "Umumiy taʼlim tarmogʻimiz (Amanah Partners va Faydalan Academy) orqali hujjat topshirish va qabul jarayoni olib borilgan universitetlardan baʼzilari."
+  },
+  "price": {
+    "eyebrow": "Narxlar",
+    "title": "Hamyonbop narx, shaffof shartlar.",
+    "body": "Har bir oʻquvchining maqsadi har xil, paketimiz ham shunday. Faqat kerakli xizmat uchun toʻlaysiz. Narx maqsadli davlat, universitet va fanlar soniga qarab belgilanadi; birinchi suhbatda byudjetingizga mos paketni birga tuzamiz. Shartnomada yozilmagan hech qanday toʻlov talab qilinmaydi.",
+    "button": "Bepul konsultatsiyada narxni bilib oling",
+    "link": "Paketlar va nimalar kiradi"
+  },
+  "team": {
+    "eyebrow": "Jamoa",
+    "title": "Kompaniyamiz yangi, tajribamiz emas.",
+    "body": "Jamoamiz 50 ga yaqin universitet bilan ishlagan va yuzlab oʻquvchilarga maslahat bergan. Jamoada 10 yildan ortiq tajribaga ega maslahatchilar va oʻquvchilarga mentorlik qiladigan professorlar bor.",
+    "points": [
+      "Professorlar mentorligi",
+      "Oʻzbek, rus va ingliz tilida gaplashadigan maslahatchilar",
+      "Turkiya va Oʻzbekistonda jamoa"
+    ]
+  },
+  "faq": {
+    "eyebrow": "Savollar",
+    "title": "Koʻp beriladigan savollar",
+    "all": "Barcha savollar"
+  },
+  "guides": {
+    "eyebrow": "Maqolalar",
+    "title": "Soʻnggi maqolalar",
+    "all": "Barcha maqolalar"
+  }
+}

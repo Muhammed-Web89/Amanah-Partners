@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Partners: our shared partnership network",
+    "description": "The shared partnership network of Amanah Partners and Faydalan Academy: international education platforms, language schools and an exam centre."
+  },
+  "header": {
+    "eyebrow": "Partners",
+    "title": "Our shared partnership network",
+    "lede": "Organisations in our shared network with Faydalan Academy. Logos are not used without permission; only names are listed."
+  },
+  "blocks": [
+    {
+      "type": "ledger",
+      "rows": [
+        { "label": "International education and application platforms", "value": "Kaplan International Pathways, Dukes Education, ApplyBoard, Minerva Virtual Academy" },
+        { "label": "Language and summer schools", "value": "BSC Education, CELT, SAMIAD, The Language Gallery, DID Deutsch-Institut" },
+        { "label": "Exam and education centre", "value": "ABC Horizon (Istanbul, Pearson Edexcel-approved centre no. 91667)" }
+      ]
+    },
+    { "type": "cta" }
+  ]
+}

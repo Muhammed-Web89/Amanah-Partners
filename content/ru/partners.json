@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Партнёры: наша общая сеть сотрудничества",
+    "description": "Общая сеть сотрудничества Amanah Partners и Faydalan Academy: международные образовательные платформы, языковые школы и экзаменационный центр."
+  },
+  "header": {
+    "eyebrow": "Партнёры",
+    "title": "Наша общая сеть сотрудничества",
+    "lede": "Организации из нашей общей сети с Faydalan Academy. Логотипы без разрешения не используются; приводятся только названия."
+  },
+  "blocks": [
+    {
+      "type": "ledger",
+      "rows": [
+        { "label": "Международные образовательные платформы и платформы поступления", "value": "Kaplan International Pathways, Dukes Education, ApplyBoard, Minerva Virtual Academy" },
+        { "label": "Языковые и летние школы", "value": "BSC Education, CELT, SAMIAD, The Language Gallery, DID Deutsch-Institut" },
+        { "label": "Экзаменационный и учебный центр", "value": "ABC Horizon (Стамбул, центр, одобренный Pearson Edexcel, номер 91667)" }
+      ]
+    },
+    { "type": "cta" }
+  ]
+}

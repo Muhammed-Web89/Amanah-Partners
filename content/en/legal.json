@@ -1,0 +1,60 @@
+{
+  "draftNotice": "Taslak — hukuki onay bekleniyor. Bu metin avukat onayından geçmeden canlıya alınmaz (plan v2 §16, Kapı 1).",
+  "pages": {
+    "privacy": {
+      "meta": { "title": "Privacy policy", "description": "What data we collect, why, how long we keep it and your rights." },
+      "header": { "eyebrow": "Legal", "title": "Privacy policy and personal data", "lede": "This page explains how the details you give in the consultation form are used." },
+      "sections": [
+        { "title": "What data do we collect?", "paragraphs": ["The details in the consultation form: the student's name, school year, whether they are 18 or older, the programme of interest, destination country, who filled in the form, the parent's name and phone number (for students under 18), Telegram or phone, city and message."] },
+        { "title": "Why?", "paragraphs": ["Only to contact you and hold your free consultation. Your data is not sold and is not used for advertising."] },
+        { "title": "Where is it stored, and for how long?", "paragraphs": ["Data is stored encrypted on a server in the European Union. Retention period: [KARAR — avukat onayı bekleniyor]."] },
+        { "title": "Students under 18", "paragraphs": ["If the student is under 18, consent from a parent or guardian is required."] },
+        { "title": "Your rights", "paragraphs": ["You can ask to see, correct or delete your data. Contact for requests: [KARAR — kurumsal e-posta]."] },
+        { "title": "Cookies and analytics", "paragraphs": ["The site uses an analytics tool that does not use cookies. See the Cookie policy for details."] }
+      ]
+    },
+    "terms": {
+      "meta": { "title": "Terms of use", "description": "Terms of use for the Amanah Partners website." },
+      "header": { "eyebrow": "Legal", "title": "Terms of use" },
+      "sections": [
+        { "title": "Information on this site", "paragraphs": ["Information on this site is for general guidance. University entry requirements can change; they are checked against official sources before you apply."] },
+        { "title": "No guarantee", "paragraphs": ["The university decides on admission and the consulate issues the visa. Amanah Partners does not guarantee outcomes."] },
+        { "title": "Limitation of liability", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "service-agreement": {
+      "meta": { "title": "Service agreement", "description": "Main terms of the service agreement: scope, payment and cancellation." },
+      "header": { "eyebrow": "Legal", "title": "Service agreement: summary", "lede": "The full text is provided in writing before you sign." },
+      "sections": [
+        { "title": "Scope of services", "paragraphs": ["The contract states clearly which services are and are not included in the package."] },
+        { "title": "Payment", "paragraphs": ["Offer → contract → payment plan. Instalments: [KARAR 6]."] },
+        { "title": "Cancellation and distance selling", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "refunds": {
+      "meta": { "title": "Refund policy", "description": "Terms for refunds." },
+      "header": { "eyebrow": "Legal", "title": "Refund policy" },
+      "sections": [
+        { "title": "General rule", "paragraphs": ["Refund terms are set out in writing in every contract."] },
+        { "title": "Refunds by period", "paragraphs": ["[KARAR — avukat metni bekleniyor]"] }
+      ]
+    },
+    "cookies": {
+      "meta": { "title": "Cookie policy", "description": "Which cookies and browser storage the site uses." },
+      "header": { "eyebrow": "Legal", "title": "Cookie policy" },
+      "sections": [
+        { "title": "Which cookies are used?", "paragraphs": ["NEXT_LOCALE: remembers the language you chose (necessary, functional). No other cookies are used."] },
+        { "title": "Browser storage", "paragraphs": ["Your dark mode choice is stored in your browser (localStorage) and is not sent to our server."] },
+        { "title": "Analytics", "paragraphs": ["We use an analytics tool that does not use cookies or collect personal data. That is why no cookie banner is shown."] }
+      ]
+    },
+    "official-accounts": {
+      "meta": { "title": "Official accounts", "description": "The list of Amanah Partners' official accounts and a warning about fake accounts." },
+      "header": { "eyebrow": "Security", "title": "Our official accounts", "lede": "Only the accounts on this list belong to Amanah Partners. Do not make payments to, or share personal details with, any account that is not listed." },
+      "sections": [
+        { "title": "Official accounts", "paragraphs": ["[KARAR 3 — Telegram destek, Telegram kanal ve diğer hesaplar doğrulanınca listelenecek]"] },
+        { "title": "Payments", "paragraphs": ["Payments are accepted only to the account details in your signed contract."] }
+      ]
+    }
+  }
+}

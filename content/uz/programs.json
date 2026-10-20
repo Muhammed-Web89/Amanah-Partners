@@ -1,0 +1,246 @@
+{
+  "index": {
+    "meta": {
+      "title": "Dasturlar: A-Level, IGCSE, SAT, IELTS, UCAT/IMAT",
+      "description": "Pearson Edexcel International A-Level, IGCSE va A-Level yoʻli hamda SAT, IELTS/TOEFL, UCAT/IMAT va portfolio tayyorgarligi. Har bir yoʻlda bitta jamoa."
+    },
+    "header": {
+      "eyebrow": "Dasturlar",
+      "title": "Maqsadingizga qarab yoʻl, har bir yoʻlda bitta jamoa",
+      "lede": "Asosiy dasturlarimiz Pearson Edexcel International A-Level va IGCSE + A-Level yoʻli. Qoʻshimcha tayyorgarlik dasturlari ularni maqsadli davlat va yoʻnalishga qarab toʻldiradi."
+    },
+    "blocks": [
+      {
+        "type": "cards",
+        "title": "Asosiy dasturlar",
+        "columns": 2,
+        "items": [
+          { "eyebrow": "16–18 yosh · ~2 yil", "title": "A-Level", "body": "Maqsadli yoʻnalishga qarab tanlangan 3 ta (kerak boʻlsa 4 ta) International A-Level fani. Bakalavriatga toʻgʻridan-toʻgʻri hujjat topshirish uchun.", "href": "/programs/a-level", "link": "A-Level dasturi" },
+          { "eyebrow": "14–15 yosh · ~4 yil", "title": "IGCSE va A-Level", "body": "Avval International GCSE bilan mustahkam poydevor, soʻng International A-Level. Erta boshlab, uzoq muddatli reja tuzmoqchi boʻlgan oilalar uchun.", "href": "/programs/igcse-a-level", "link": "IGCSE va A-Level yoʻli" }
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Qoʻshimcha tayyorgarlik",
+        "columns": 3,
+        "items": [
+          { "title": "SAT", "body": "AQSh universitetlariga hujjat topshirish uchun SAT tayyorgarligi.", "href": "/programs/sat", "link": "Batafsil" },
+          { "title": "IELTS / TOEFL", "body": "Universitetlarning til talabi uchun tayyorgarlik va akademik ingliz tili.", "href": "/programs/ielts-toefl", "link": "Batafsil" },
+          { "title": "Tibbiyot: UCAT va IMAT", "body": "Britaniyada tibbiyot uchun UCAT, Italiyada ingliz tilidagi tibbiyot uchun IMAT.", "href": "/programs/medicine-ucat-imat", "link": "Batafsil" },
+          { "title": "AP / IB darslari", "body": "AP yoki IB oʻqiyotgan oʻquvchilarga mavzular boʻyicha dars va imtihon yordami.", "href": "/programs/ap-ib", "link": "Batafsil" },
+          { "title": "Arxitektura va dizayn portfoliosi", "body": "Sanʼat, dizayn va arxitektura fakultetlariga portfolio tayyorlash.", "href": "/programs/portfolio", "link": "Batafsil" },
+          { "title": "BTEC", "body": "Amaliy, loyiha asosidagi yoʻl: biznes, IT, muhandislik.", "href": "/programs/btec", "link": "Batafsil", "verify": "btec" }
+        ]
+      },
+      {
+        "type": "table",
+        "title": "Ikki asosiy yoʻlni taqqoslash",
+        "caption": "IGCSE va A-Level hamda toʻgʻridan-toʻgʻri A-Level taqqoslamasi",
+        "columns": ["", "IGCSE va A-Level", "Toʻgʻridan-toʻgʻri A-Level"],
+        "rows": [
+          ["Yosh", "14–15", "16–18"],
+          ["Odatiy muddat", "~4 yil (2 + 2)", "~2 yil (oʻquvchi darajasiga qarab qisqarishi mumkin)"],
+          ["Fanlar soni", "IGCSE: 5–7 · A-Level: 3", "3 ta A-Level (kerak boʻlsa 4)"],
+          ["Imtihon sessiyalari", "IGCSE: noyabr, may–iyun · IAL: oktyabr, yanvar, may–iyun", "Oktyabr, yanvar, may–iyun"],
+          ["Maqsad", "Mustahkam poydevor va kuchli universitetlar", "Bakalavriatga toʻgʻridan-toʻgʻri hujjat topshirish"]
+        ]
+      },
+      {
+        "type": "finder",
+        "title": "Qaysi yoʻl sizga mos?",
+        "intro": "Uchta savol. Har bir javob sizni mos sahifaga olib boradi.",
+        "questions": [
+          {
+            "q": "Yoshingiz nechada?",
+            "options": [
+              { "label": "14–15 yosh", "href": "/programs/igcse-a-level" },
+              { "label": "16–18 yosh", "href": "/programs/a-level" }
+            ]
+          },
+          {
+            "q": "Nechanchi sinfdasiz?",
+            "options": [
+              { "label": "8–9-sinf", "href": "/programs/igcse-a-level" },
+              { "label": "10–11-sinf", "href": "/programs/a-level" },
+              { "label": "Maktabni tugatganman", "href": "/programs/a-level" }
+            ]
+          },
+          {
+            "q": "Maqsadingiz qayer?",
+            "options": [
+              { "label": "Britaniya, Germaniya, Italiya, Niderlandiya, Kanada", "href": "/programs/a-level" },
+              { "label": "AQSh", "href": "/programs/sat" },
+              { "label": "Tibbiyot", "href": "/programs/medicine-ucat-imat" }
+            ]
+          }
+        ],
+        "outro": "Hali ham ishonchingiz komil emasmi? Bepul konsultatsiyada birga aniqlaymiz."
+      },
+      { "type": "cta" }
+    ]
+  },
+  "pages": {
+    "a-level": {
+      "meta": {
+        "title": "Pearson Edexcel International A-Level: onlayn tayyorgarlik",
+        "description": "Maktabni tark etmasdan Pearson Edexcel International A-Level. Yoʻnalishga qarab fanlar, jonli onlayn darslar, Pearson tasdiqlagan markazda imtihon va universitetga hujjat topshirish."
+      },
+      "header": {
+        "eyebrow": "Asosiy dastur · 16–18 yosh",
+        "title": "Pearson Edexcel International A-Level",
+        "lede": "Maktabingizda oʻqishni davom ettirib, 3 ta A-Level fani bilan xorijiy universitetga toʻgʻridan-toʻgʻri hujjat topshirishga tayyorlaning."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Dastur nima?",
+          "paragraphs": [
+            "Pearson Edexcel International Advanced Level (IAL) Buyuk Britaniyada joylashgan Pearson Edexcel tomonidan beriladigan xalqaro A-Level malakasi. U fanlar boʻyicha olinadi, modulli tuzilgan va dunyo boʻylab universitetlar tomonidan tan olinadi.",
+            "Huquqdan tashqari barcha IAL fanlari modulli: har bir boʻlim (unit) alohida imtihon bilan baholanadi. Bahoni oshirish uchun faqat kerakli boʻlimni qayta topshirasiz."
+          ]
+        },
+        { "type": "why" },
+        {
+          "type": "cards",
+          "title": "Yoʻnalishga qarab fanlar",
+          "intro": "Fanlar kombinatsiyasini maqsadli universitetning qabul shartlari belgilaydi. Yoʻnalishingizni birinchi suhbatda birga tuzamiz.",
+          "columns": 2,
+          "items": [
+            { "eyebrow": "Muhandislik", "title": "Matematika, Oliy matematika, Fizika", "body": "Qoʻshimcha: Kimyo yoki Informatika." },
+            { "eyebrow": "Tibbiyot va sogʻliqni saqlash", "title": "Biologiya, Kimyo + Matematika yoki Fizika", "body": "Qoʻshimcha: UCAT yoki IMAT tayyorgarligi." },
+            { "eyebrow": "Biznes va iqtisodiyot", "title": "Iqtisodiyot, Matematika + Biznes yoki Buxgalteriya", "body": "Universitet talabiga qarab tanlanadi." },
+            { "eyebrow": "Huquq va ijtimoiy fanlar", "title": "Ingliz tili, Tarix, Iqtisodiyot yoki Psixologiya", "body": "Universitet talabiga qarab tanlanadi." }
+          ],
+          "note": "Taklif etiladigan fanlar roʻyxati tasdiqlanmoqda.",
+          "verify": "courseList"
+        },
+        { "type": "weekly" },
+        {
+          "type": "text",
+          "title": "Imtihon rejasi",
+          "paragraphs": [
+            "Yilda uchta sessiya bor: oktyabr, yanvar va may–iyun. Boʻlimlar tartibini hujjat topshirish muddatidan orqaga qarab rejalashtiramiz, chunki natijalar universitetga arizangizga ulgurishi kerak."
+          ]
+        },
+        { "type": "exam" },
+        {
+          "type": "list",
+          "title": "Keyingi qadam: universitet",
+          "items": [
+            "Britaniya: UCAS orqali hujjat topshirish",
+            "AQSh: Common App va SAT",
+            "Yevropa: Germaniya, Italiya, Niderlandiya universitetlari"
+          ],
+          "link": { "label": "Davlatlar boʻyicha yoʻllar", "href": "/destinations" }
+        },
+        { "type": "cta" }
+      ]
+    },
+    "igcse-a-level": {
+      "meta": {
+        "title": "IGCSE va A-Level yoʻli: 14–15 yoshdagilar uchun",
+        "description": "Avval Pearson Edexcel International GCSE, soʻng International A-Level. Maktab bilan birga, uzoq muddatli reja. Imtihon sessiyalari: noyabr va may–iyun."
+      },
+      "header": {
+        "eyebrow": "Asosiy dastur · 14–15 yosh",
+        "title": "IGCSE va A-Level yoʻli",
+        "lede": "8–9-sinfda boshlab, avval International GCSE bilan Britaniya tizimida poydevor quring, soʻng International A-Level bilan universitetga tayyorlaning."
+      },
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Yoʻl qanday ishlaydi?",
+          "variant": "compact",
+          "items": [
+            { "title": "International GCSE", "body": "Taxminan 2 yil. Matematika, ingliz tili, tabiiy fanlar va tanlov fanlari." },
+            { "title": "International A-Level", "body": "Taxminan 2 yil. Maqsadli yoʻnalishga qarab 3 ta fan." },
+            { "title": "Universitet", "body": "A-Level natijalari bilan bakalavriatga hujjat topshirish." }
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Kimlar uchun?",
+          "paragraphs": [
+            "Erta boshlab, ingliz tilidagi akademik poydevorni mustahkamlashni istagan oʻquvchilar uchun. Maktabda oʻqish davom etadi: darslar kechqurun va dam olish kunlari."
+          ]
+        },
+        {
+          "type": "ledger",
+          "title": "Asosiy maʼlumotlar",
+          "rows": [
+            { "label": "Muddat", "value": "~2 yil IGCSE + ~2 yil A-Level" },
+            { "label": "IGCSE fanlari", "value": "5–7 fan: matematika, ingliz tili, tabiiy fanlar va tanlov fanlari" },
+            { "label": "IGCSE sessiyalari", "value": "Noyabr, may–iyun" },
+            { "label": "A-Level sessiyalari", "value": "Oktyabr, yanvar, may–iyun" }
+          ],
+          "note": "Taklif etiladigan IGCSE fanlari roʻyxati tasdiqlanmoqda.",
+          "verify": "courseList"
+        },
+        {
+          "type": "text",
+          "title": "IGCSE nimani beradi?",
+          "paragraphs": [
+            "IGCSE oʻz-oʻzidan universitetga kirish malakasi emas. U A-Levelga tayyorlaydi va universitetga arizangizni mustahkamlaydi.",
+            "IGCSEdan soʻng maqsadli yoʻnalishga qarab A-Level fanlari tanlanadi."
+          ],
+          "link": { "label": "A-Level dasturi", "href": "/programs/a-level" }
+        },
+        { "type": "weekly" },
+        { "type": "exam" },
+        { "type": "cta" }
+      ]
+    },
+    "sat": {
+      "meta": { "title": "SAT tayyorgarligi: AQSh universitetlari uchun", "description": "AQSh universitetlariga hujjat topshirish uchun SAT tayyorgarligi: sinov imtihonlari va ball kuzatuvi. A-Level bilan birga kuchli ariza." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "SAT", "lede": "AQSh universitetlariga hujjat topshirish uchun SAT tayyorgarligi: sinov imtihonlari va ball kuzatuvi." },
+      "blocks": [
+        { "type": "text", "title": "Nega SAT?", "paragraphs": ["AQShning nufuzli universitetlarining koʻpchiligi SAT/ACTni qayta majburiy qildi. A-Level arizani akademik jihatdan kuchaytiradi, lekin SAT oʻrnini bosmaydi.", "Shuning uchun AQShni maqsad qilgan oʻquvchilarga SAT va A-Levelni birga rejalashtiramiz."] },
+        { "type": "list", "title": "Dasturda", "items": ["Boshlangʻich darajani aniqlash", "Matematika va Reading & Writing boʻlimlari boʻyicha darslar", "Muntazam sinov imtihonlari va ball kuzatuvi", "Imtihon sanasini hujjat topshirish muddatiga qarab rejalashtirish"] },
+        { "type": "cta" }
+      ]
+    },
+    "ielts-toefl": {
+      "meta": { "title": "IELTS va TOEFL tayyorgarligi", "description": "Universitetlarning til talabi uchun IELTS va TOEFL tayyorgarligi, sinov imtihonlari va akademik ingliz tili." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "IELTS / TOEFL", "lede": "Universitetlarning til talabi uchun tayyorgarlik va akademik ingliz tili." },
+      "blocks": [
+        { "type": "text", "title": "Kimlar uchun?", "paragraphs": ["Xorijiy universitetlarning koʻpchiligi til sertifikati talab qiladi. Kerakli ball universitet va yoʻnalishga qarab farq qiladi; maqsadingizga qarab rejani tuzamiz."] },
+        { "type": "list", "title": "Dasturda", "items": ["Darajani aniqlash va maqsadli ball", "Toʻrt koʻnikma: oʻqish, tinglash, yozish, gapirish", "Sinov imtihonlari", "A-Level darslari bilan birga akademik ingliz tili"] },
+        { "type": "cta" }
+      ]
+    },
+    "medicine-ucat-imat": {
+      "meta": { "title": "Tibbiyotga tayyorgarlik: UCAT va IMAT", "description": "Britaniyada tibbiyot uchun UCAT, Italiyada ingliz tilidagi tibbiyot, stomatologiya va veterinariya uchun IMAT. A-Level biologiya va kimyo bilan birga reja." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "Tibbiyot: UCAT va IMAT", "lede": "Tibbiyot yoʻnalishi uchun kirish imtihonlari va A-Level biologiya hamda kimyo bilan birga reja." },
+      "blocks": [
+        { "type": "ledger", "title": "Qaysi imtihon qayerda?", "rows": [{ "label": "Buyuk Britaniya", "value": "Tibbiyot uchun UCAT" }, { "label": "Italiya", "value": "Ingliz tilidagi tibbiyot, stomatologiya va veterinariya uchun IMAT (Vazirlik oʻtkazadi, sentabr oxiri)" }] },
+        { "type": "text", "title": "Qanday tayyorlanamiz?", "paragraphs": ["UCAT yoki IMAT tayyorgarligini A-Level biologiya va kimyo darslari bilan bitta rejaga bogʻlaymiz. Imtihon sanasi va hujjat topshirish muddatlari birga rejalashtiriladi."] },
+        { "type": "cta" }
+      ]
+    },
+    "ap-ib": {
+      "meta": { "title": "AP va IB darslari", "description": "AP yoki IB oʻqiyotgan oʻquvchilarga mavzular boʻyicha dars va imtihon yordami." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "AP / IB darslari", "lede": "Maktabida AP yoki IB oʻqiyotgan oʻquvchilarga mavzular boʻyicha dars va imtihon yordami." },
+      "blocks": [
+        { "type": "text", "title": "Bu dastur kim uchun?", "paragraphs": ["Bu asosiy dastur emas, yordamchi xizmat. Oʻquvchi oʻz maktabidagi AP yoki IB dasturini davom ettiradi; biz qiyin fanlar va imtihonga tayyorgarlikda yordam beramiz."] },
+        { "type": "cta" }
+      ]
+    },
+    "portfolio": {
+      "meta": { "title": "Arxitektura va dizayn portfoliosi", "description": "Sanʼat, dizayn va arxitektura fakultetlariga hujjat topshirish uchun portfolio tayyorlash." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "Arxitektura va dizayn portfoliosi", "lede": "Sanʼat, dizayn va arxitektura fakultetlariga hujjat topshirish uchun portfolio tayyorlash." },
+      "blocks": [
+        { "type": "list", "title": "Dasturda", "items": ["Maqsadli universitetlarning portfolio talablarini tahlil qilish", "Ishlarni tanlash va loyihalarni rivojlantirish", "Portfolio tuzilishi va taqdimoti", "Hujjat topshirish muddatlariga qarab reja"] },
+        { "type": "cta" }
+      ]
+    },
+    "btec": {
+      "verify": "btec",
+      "meta": { "title": "BTEC", "description": "Amaliy, loyiha asosidagi yoʻl: biznes, IT va muhandislik." },
+      "header": { "eyebrow": "Qoʻshimcha tayyorgarlik", "title": "BTEC", "lede": "Amaliy, loyiha asosidagi yoʻl: biznes, IT va muhandislik." },
+      "blocks": [
+        { "type": "text", "title": "BTEC qanday ishlaydi?", "paragraphs": ["BTEC tasdiqlangan markazning baholashi bilan olib boriladi. Shuning uchun bu dastur faqat hamkor markaz orqali va qamrovi tasdiqlangandan soʻng taklif etiladi."] },
+        { "type": "cta" }
+      ]
+    }
+  }
+}

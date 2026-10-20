@@ -1,0 +1,193 @@
+{
+  "common": {
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "updated": "Last updated",
+    "skipToContent": "Skip to content",
+    "slogan": "Together towards your goal",
+    "consultation": "Book a free consultation",
+    "consultationShort": "Free consultation",
+    "telegram": "Telegram",
+    "telegramWrite": "Message us on Telegram",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Choose language",
+    "themeToggle": "Turn dark mode on or off",
+    "sources": "Sources",
+    "yes": "Yes",
+    "no": "No",
+    "readMore": "Read more",
+    "results": "{count, plural, one {# result} other {# results}}"
+  },
+  "nav": {
+    "primary": "Main menu",
+    "programs": "Programmes",
+    "howWeWork": "How we work",
+    "destinations": "Destinations",
+    "fees": "Fees",
+    "guides": "Guides",
+    "about": "About",
+    "contact": "Contact",
+    "allPrograms": "All programmes",
+    "mainPrograms": "Main programmes",
+    "supportPrograms": "Additional preparation",
+    "program": {
+      "aLevel": "A-Level",
+      "igcse": "IGCSE and A-Level",
+      "sat": "SAT",
+      "ielts": "IELTS / TOEFL",
+      "medicine": "Medicine: UCAT and IMAT",
+      "apIb": "AP / IB tutoring",
+      "portfolio": "Architecture and design portfolio",
+      "btec": "BTEC"
+    }
+  },
+  "footer": {
+    "services": "Services",
+    "supportPrograms": "SAT · IELTS · UCAT/IMAT",
+    "applicationVisa": "University applications and visa",
+    "company": "Company",
+    "partners": "Partners",
+    "officialAccounts": "Official accounts",
+    "info": "Resources",
+    "faq": "FAQ",
+    "contactTitle": "Contact",
+    "telegramSupport": "Telegram (support)",
+    "telegramChannel": "Telegram channel (news)",
+    "legal": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "serviceAgreement": "Service agreement",
+    "refunds": "Refund policy",
+    "cookies": "Cookie policy",
+    "tagline": "A-Level preparation, Pearson exams, university applications and visas for students in Uzbekistan and their families, all with one team.",
+    "noGuarantee": "The university decides on admission and the consulate issues the visa. We do not guarantee outcomes; we build the strongest application with you."
+  },
+  "form": {
+    "title": "Book a free consultation",
+    "intro": "Fill in the form and one of our advisers will contact you on Telegram or by phone.",
+    "required": "required",
+    "optional": "optional",
+    "studentName": "Student's name",
+    "grade": "School year",
+    "gradeChoose": "Choose",
+    "grades": {
+      "8": "Grade 8",
+      "9": "Grade 9",
+      "10": "Grade 10",
+      "11": "Grade 11",
+      "graduate": "Finished school"
+    },
+    "age": "Is the student 18 or older?",
+    "ages": {
+      "minor": "No, under 18",
+      "adult": "Yes, 18 or older"
+    },
+    "program": "Which programme are you interested in?",
+    "programs": {
+      "a-level": "A-Level",
+      "igcse-a-level": "IGCSE and A-Level",
+      "sat": "SAT",
+      "ielts": "IELTS / TOEFL",
+      "medicine": "Medicine (UCAT / IMAT)",
+      "application": "University applications and visa",
+      "unsure": "Not sure yet"
+    },
+    "countries": "Destination country",
+    "countriesHint": "You can choose more than one.",
+    "countryOptions": {
+      "uk": "United Kingdom",
+      "usa": "USA",
+      "germany": "Germany",
+      "italy": "Italy",
+      "netherlands": "Netherlands",
+      "canada": "Canada",
+      "undecided": "Not decided yet"
+    },
+    "filledBy": "Who is filling in this form?",
+    "filledByOptions": {
+      "student": "Student",
+      "parent": "Parent (guardian)"
+    },
+    "parentTitle": "Parent details",
+    "parentHint": "Required if the student is under 18. Please fill in the form together with a parent.",
+    "parentName": "Parent's name",
+    "parentPhone": "Parent's phone number",
+    "parentPhoneHint": "For example: +998 90 123 45 67",
+    "contact": "Telegram or phone",
+    "contactHint": "Enter your Telegram username with @ or a phone number.",
+    "city": "City",
+    "message": "Message",
+    "messageHint": "A few words about your goal or question.",
+    "consent": "I agree to my personal data being processed only for this consultation, as described in the <link>Privacy policy</link>.",
+    "parentConsent": "I am the student's parent (guardian) and I agree to their data being processed.",
+    "parentConsentHint": "Required if the student is under 18.",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "honeypot": "Leave this field empty",
+    "storage": "Your details are used only for the consultation and are never sold to third parties.",
+    "errorSummary": "There {count, plural, one {is # problem} other {are # problems}} with the form. Please correct:",
+    "errors": {
+      "studentName": "Enter the student's name.",
+      "grade": "Choose the school year.",
+      "age": "Tell us whether the student is 18 or older.",
+      "program": "Choose a programme. If you are not sure, choose “Not sure yet”.",
+      "filledBy": "Tell us who is filling in the form.",
+      "parentName": "Enter the parent's name (the student is under 18).",
+      "parentPhone": "Enter the parent's phone number in international format, for example: +998 90 123 45 67.",
+      "contact": "Enter your Telegram username with @ or a phone number.",
+      "consent": "To continue, agree to the processing of your personal data.",
+      "parentConsent": "The student is under 18, so a parent's consent is needed.",
+      "tooLong": "This text is too long. Please shorten it.",
+      "rateLimit": "Too many requests in a short time. Try again in 10 minutes or message us on Telegram.",
+      "server": "Your request was not sent because of a server error. Your details are still in the form: send it again or message us on Telegram."
+    },
+    "thanksTitle": "We have received your request",
+    "thanksBody": "Thank you! An adviser will contact you on Telegram or by the phone number you gave.",
+    "thanksResponseUnknown": "Our response time will be published soon.",
+    "thanksNext": "What happens next",
+    "thanksSteps": [
+      "An adviser asks a few short questions about your goal and current situation.",
+      "We agree a time for your free online consultation.",
+      "In the consultation we work out the right route and package for you."
+    ],
+    "thanksTelegram": "Prefer not to wait? Message us on Telegram now.",
+    "backHome": "Back to the home page"
+  },
+  "guides": {
+    "summary": "Short answer",
+    "category": "Topic",
+    "allCategories": "All",
+    "search": "Search guides",
+    "searchPlaceholder": "For example: Studienkolleg",
+    "noResults": "No guides match this search.",
+    "emptyTitle": "Guides are on the way",
+    "emptyBody": "There are no guides in this section yet. If you have a question, ask it in your free consultation.",
+    "categories": {
+      "exams": "Exams",
+      "admission": "Admission",
+      "visa": "Visa",
+      "countries": "Countries",
+      "documents": "Documents"
+    }
+  },
+  "faq": {
+    "search": "Search questions",
+    "searchPlaceholder": "For example: exam",
+    "noResults": "No matching question. Message us on Telegram."
+  },
+  "errors": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "There is no page at this address, or it has moved. Start from the home page or get in touch.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "There was an error loading this page. Try again or get in touch.",
+    "retry": "Try again",
+    "toHome": "Home",
+    "toContact": "Contact"
+  },
+  "meta": {
+    "title": "Amanah Partners — Pearson A-Level and university preparation",
+    "description": "Stay at your school, earn Pearson Edexcel International A-Levels and apply to the university you want. Lessons, exams, applications and visa with one team.",
+    "ogTagline": "Lessons, exams, applications and visa with one team"
+  }
+}

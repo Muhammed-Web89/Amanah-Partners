@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Fees: fair prices, clear terms",
+    "description": "Our packages and what they include. Fees depend on destination, university and number of subjects; we put together the right package in a free consultation."
+  },
+  "header": {
+    "eyebrow": "Fees",
+    "title": "Fair prices, clear terms.",
+    "lede": "The cost of preparation, university applications and visa support depends on the destination, university, number of subjects and timeline. So instead of one price for everyone, we offer a package that fits you."
+  },
+  "blocks": [
+    {
+      "type": "table",
+      "title": "Packages",
+      "caption": "Packages and the services they include",
+      "columns": ["Package", "What's included"],
+      "rows": [
+        ["IGCSE academic preparation", "Core subjects (maths, English, sciences), live lessons, digital materials, weekly report for parents"],
+        ["Full A-Level preparation", "3 (or 4) A-Level subjects, past paper coaching, mock exams, exam registration coordination, mentoring by a professor"],
+        ["University placement and visa", "Country and university shortlist (Safe / Target / Reach), personal statement editing, reference coordination, applications, scholarship research, visa file, interview practice"],
+        ["Add-ons", "SAT, IELTS/TOEFL, UCAT/IMAT, portfolio: can be added to a package"]
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Why are our prices fair?",
+      "columns": 3,
+      "items": [
+        { "title": "Pay only for what you need", "body": "We build the package around your goal, with no unnecessary services." },
+        { "title": "Save a year", "body": "With A-Levels you may not need a foundation year. That is a year of tuition and living costs abroad." },
+        { "title": "Prepare from home", "body": "Online lessons mean no costs for a preparatory school abroad." }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Costs paid separately",
+      "intro": "Your offer states which of these are included in your package.",
+      "items": ["Exam fees (paid to the centre)", "University application fees", "Visa fees"]
+    },
+    {
+      "type": "steps",
+      "title": "How payment works",
+      "variant": "compact",
+      "items": [{ "title": "Offer" }, { "title": "Contract" }, { "title": "Payment plan" }]
+    },
+    {
+      "type": "notice",
+      "tone": "pending",
+      "code": "KARAR 6",
+      "text": "Instalment options and payment channels have not been decided yet."
+    },
+    {
+      "type": "text",
+      "paragraphs": ["We never charge anything that is not in the contract. Refund terms are set out in the contract and on the Refund policy page."],
+      "link": { "label": "Refund policy", "href": "/refunds" }
+    },
+    { "type": "cta", "title": "Find out the right package and price in a free consultation." }
+  ]
+}

@@ -1,0 +1,141 @@
+/*
+ * Amanah Partners tasarım değişkenleri (tokens) · Yön A: Kayıt defteri
+ * Kontrast tablosu: docs/03-tasarim-sistemi.md. Bileşenler yalnızca bu anlamsal adları kullanır;
+ * koyu tema değerleri burada değişir, bileşenlerde "dark:" sınıfı gerekmez.
+ */
+
+:root {
+  /* Zeminler */
+  --c-paper: #ffffff;
+  --c-paper-2: #f1f6f9; /* "dosya": alternatif bölüm, buz mavisi tonu */
+  --c-paper-3: #e4edf3; /* hover zemini */
+
+  /* Metin */
+  --c-ink: #13202f; /* gövde, başlık; logo laciverti — 16.5:1 */
+  --c-ink-2: #4a5568; /* ikincil — 7.5:1 */
+  --c-link: #1d4e89; /* 8.4:1 */
+
+  /* Vurgu: logodaki buz mavisi (#a8ccda) ailesi */
+  --c-accent: #3f6680; /* etiket ve vurgu metni — 6.1:1 */
+  --c-accent-line: #5e88a0; /* rota çizgisi, anlamlı grafik — ≥3:1 */
+  --c-accent-soft: #e6f0f6; /* not kutusu zemini */
+  --c-accent-light: #a8ccda; /* logo mavisi: yalnızca dekoratif çizgi ve yüzey */
+  --c-logo-a: #13202f; /* logo dış Λ */
+  --c-logo-b: #7ba8bf; /* logo iç Λ */
+
+  /* Çizgiler */
+  --c-rule: #d3d8df; /* dekoratif ayırıcı */
+  --c-rule-strong: #7a8494; /* form alanı sınırı — 3.8:1 */
+
+  /* Durum */
+  --c-danger: #a3312a;
+  --c-danger-soft: #fbecea;
+  --c-success: #1f6658;
+  --c-success-soft: #e4f1ed;
+
+  /* Eylem */
+  --c-action: #13202f;
+  --c-action-hover: #23364d;
+  --c-action-active: #0b1520;
+  --c-action-text: #ffffff;
+  --c-focus: #1d4e89;
+
+  /* Gölge: iki seviye, rol bazlı */
+  --shadow-raised: 0 1px 2px rgb(19 32 47 / 0.06), 0 4px 12px -2px rgb(19 32 47 / 0.1); /* açılır menü */
+  --shadow-overlay: 0 -2px 16px -4px rgb(19 32 47 / 0.14); /* sabit mobil bar, menü paneli */
+
+  /* Buzlu cam (tasarım01 §1): metin her zaman cam üzerinde ink/ink-2 ile ≥ 7:1 kalır */
+  --glass-bg: rgb(255 255 255 / 0.66);
+  --glass-bg-strong: rgb(255 255 255 / 0.86); /* sabit üst menü: içerik arkadan akarken okunur kalır */
+  --glass-border: rgb(255 255 255 / 0.75);
+  --glass-edge: rgb(19 32 47 / 0.08);
+  --glass-shadow: 0 1px 1px rgb(19 32 47 / 0.04), 0 12px 40px -12px rgb(19 32 47 / 0.18);
+
+  /* Pastel arka plan: logo mavisi + yumuşak lavanta, nane, şeftali */
+  --pastel-1: #c9e0ec;
+  --pastel-2: #e2dbf4;
+  --pastel-3: #d3eee4;
+  --pastel-4: #f6e6d6;
+  --beam: rgb(168 204 218 / 0.55); /* fotoğraf arkasındaki ışık hüzmesi */
+
+  /* tasarım04: kareli defter zemini ve ince cam paneller (metin ink/ink-2, zemin paper-2 üzerinde ≥ 7:1) */
+  --grid-line: rgb(63 102 128 / 0.09);
+  --glass-thin: rgb(255 255 255 / 0.1);
+  --glass-thin-hover: rgb(255 255 255 / 0.42);
+  --neon: #6fb3d6; /* hover kenar parlaması */
+  /* tasarım06: belirgin cam (hikâye metin kartı + ilerleme çubuğu) ve 3D illüstrasyon karoları */
+  --glass-strong-from: rgb(255 255 255 / 0.82);
+  --glass-strong-to: rgb(255 255 255 / 0.5);
+  --glass-highlight: rgb(255 255 255 / 0.95);
+  --glass-depth: 0 24px 60px -24px rgb(19 32 47 / 0.35), 0 8px 20px -12px rgb(19 32 47 / 0.2);
+  --tile-from: #ffffff;
+  --tile-to: #d7e8f1;
+  --tile-edge: #b9d3e0; /* karo kalınlığı (3D kenar) */
+  --ink-grad-from: #5e88a0;
+  --ink-grad-to: #13202f;
+  --check: #15803d; /* tasarım05: Amanah sütunundaki canlı yeşil tik (grafik, ≥ 3:1) */
+  --check-glow: rgb(22 163 74 / 0.45);
+
+  /* Hareket */
+  --dur-fast: 120ms; /* renk, hover */
+  --dur-base: 200ms; /* akordeon, menü */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  color-scheme: light;
+}
+
+/* Koyu tema: sistem tercihi ya da kayıtlı seçim (ThemeScript) → <html class="dark"> */
+.dark {
+  --c-paper: #0f1a28; /* logo zemini */
+  --c-paper-2: #142336;
+  --c-paper-3: #1b2d44;
+  --c-ink: #e8ecf2;
+  --c-ink-2: #aeb8c7;
+  --c-link: #93b9ec;
+  --c-accent: #a8ccda;
+  --c-accent-line: #7ba8bf;
+  --c-accent-soft: #16293c;
+  --c-accent-light: #5f8aa3;
+  --c-logo-a: #b4d4e1;
+  --c-logo-b: #5f7488;
+  --c-rule: #263850;
+  --c-rule-strong: #7584a0;
+  --c-danger: #f2978f;
+  --c-danger-soft: #3a1f22;
+  --c-success: #86cdbd;
+  --c-success-soft: #15302c;
+  --c-action: #a8ccda;
+  --c-action-hover: #c2dde8;
+  --c-action-active: #8fb8cc;
+  --c-action-text: #0f1a28;
+  --c-focus: #93b9ec;
+  --shadow-raised: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 16px -4px rgb(0 0 0 / 0.45);
+  --glass-bg: rgb(15 26 40 / 0.58);
+  --glass-bg-strong: rgb(15 26 40 / 0.84);
+  --glass-border: rgb(168 204 218 / 0.16);
+  --glass-edge: rgb(0 0 0 / 0.25);
+  --glass-shadow: 0 1px 1px rgb(0 0 0 / 0.2), 0 16px 48px -12px rgb(0 0 0 / 0.55);
+  --pastel-1: #1b3a52;
+  --pastel-2: #2a2650;
+  --pastel-3: #14393a;
+  --pastel-4: #3a2d2a;
+  --beam: rgb(123 168 191 / 0.35);
+  --grid-line: rgb(168 204 218 / 0.07);
+  --glass-thin: rgb(255 255 255 / 0.04);
+  --glass-thin-hover: rgb(255 255 255 / 0.09);
+  --neon: #a8ccda;
+  --glass-strong-from: rgb(30 48 72 / 0.82);
+  --glass-strong-to: rgb(15 26 40 / 0.6);
+  --glass-highlight: rgb(168 204 218 / 0.35);
+  --glass-depth: 0 24px 60px -24px rgb(0 0 0 / 0.7), 0 8px 20px -12px rgb(0 0 0 / 0.5);
+  --tile-from: #24405e;
+  --tile-to: #142336;
+  --tile-edge: #0b1520;
+  --ink-grad-from: #c2dde8;
+  --ink-grad-to: #7ba8bf;
+  --check: #4ade80;
+  --check-glow: rgb(74 222 128 / 0.4);
+  --shadow-overlay: 0 -2px 16px -4px rgb(0 0 0 / 0.5);
+
+  color-scheme: dark;
+}

@@ -1,0 +1,193 @@
+{
+  "common": {
+    "home": "Bosh sahifa",
+    "breadcrumb": "Sahifa yoʻli",
+    "updated": "Soʻnggi yangilanish",
+    "skipToContent": "Asosiy mazmunga oʻtish",
+    "slogan": "Maqsadingiz sari birga",
+    "consultation": "Bepul konsultatsiyaga yoziling",
+    "consultationShort": "Bepul konsultatsiya",
+    "telegram": "Telegram",
+    "telegramWrite": "Telegram orqali yozing",
+    "menuOpen": "Menyuni ochish",
+    "menuClose": "Menyuni yopish",
+    "language": "Tilni tanlash",
+    "themeToggle": "Tungi rejimni yoqish yoki oʻchirish",
+    "sources": "Manbalar",
+    "yes": "Bor",
+    "no": "Yoʻq",
+    "readMore": "Batafsil",
+    "results": "Natijalar: {count}"
+  },
+  "nav": {
+    "primary": "Asosiy menyu",
+    "programs": "Dasturlar",
+    "howWeWork": "Qanday ishlaymiz",
+    "destinations": "Davlatlar",
+    "fees": "Narxlar",
+    "guides": "Maqolalar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "allPrograms": "Barcha dasturlar",
+    "mainPrograms": "Asosiy dasturlar",
+    "supportPrograms": "Qoʻshimcha tayyorgarlik",
+    "program": {
+      "aLevel": "A-Level",
+      "igcse": "IGCSE va A-Level",
+      "sat": "SAT",
+      "ielts": "IELTS / TOEFL",
+      "medicine": "Tibbiyot: UCAT va IMAT",
+      "apIb": "AP / IB darslari",
+      "portfolio": "Arxitektura va dizayn portfoliosi",
+      "btec": "BTEC"
+    }
+  },
+  "footer": {
+    "services": "Xizmatlar",
+    "supportPrograms": "SAT · IELTS · UCAT/IMAT",
+    "applicationVisa": "Universitetga hujjat topshirish va viza",
+    "company": "Kompaniya",
+    "partners": "Hamkorlar",
+    "officialAccounts": "Rasmiy sahifalar",
+    "info": "Foydali",
+    "faq": "Savollar",
+    "contactTitle": "Aloqa",
+    "telegramSupport": "Telegram (yordam)",
+    "telegramChannel": "Telegram kanal (eʼlonlar)",
+    "legal": "Huquqiy maʼlumotlar",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "serviceAgreement": "Xizmat shartnomasi",
+    "refunds": "Qaytarish shartlari",
+    "cookies": "Cookie siyosati",
+    "tagline": "Oʻzbekistondagi oʻquvchilar va ularning oilalari uchun A-Level tayyorgarligi, Pearson imtihonlari, universitetga hujjat topshirish va vizani bitta jamoada olib boramiz.",
+    "noGuarantee": "Qabul qarorini universitet, vizani konsullik beradi. Biz natijani kafolatlamaymiz, eng kuchli arizani birga tayyorlaymiz."
+  },
+  "form": {
+    "title": "Bepul konsultatsiyaga yozilish",
+    "intro": "Formani toʻldiring. Maslahatchimiz siz bilan Telegram yoki telefon orqali bogʻlanadi.",
+    "required": "majburiy",
+    "optional": "ixtiyoriy",
+    "studentName": "Oʻquvchining ismi",
+    "grade": "Sinfi",
+    "gradeChoose": "Tanlang",
+    "grades": {
+      "8": "8-sinf",
+      "9": "9-sinf",
+      "10": "10-sinf",
+      "11": "11-sinf",
+      "graduate": "Maktabni tugatgan"
+    },
+    "age": "Oʻquvchi 18 yoshga toʻlganmi?",
+    "ages": {
+      "minor": "Yoʻq, 18 yoshdan kichik",
+      "adult": "Ha, 18 yosh yoki katta"
+    },
+    "program": "Qaysi dastur qiziqtiradi?",
+    "programs": {
+      "a-level": "A-Level",
+      "igcse-a-level": "IGCSE va A-Level",
+      "sat": "SAT",
+      "ielts": "IELTS / TOEFL",
+      "medicine": "Tibbiyot (UCAT / IMAT)",
+      "application": "Universitetga hujjat topshirish va viza",
+      "unsure": "Hali bilmayman"
+    },
+    "countries": "Maqsadli davlat",
+    "countriesHint": "Bir nechtasini tanlashingiz mumkin.",
+    "countryOptions": {
+      "uk": "Buyuk Britaniya",
+      "usa": "AQSh",
+      "germany": "Germaniya",
+      "italy": "Italiya",
+      "netherlands": "Niderlandiya",
+      "canada": "Kanada",
+      "undecided": "Hali qaror qilmadim"
+    },
+    "filledBy": "Formani kim toʻldiryapti?",
+    "filledByOptions": {
+      "student": "Oʻquvchi",
+      "parent": "Ota-ona (vasiy)"
+    },
+    "parentTitle": "Ota-ona maʼlumotlari",
+    "parentHint": "Oʻquvchi 18 yoshdan kichik boʻlsa majburiy. Formani ota-onangiz bilan birga toʻldiring.",
+    "parentName": "Ota-onaning ismi",
+    "parentPhone": "Ota-onaning telefon raqami",
+    "parentPhoneHint": "Masalan: +998 90 123 45 67",
+    "contact": "Telegram yoki telefon",
+    "contactHint": "Telegram foydalanuvchi nomini @ bilan yozing yoki telefon raqamini kiriting.",
+    "city": "Shahar",
+    "message": "Xabar",
+    "messageHint": "Maqsadingiz yoki savolingiz haqida qisqacha.",
+    "consent": "Shaxsiy maʼlumotlarimni <link>Maxfiylik siyosati</link>ga muvofiq faqat konsultatsiya uchun qayta ishlashga roziman.",
+    "parentConsent": "Men oʻquvchining ota-onasi (vasiysi)man va uning maʼlumotlarini qayta ishlashga roziman.",
+    "parentConsentHint": "Oʻquvchi 18 yoshdan kichik boʻlsa majburiy.",
+    "submit": "Arizani yuborish",
+    "submitting": "Yuborilmoqda…",
+    "honeypot": "Bu maydonni boʻsh qoldiring",
+    "storage": "Maʼlumotlaringiz faqat konsultatsiya uchun ishlatiladi va uchinchi shaxslarga sotilmaydi.",
+    "errorSummary": "Formada {count, plural, one {# ta xato} other {# ta xato}} bor. Iltimos, tuzating:",
+    "errors": {
+      "studentName": "Oʻquvchining ismini yozing.",
+      "grade": "Sinfni tanlang.",
+      "age": "Oʻquvchi 18 yoshga toʻlganmi, belgilang.",
+      "program": "Dasturni tanlang. Bilmasangiz, “Hali bilmayman”ni tanlang.",
+      "filledBy": "Formani kim toʻldirayotganini belgilang.",
+      "parentName": "Ota-onaning ismini yozing (oʻquvchi 18 yoshdan kichik).",
+      "parentPhone": "Ota-onaning telefon raqamini xalqaro formatda yozing, masalan: +998 90 123 45 67.",
+      "contact": "Telegram foydalanuvchi nomini @ bilan yozing yoki telefon raqamini kiriting.",
+      "consent": "Davom etish uchun shaxsiy maʼlumotlarni qayta ishlashga rozilik bering.",
+      "parentConsent": "Oʻquvchi 18 yoshdan kichik: ota-ona roziligi belgilanishi kerak.",
+      "tooLong": "Matn juda uzun. Qisqartiring.",
+      "rateLimit": "Qisqa vaqt ichida juda koʻp ariza yuborildi. 10 daqiqadan soʻng qayta urinib koʻring yoki bizga Telegram orqali yozing.",
+      "server": "Ariza yuborilmadi: serverda xatolik yuz berdi. Maʼlumotlaringiz saqlanib qoldi, qayta yuboring yoki bizga Telegram orqali yozing."
+    },
+    "thanksTitle": "Arizangiz qabul qilindi",
+    "thanksBody": "Rahmat! Maslahatchimiz siz bilan koʻrsatgan Telegram yoki telefon orqali bogʻlanadi.",
+    "thanksResponseUnknown": "Javob muddati tez orada eʼlon qilinadi.",
+    "thanksNext": "Keyingi qadam",
+    "thanksSteps": [
+      "Maslahatchimiz maqsad va hozirgi holatingiz haqida qisqa savollar beradi.",
+      "Bepul onlayn konsultatsiya vaqtini birga belgilaymiz.",
+      "Konsultatsiyada sizga mos yoʻl va paketni aniqlaymiz."
+    ],
+    "thanksTelegram": "Kutishni xohlamasangiz, bizga hoziroq Telegram orqali yozing.",
+    "backHome": "Bosh sahifaga qaytish"
+  },
+  "guides": {
+    "summary": "Qisqa javob",
+    "category": "Mavzu",
+    "allCategories": "Barchasi",
+    "search": "Maqolalar boʻyicha qidirish",
+    "searchPlaceholder": "Masalan: Studienkolleg",
+    "noResults": "Bu soʻrov boʻyicha maqola topilmadi.",
+    "emptyTitle": "Maqolalar tayyorlanmoqda",
+    "emptyBody": "Hozircha bu boʻlimda maqola yoʻq. Savolingiz boʻlsa, uni bepul konsultatsiyada bering.",
+    "categories": {
+      "exams": "Imtihonlar",
+      "admission": "Qabul",
+      "visa": "Viza",
+      "countries": "Davlatlar",
+      "documents": "Hujjatlar"
+    }
+  },
+  "faq": {
+    "search": "Savollar boʻyicha qidirish",
+    "searchPlaceholder": "Masalan: imtihon",
+    "noResults": "Mos savol topilmadi. Savolingizni bizga Telegram orqali yozing."
+  },
+  "errors": {
+    "notFoundTitle": "Sahifa topilmadi",
+    "notFoundBody": "Bu manzilda sahifa yoʻq yoki u koʻchirilgan. Bosh sahifadan boshlang yoki bizga yozing.",
+    "errorTitle": "Nimadir notoʻgʻri ketdi",
+    "errorBody": "Sahifani yuklashda xatolik yuz berdi. Qayta urinib koʻring yoki bizga yozing.",
+    "retry": "Qayta urinish",
+    "toHome": "Bosh sahifa",
+    "toContact": "Aloqa"
+  },
+  "meta": {
+    "title": "Amanah Partners — Pearson A-Level va xorijiy universitetga tayyorgarlik",
+    "description": "Maktabingizni tark etmasdan Pearson Edexcel International A-Level oling va orzuingizdagi universitetga hujjat topshiring. Darslar, imtihon, hujjatlar va viza bitta jamoada.",
+    "ogTagline": "Darslar, imtihon, hujjatlar va viza — bitta jamoada"
+  }
+}

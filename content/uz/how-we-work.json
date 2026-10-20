@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Qanday ishlaymiz: birinchi suhbatdan kampusgacha",
+    "description": "Olti qadamda: bepul konsultatsiya, daraja aniqlash, fanlar strategiyasi, onlayn taʼlim, Pearson imtihonlari va universitet, viza va joylashish."
+  },
+  "header": {
+    "eyebrow": "Qanday ishlaymiz",
+    "title": "Har bir oʻquvchi alohida loyiha",
+    "lede": "Birinchi suhbatdan kampusgacha olti qadam. Har qadamda nima boʻlishi, sizdan nima kutilishi va qancha vaqt olishi oldindan maʼlum."
+  },
+  "blocks": [
+    {
+      "type": "steps",
+      "title": "Olti qadam",
+      "variant": "detailed",
+      "items": [
+        {
+          "title": "Bepul konsultatsiya va maqsad tahlili",
+          "body": "Onlayn suhbat. Oʻquvchining maqsadi, hozirgi maktabi, sinfi va oilaning ustuvorliklari muhokama qilinadi. Toʻlov yoʻq.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Formani toʻldirish va qulay vaqtni tanlash." },
+            { "label": "Qancha vaqt oladi?", "text": "Bitta suhbat." }
+          ]
+        },
+        {
+          "title": "Ingliz tili va akademik darajani aniqlash",
+          "body": "Daraja oʻlchanadi, natija yozma ravishda beriladi. Qaysi dastur va qanday surʼat bilan boshlash aniq boʻladi.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Onlayn darajani aniqlash testini topshirish." },
+            { "label": "Natija", "text": "Yozma daraja hisoboti." }
+          ]
+        },
+        {
+          "title": "Yoʻnalish, davlat va fanlar strategiyasi",
+          "body": "Maqsadli yoʻnalish, davlat va universitetlar qisqa roʻyxati (Safe / Target / Reach) hamda unga mos A-Level fanlari belgilanadi. Taklif va yozma shartnoma shu bosqichda beriladi.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Roʻyxat va fanlarni oila bilan muhokama qilish, shartnomani oʻqib chiqish." },
+            { "label": "Natija", "text": "Universitetlar roʻyxati, fanlar rejasi, taklif va shartnoma." }
+          ]
+        },
+        {
+          "title": "Onlayn taʼlim va haftalik nazorat",
+          "body": "Jonli darslar, professorlar bilan mentorlik, sinov imtihonlari va ota-onaga haftalik hisobot.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Darslarda qatnashish, uy vazifalari va mustaqil ishlash." },
+            { "label": "Natija", "text": "Har hafta yozma hisobot." }
+          ]
+        },
+        {
+          "title": "Pearson imtihonlari va universitetga hujjat topshirish",
+          "body": "Imtihonga roʻyxatdan oʻtkazish va kuzatish. Shaxsiy bayonot (personal statement), tavsiyanomalar, UCAS / Common App / Yevropa arizalari va grant qidirish.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Hujjatlarni oʻz vaqtida berish, shaxsiy bayonot ustida birga ishlash." },
+            { "label": "Natija", "text": "Imtihonga roʻyxatdan oʻtish hujjati, yuborilgan arizalar." }
+          ]
+        },
+        {
+          "title": "Qabuldan joylashishgacha",
+          "body": "Viza hujjatlari va moliyaviy hujjatlarni tekshirish, viza suhbati mashqi, yotoqxona yoki turar joy, safar va kelishdan oldingi maʼlumot.",
+          "details": [
+            { "label": "Sizdan nima kutiladi?", "text": "Viza uchun hujjatlarni tayyorlash va mashqda qatnashish." },
+            { "label": "Natija", "text": "Toʻliq viza hujjatlari va joylashish rejasi." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam",
+      "id": "imtihon",
+      "extended": true
+    },
+    {
+      "type": "steps",
+      "title": "Imtihon jarayoni: besh qadam",
+      "variant": "detailed",
+      "items": [
+        { "title": "Fan va boʻlim kodlari belgilanadi", "body": "Maqsadli imtihon sessiyasi tanlanadi." },
+        { "title": "Mos markaz tanlanadi", "body": "Markaz xususiy nomzodlarni qabul qilishi tasdiqlanadi." },
+        { "title": "Roʻyxatdan oʻtish", "body": "Roʻyxatdan oʻtish soʻnggi muddatdan oldin yakunlanadi. Roʻyxat hujjati tekshiriladi." },
+        { "title": "Imtihon kuni haqida maʼlumot", "body": "Manzil, shaxsni tasdiqlovchi hujjat va vaqt." },
+        { "title": "Natija va sertifikat", "body": "Natijalarni kuzatish, kerak boʻlsa qayta topshirish rejasi va sertifikatni topshirish." }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Koʻp uchraydigan xatolar",
+      "items": [
+        "Roʻyxatdan oʻtishning soʻnggi muddatini oʻtkazib yuborish",
+        "Notoʻgʻri fanlar kombinatsiyasini tanlash",
+        "Til imtihonini kech rejalashtirish"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Yozma ravishda nimalarni olasiz?",
+      "items": ["Daraja hisoboti", "Taklif", "Shartnoma", "Haftalik hisobot", "Imtihonga roʻyxatdan oʻtish hujjati"]
+    },
+    { "type": "cta" }
+  ]
+}

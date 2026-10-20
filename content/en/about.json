@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "About us",
+    "description": "Amanah Partners is a team that manages the whole international education journey for students in Uzbekistan and their families."
+  },
+  "header": {
+    "eyebrow": "About us",
+    "title": "Your child's future is entrusted to us.",
+    "lede": "Amanah Partners is a team that manages the whole international education journey for students in Uzbekistan and their families, from start to finish."
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Who are we?",
+      "paragraphs": [
+        "We handle lessons, exams, university applications and visas with one team. At every stage parents know who to talk to."
+      ]
+    },
+    {
+      "type": "text",
+      "verify": "faydalanName",
+      "paragraphs": [
+        "Amanah Partners works together with Faydalan Academy, which runs the same model in Türkiye. Lessons, mentoring by professors, our partnership with a Pearson-approved exam centre and our international application network are shared. Students in Uzbekistan have a dedicated team that speaks Uzbek and Russian."
+      ]
+    },
+    {
+      "type": "list",
+      "title": "What do we do?",
+      "items": ["A-Level and IGCSE preparation", "Organising Pearson exams", "University applications", "Visa and settling in"]
+    },
+    {
+      "type": "text",
+      "title": "Every student is a project of their own",
+      "paragraphs": ["We plan the student's personality, academic goals, skills and international career together."]
+    },
+    {
+      "type": "cards",
+      "title": "Our team",
+      "intro": "Our team has worked with nearly 50 universities and advised hundreds of students. It includes advisers with over 10 years of experience and professors who mentor our students.",
+      "columns": 3,
+      "items": [
+        { "title": "Academic advising", "body": "Strategy for subjects, courses and universities." },
+        { "title": "Professor mentors", "body": "Mentoring on academic direction and university preparation." },
+        { "title": "Exam coordination", "body": "Centres, registration, deadlines and results." },
+        { "title": "Applications and visa", "body": "Applications, personal statements, visa files and interview practice." },
+        { "title": "Student and parent communication", "body": "Weekly reports and answers to your questions." }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "How we work",
+      "columns": 4,
+      "items": [
+        { "title": "Transparency", "body": "Prices, timelines and the process are explained up front." },
+        { "title": "Written commitments", "body": "Everything we agree is in the contract." },
+        { "title": "Confidentiality", "body": "Your details are used only for the consultation and our services." },
+        { "title": "Regular reporting", "body": "A written report every week." }
+      ]
+    },
+    { "type": "cta" }
+  ]
+}

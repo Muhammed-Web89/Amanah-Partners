@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Narxlar: hamyonbop narx, shaffof shartlar",
+    "description": "Paketlar va ularga nimalar kirishi. Narx maqsadli davlat, universitet va fanlar soniga qarab belgilanadi; bepul konsultatsiyada sizga mos paketni tuzamiz."
+  },
+  "header": {
+    "eyebrow": "Narxlar",
+    "title": "Hamyonbop narx, shaffof shartlar.",
+    "lede": "Taʼlim, universitetga hujjat topshirish va viza boʻyicha maslahat narxi maqsadli davlat, universitet, fanlar soni va muddatga qarab oʻzgaradi. Shuning uchun hammaga bir xil narx emas, sizga mos paketni taklif qilamiz."
+  },
+  "blocks": [
+    {
+      "type": "table",
+      "title": "Paketlar",
+      "caption": "Paketlar va ularga kiradigan xizmatlar",
+      "columns": ["Paket", "Nimalar kiradi"],
+      "rows": [
+        ["IGCSE akademik tayyorgarlik", "Asosiy fanlar (matematika, ingliz tili, tabiiy fanlar), jonli darslar, raqamli materiallar, ota-onaga haftalik hisobot"],
+        ["A-Level toʻliq tayyorgarlik", "3 (yoki 4) ta A-Level fani, past paper bilan ishlash, sinov imtihonlari, imtihonga roʻyxatdan oʻtishni muvofiqlashtirish, professor mentorligi"],
+        ["Universitetga joylashtirish va viza", "Davlat va universitetlar roʻyxati (Safe / Target / Reach), shaxsiy bayonotni tahrirlash, tavsiyanomalarni muvofiqlashtirish, arizalar, grant qidirish, viza hujjatlari, suhbat mashqi"],
+        ["Qoʻshimcha xizmatlar", "SAT, IELTS/TOEFL, UCAT/IMAT, portfolio: paketga qoʻshilishi mumkin"]
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Nega narx hamyonbop?",
+      "columns": 3,
+      "items": [
+        { "title": "Faqat kerakli xizmat uchun toʻlov", "body": "Paketni maqsadingizga qarab tuzamiz; keraksiz xizmat yoʻq." },
+        { "title": "Bir yilni tejang", "body": "A-Level bilan foundation yili kerak boʻlmasligi mumkin. Bu bir yillik xorijdagi oʻqish toʻlovi va yashash xarajati demakdir." },
+        { "title": "Uydan tayyorlaning", "body": "Onlayn darslar tufayli xorijdagi tayyorlov maktabi xarajati yoʻq." }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Alohida toʻlanadigan xarajatlar",
+      "intro": "Ulardan qaysilari paketingizga kirishi taklifda yoziladi.",
+      "items": ["Imtihon toʻlovlari (markazga toʻlanadi)", "Universitetga ariza toʻlovlari", "Viza yigʻimlari"]
+    },
+    {
+      "type": "steps",
+      "title": "Toʻlov tartibi",
+      "variant": "compact",
+      "items": [{ "title": "Taklif" }, { "title": "Shartnoma" }, { "title": "Toʻlov rejasi" }]
+    },
+    {
+      "type": "notice",
+      "tone": "pending",
+      "code": "KARAR 6",
+      "text": "Boʻlib toʻlash imkoniyati va toʻlov kanallari hali belgilanmagan."
+    },
+    {
+      "type": "text",
+      "paragraphs": ["Shartnomada yozilmagan hech qanday toʻlov talab qilinmaydi. Qaytarish shartlari shartnomada va “Qaytarish shartlari” sahifasida yozilgan."],
+      "link": { "label": "Qaytarish shartlari", "href": "/refunds" }
+    },
+    { "type": "cta", "title": "Bepul konsultatsiyada sizga mos paket va narxni bilib oling." }
+  ]
+}
