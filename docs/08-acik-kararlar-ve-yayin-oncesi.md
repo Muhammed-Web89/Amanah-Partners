@@ -18,7 +18,8 @@
 
 | # | Teyit | Sitede bekleyen | Kapanınca |
 |---|---|---|---|
-| 1 | Faydalan'ın isim, ortak ağ, partner ve üniversite listesi için yazılı onayı | Hakkımızda paragrafı, "Kim neyi yürütür" satırı, SSS cevabı, Hamkorlar sayfası, üniversite listesi | `verified.faydalanName`, `verified.universityList` |
+| 1 | ✅ Faydalan'ın isim, ortak ağ ve üniversite listesi için onayı: **sözlü olarak alındı (22.10.2026)** | Hakkımızda paragrafı, "Kim neyi yürütür" satırı, SSS cevabı, üniversite listesi canlıda açık | `verified.faydalanName = true`, `verified.universityList = true` |
+| 1b | Hamkorlar sayfasındaki her partnerin (Kaplan, ApplyBoard, CELT vb.) kendi onayı | Hamkorlar sayfası ve alt bilgi bağlantısı | `verified.partnersPage` |
 | 2 | ABC Horizon (91667) üzerinden kayıt teyidi | Güven şeridi maddesi, model tablosu, Nasıl çalışıyoruz genişletilmiş metni, SSS | `verified.centre91667` |
 | 3 | Özbekistan'daki onaylı merkezler | Aynı yerler; merkez adları henüz yok | `verified.uzbekistanCentres` + `shared.json → exam.extended` metni |
 | 4 | Amanah'ın kendi Pearson merkez numarası | "Amanah Pearson onaylı merkezdir" hiçbir yerde yazmıyor | Numara alınırsa numarasıyla eklenir |

@@ -92,3 +92,54 @@ Rakip işaretinin anlamı korunur: rakip "var" ise gri tik gösterilir (çizgi/�
 | §B Seyahat + eğitim arka planı | `HeroBackdrop travel`: soluk dünya meridyenleri, 40–60 sn'de akan kesik çizgili uçuş rotaları, süzülen uçak/kep/kitap simgeleri; pastel lekeler sürüyor |
 
 Statik düzende (mobil, "hareketi azalt") açılış sahnesi gösterilir. Hepsi dekoratif (`aria-hidden`); anlamı adım metni taşır.
+
+## tasarım07 · "Birinchi suhbatdan kampusgacha olti qadam" (21 Ekim 2026)
+
+| Talep | Uygulama |
+|---|---|
+| §A Dikey, kıvrımlı yol haritası | Yatay çizgi kaldırıldı. Kartlar dikey dizilir; bağlantı çizgisi düğümler arasında dönüşümlü sola/sağa kıvrılır (S). Geniş ekranda kartlar çizginin iki yanında, mobilde çizgi solda |
+| §B Cam kartlar, iki tema | `glass-roadmap`: açıkta `rgba(255,255,255,.38)` + `blur(12px)` + ince gri kenar; koyuda `rgba(25,30,45,.6)` + parlayan ince cyan kenar. Değişkenler `tokens.css → --rm-*` |
+| §C Kaydırmayla giriş | Görüş alanına gelen kart soldan/sağdan (mobilde aşağıdan) süzülür (IntersectionObserver). Sayfa açılışında görünür olan kartlar gizlenmez |
+| §C Neon ilerleme | Çizgi yukarıdan aşağı neon gibi dolar (`pathLength=1`, `stroke-dashoffset`); ulaşılan düğüm parlar |
+| §D Numara + ikon | Kart sol üstünde büyük degrade serif numara + parlak ikon karosu: sohbet · değerlendirme · pusula · ekran · belge · uçak |
+
+Açıklamalar yeni metin değil: "Qanday ishlaymiz" sayfasındaki ilk adım bloğundan, aynı sırayla alınır (`how-we-work.json`). JS yoksa ya da "hareketi azalt" açıksa tüm kartlar görünür ve çizgi dolu. Dosya: `src/components/home/Roadmap.tsx`.
+
+## tasarım08 · "Koʻp beriladigan savollar" akordeonu (21 Ekim 2026)
+
+| Talep | Uygulama |
+|---|---|
+| §A Bağımsız cam paneller | Düz çizgiler kaldırıldı; her soru ayrı `glass-faq` paneli (`rounded-2xl`, `blur(10px)`, ince kenar), paneller arası `gap-3`. Değişkenler `tokens.css → --faq-*` |
+| §B Hover | Panel hafifçe aydınlanır, kenar neon mavi parlar; sağdaki halka aşağı esner (yaylı geçiş). Yalnızca fareli cihazlarda |
+| §B Açık durum | `scale(1.01)`, cam belirginleşir (`blur(22px)`); koyu temada daha açık lacivert (`rgb(36 56 88 / .72)`) |
+| §B Cevap geçişi | Yükseklik yumuşakça açılır/kapanır, cevap yukarıdan süzülerek ve solarak gelir (Web Animations API, ~20 satır JS) |
+| §C İkon + tipografi | Soru başlığı yarı kalın. Ok yerine dairesel `+`: açılınca yarım tur döner ve `−` olur, halka dolar |
+| §D Linkler | `ArrowLink variant="sweep"`: alt çizgi hover/odakta soldan dolar, ok sağa kayar. "Barcha savollar" `variant="pill"`: cam düğme + daire içinde kayan ok. Diğer `ArrowLink`'ler değişmedi |
+
+`<details>/<summary>` korunur: JS yoksa (Telegram içi tarayıcı) ve "hareketi azalt"ta animasyonsuz açılır; klavye (Enter/Space) ve sayfa içi arama çalışır. Ortak bileşen olduğu için ana sayfa, SSS sayfası (`FilterList listClassName="grid gap-3"`), İletişim ve rehber bloklarında aynı görünüm. Dosyalar: `src/components/ui/Accordion.tsx`, `src/components/ui/misc.tsx`, `src/styles/globals.css`.
+
+## Tasarım09 · Sınavlar, Ülkeler, Üniversiteler, Fiyat (21 Ekim 2026)
+
+| Görev | Uygulama | Dosya |
+|---|---|---|
+| §9 Sınavlar | Tek büyük cam kart, `lg:grid-cols-2`. Sol: başlık + ferah metin + neon kenarlı, hover'da parlayan bağlantı düğmesi. Sağ: daha koyu iç panel (`--inner-card`): oturumlar ay çipleriyle (`sessions` metninden ayrıştırılır) + notlar. Sağ üstte süzülen 3D rozet | `ExamBlock.tsx` (`variant="glass"`; diğer sayfalar eski düzende) |
+| §10 Ülkeler | 3×2 bağımsız cam kart (tüm kart bağlantı). Elle çizilmiş tek çizgi simgeler: Big Ben, Özgürlük Heykeli, Brandenburg Kapısı, Kolezyum, yel değirmeni, akçaağaç yaprağı. Hover/odak: kart yükselir, arkada bayrak renklerinde yumuşak parlama, açıklama `ink`'e aydınlanır | `CountryCards.tsx`, `CountryIcons.tsx` |
+| §11 Üniversiteler | Sağdan sola sonsuz kayan cam kapsüller (45 sn). Fare üstünde/klavye odağında durur, kapsül neon parlar. WCAG 2.2.2 için Durdur/Oynat düğmesi (3 dil). "Hareketi azalt"ta kayma yok, kapsüller sarılır. Hâlâ `[TEYİT 1]` ile yalnızca staging'de | `UniversityMarquee.tsx` |
+| §12 Fiyat / CTA | Ortalanmış büyük cam panel; yalnızca arkasında 40 sn'de dönen konik pastel/neon ışık kümesi. Birincil düğme: yüksek kontrast, hover'da parlar ve %4 büyür. "Paketlar…" bağlantısı ikonlu, okla hareket eden etkileşimli bağlantı | `PriceCta.tsx` |
+
+Rozet bilinçli olarak genel bir "onaylı sınav" simgesi: Pearson logosu kullanılmadı ve Amanah'ın kendi Pearson merkez numarası yok (docs/08 · TEYİT 4).
+
+## Ekip (JAMOA) bölümü kaldırıldı (22 Ekim 2026)
+
+Kullanıcı isteğiyle ana sayfadan çıkarıldı (eski 5.11). Fiyat paneli artık doğrudan SSS'ye bağlanır: fiyat bölümünün zemini üstte `paper-2` (önceki cam bölümlerle aynı), altta `paper`'a (SSS) erir; dönen ışık kümesi dikeyde kırpılmaz, yalnızca yatay taşma kırpılır (`overflow-x-clip`) — bölümler arasında dikiş yok. Metin `content/*/home.json → team` içinde duruyor (kullanılmıyor); geri istenirse tek satırla eklenir.
+
+## Görev 13–14 · Makaleler, Kapanış CTA, Footer (22 Ekim 2026)
+
+| Görev | Uygulama | Dosya |
+|---|---|---|
+| §13 Makale kartları | 3 sütunlu cam kart ızgarası (md 2, mobil 1). Kapak: pastel degrade + kesik rota + eğik 3D cam karo içinde ikon (kodla çizilir, fotoğraf yok). Altında tarih/etiket, başlık, özet, "Batafsil →". Hover: kart yükselir + neon kenar, kapak %6 yakınlaşır. "Barcha maqolalar" cam kapsül düğme | `GuideCards.tsx` |
+| §13 "Yer tutucu" kartlar | Uydurma makale yerine sitedeki **gerçek** sayfalara giden kartlar: "Qanday ishlaymiz" ve "Savollar" (başlık/açıklama o sayfaların kendi içeriğinden). Yeni yazı eklendikçe bunların yerini otomatik alır | `app/[locale]/page.tsx` |
+| §14A Kapanış CTA | Ortalanmış geniş cam panel; arkasında iki yavaş süzülen mavi/lacivert parıltı. Birincil düğme ve Telegram düğmesi hover'da parlar ve %4 büyür. Tüm sayfalarda ortak (`ConsultationBand`) | `ConsultationBand.tsx` |
+| §14B Footer | Pastel zemin üst kenarda CTA'nın zeminiyle aynı tona erir (dikiş yok); yarı saydam cam panel, hizalama değişmedi. Bağlantılarda soldan sağa çizilen neon alt çizgi animasyonu (hover + klavye odağı) | `Footer.tsx` |
+
+Metin: yalnızca "Batafsil / Подробнее / Read more" eklendi (`home.json → guides.read`).

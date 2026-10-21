@@ -26,8 +26,9 @@ export const site = {
 
 // [TEYİT] maddeleri. `false` olan bölümler canlıda hiç görünmez; staging'de "teyit bekliyor" notuyla görünür.
 export const verified = {
-  faydalanName: false, // TEYİT 1: Faydalan adı, ortak ağ ve partnerler
-  universityList: false, // TEYİT 1: "öğrencilerimizin yol aldığı üniversiteler"
+  faydalanName: true, // TEYİT 1: Faydalan adı ve ortak ağ (sözlü onay alındı, 22.10.2026)
+  universityList: true, // TEYİT 1: üniversite listesi (aynı onay)
+  partnersPage: false, // TEYİT 1b: Hamkorlar sayfasındaki her partnerin kendi onayı
   centre91667: false, // TEYİT 2: ABC Horizon üzerinden kayıt
   uzbekistanCentres: false, // TEYİT 3
   courseList: false, // TEYİT 5: sunulan A-Level / IGCSE ders listesi

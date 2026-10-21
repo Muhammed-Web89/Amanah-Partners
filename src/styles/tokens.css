@@ -73,8 +73,33 @@
   --tile-edge: #b9d3e0; /* karo kalınlığı (3D kenar) */
   --ink-grad-from: #5e88a0;
   --ink-grad-to: #13202f;
+  /* tasarım07: yol haritası kartları ve neon ilerleme çizgisi */
+  --rm-card-bg: rgb(255 255 255 / 0.38);
+  --rm-card-border: rgb(122 132 148 / 0.35); /* ince gri */
+  --rm-card-glow: 0 0 0 0 transparent;
+  --rm-line: rgb(94 136 160 / 0.22);
+  --rm-neon: #3d9cc9;
+  --rm-neon-glow: rgb(61 156 201 / 0.55);
+  --inner-card: rgb(19 32 47 / 0.05); /* cam içinde daha koyu iç panel */
+  /* tasarım08: SSS cam panelleri — kapalı: hafif cam, hover: parlar, açık: cam belirginleşir */
+  --faq-bg: rgb(255 255 255 / 0.42);
+  --faq-bg-hover: rgb(255 255 255 / 0.62);
+  --faq-bg-open: rgb(255 255 255 / 0.78);
+  --faq-border: rgb(122 132 148 / 0.28);
+  --faq-border-hover: rgb(61 156 201 / 0.55);
+  --faq-glow: 0 0 0 0 transparent;
+  --faq-glow-hover: 0 0 22px -8px rgb(61 156 201 / 0.55);
+  --faq-inset: inset 0 1px 0 rgb(255 255 255 / 0.9);
   --check: #15803d; /* tasarım05: Amanah sütunundaki canlı yeşil tik (grafik, ≥ 3:1) */
   --check-glow: rgb(22 163 74 / 0.45);
+
+  /* Global tasarım sistemi (docs/11): tüm sayfalar bu anlamsal katmanı kullanır. Değerler mevcut neon'a bağlı,
+     koyu temada .dark altındaki --rm-neon/--rm-neon-glow ile kendiliğinden değişir. */
+  --ds-neon: var(--rm-neon); /* hover kenar ışığı, ikon vurgusu */
+  --ds-glow: var(--rm-neon-glow); /* dış parlama */
+  --ds-lift: -5px; /* hover'da kalkma */
+  --ds-ring: 0 0 0 1px var(--ds-neon), 0 0 28px -6px var(--ds-glow);
+  --dur-ui: 300ms; /* kart/düğme hover geçişi */
 
   /* Hareket */
   --dur-fast: 120ms; /* renk, hover */
@@ -133,6 +158,21 @@
   --tile-edge: #0b1520;
   --ink-grad-from: #c2dde8;
   --ink-grad-to: #7ba8bf;
+  --rm-card-bg: rgb(25 30 45 / 0.6);
+  --rm-card-border: rgb(103 232 249 / 0.4); /* parlayan ince cyan */
+  --rm-card-glow: 0 0 18px -6px rgb(103 232 249 / 0.45);
+  --rm-line: rgb(168 204 218 / 0.16);
+  --rm-neon: #67e8f9;
+  --rm-neon-glow: rgb(103 232 249 / 0.6);
+  --inner-card: rgb(5 10 20 / 0.45);
+  --faq-bg: rgb(20 30 48 / 0.5);
+  --faq-bg-hover: rgb(28 42 66 / 0.62);
+  --faq-bg-open: rgb(36 56 88 / 0.72); /* açıkken biraz daha açık lacivert */
+  --faq-border: rgb(168 204 218 / 0.16);
+  --faq-border-hover: rgb(103 232 249 / 0.45);
+  --faq-glow: 0 0 0 0 transparent;
+  --faq-glow-hover: 0 0 22px -8px rgb(103 232 249 / 0.5);
+  --faq-inset: inset 0 1px 0 rgb(168 204 218 / 0.14);
   --check: #4ade80;
   --check-glow: rgb(74 222 128 / 0.4);
   --shadow-overlay: 0 -2px 16px -4px rgb(0 0 0 / 0.5);

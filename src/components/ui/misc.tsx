@@ -62,7 +62,44 @@ export function Card({
 }
 
 /** Metin bağlantısı + ok (üçüncül eylem). */
-export function ArrowLink({ href, children, className }: { href: ComponentProps<typeof Link>['href']; children: ReactNode; className?: string }) {
+export function ArrowLink({
+  href,
+  children,
+  className,
+  variant = 'plain',
+}: {
+  href: ComponentProps<typeof Link>['href'];
+  children: ReactNode;
+  className?: string;
+  /** tasarım08: 'sweep' = alt çizgisi soldan dolan metin bağlantısı, 'pill' = cam düğme; ikisinde de ok sağa kayar */
+  variant?: 'plain' | 'sweep' | 'pill';
+}) {
+  if (variant !== 'plain') {
+    return (
+      <Link
+        href={href}
+        className={cn(
+          'group/al inline-flex min-h-11 items-center gap-2 font-semibold text-link no-underline',
+          variant === 'pill' &&
+            'glass-faq rounded-full py-2 pr-2 pl-5 hover:text-ink',
+          className,
+        )}
+      >
+        <span className="bg-gradient-to-r from-current to-current bg-[length:0%_1.5px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out group-hover/al:bg-[length:100%_1.5px] group-focus-visible/al:bg-[length:100%_1.5px] motion-reduce:transition-none">
+          {children}
+        </span>
+        <span
+          aria-hidden="true"
+          className={cn(
+            'grid place-items-center transition-transform duration-300 ease-[cubic-bezier(.34,1.56,.64,1)] group-hover/al:translate-x-1 group-focus-visible/al:translate-x-1 motion-reduce:transition-none',
+            variant === 'pill' && 'size-8 rounded-full bg-accent text-paper',
+          )}
+        >
+          <ArrowRight className="size-4" />
+        </span>
+      </Link>
+    );
+  }
   return (
     <Link href={href} className={cn('inline-flex min-h-11 items-center gap-1.5 font-semibold', className)}>
       {children}

@@ -218,7 +218,7 @@
   },
   "universities": {
     "eyebrow": "Universitetlar",
-    "title": "Oʻquvchilarimiz yoʻl olgan universitetlar",
+    "title": "Oʻquvchilarimiz oʻqishga kirgan universitetlar",
     "list": [
       "University College London (UCL) · Buyuk Britaniya",
       "King’s College London · Buyuk Britaniya",
@@ -229,7 +229,7 @@
       "Sapienza University of Rome · Italiya",
       "University of Padova · Italiya"
     ],
-    "note": "Umumiy taʼlim tarmogʻimiz (Amanah Partners va Faydalan Academy) orqali hujjat topshirish va qabul jarayoni olib borilgan universitetlardan baʼzilari."
+    "note": "Faydalan Academy bilan umumiy jamoamiz orqali oʻquvchilarimiz eng koʻp oʻqishga kirgan universitetlardan baʼzilari."
   },
   "price": {
     "eyebrow": "Narxlar",
@@ -256,6 +256,7 @@
   "guides": {
     "eyebrow": "Maqolalar",
     "title": "Soʻnggi maqolalar",
-    "all": "Barcha maqolalar"
+    "all": "Barcha maqolalar",
+    "read": "Batafsil"
   }
 }

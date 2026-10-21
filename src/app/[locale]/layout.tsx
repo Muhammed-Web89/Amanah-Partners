@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { MobileBar } from '@/components/layout/MobileBar';
 import { ThemeScript } from '@/components/layout/ThemeScript';
+import { RevealObserver } from '@/components/ui/RevealObserver';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { isStaging, shows, site, telegramUrl } from '@/config/site';
 import { routing } from '@/i18n/routing';
@@ -112,6 +113,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<'/[
           <Footer />
           <MobileBar />
           <Analytics />
+          <RevealObserver />
         </NextIntlClientProvider>
         <JsonLd data={organization} />
         <JsonLd data={website} />

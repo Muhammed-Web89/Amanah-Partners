@@ -17,7 +17,9 @@
     "yes": "Есть",
     "no": "Нет",
     "readMore": "Подробнее",
-    "results": "Найдено: {count}"
+    "results": "Найдено: {count}",
+    "marqueePause": "Остановить",
+    "marqueePlay": "Продолжить"
   },
   "nav": {
     "primary": "Основное меню",

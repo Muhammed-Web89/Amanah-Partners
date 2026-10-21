@@ -4,6 +4,8 @@
 
 /* Karanlık mod: <html class="dark"> — token'lar tokens.css içinde değişir */
 @custom-variant dark (&:where(.dark, .dark *));
+/* tasarım08: SSS paneli açık (kapanış animasyonu sürerken değil) */
+@custom-variant faq-open (&:where(.group[open]:not([data-closing]) *));
 
 /* Buzlu cam yüzeyler (tasarım01 §1). backdrop-filter yoksa düz zemine düşer: okunabilirlik önce gelir.
    Fotoğraf üzerine binen camda --glass-fill: var(--glass-bg-strong) kullanılır (koyu/açık fotoğraf alanında da ≥ 4.5:1). */
@@ -42,12 +44,164 @@
   }
 }
 
+/* tasarım07: yol haritası kartı — açıkta çok saydam beyaz + ince gri kenar, koyuda saydam lacivert + cyan parıltı */
+@utility glass-roadmap {
+  background: var(--rm-card-bg);
+  border: 1px solid var(--rm-card-border);
+  box-shadow: var(--rm-card-glow), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* tasarım08: SSS paneli. Açık durum [open]; kapanış animasyonu sürerken data-closing ile kapalı görünüme döner. */
+@utility glass-faq {
+  background: var(--faq-bg);
+  border: 1px solid var(--faq-border);
+  box-shadow: var(--faq-inset), var(--faq-glow), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  backdrop-filter: blur(10px) saturate(150%);
+  transition:
+    background-color var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    transform 320ms var(--ease-out);
+
+  &[open]:not([data-closing]) {
+    background: var(--faq-bg-open);
+    transform: scale(1.01);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+    backdrop-filter: blur(22px) saturate(180%);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--faq-border-hover);
+      box-shadow: var(--faq-inset), var(--faq-glow-hover), var(--glass-shadow);
+    }
+    &:not([open]):hover {
+      background: var(--faq-bg-hover);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &[open]:not([data-closing]) {
+      transform: none;
+    }
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* ── Global tasarım sistemi (docs/11) ──────────────────────────────────────────────
+   glass-card: içerik kartı. Hover/klavye odağında 5 px kalkar, kenar neon yanar, içindeki .ds-icon tepki verir.
+   Yalnızca transform/box-shadow/border-color geçer ("transition: all" yerine: düzen kaymaz). */
+@utility glass-card {
+  background: var(--glass-fill, var(--glass-bg));
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 0 1px var(--glass-edge), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  transition:
+    transform var(--dur-ui) ease-in-out,
+    box-shadow var(--dur-ui) ease-in-out,
+    border-color var(--dur-ui) ease-in-out;
+
+  & .ds-icon {
+    transition: transform var(--dur-ui) ease-in-out, color var(--dur-ui) ease-in-out;
+  }
+  &:focus-within {
+    transform: translate3d(0, var(--ds-lift), 0);
+    border-color: var(--ds-neon);
+    box-shadow: var(--ds-ring), var(--glass-shadow);
+  }
+  @media (hover: hover) {
+    &:hover {
+      transform: translate3d(0, var(--ds-lift), 0);
+      border-color: var(--ds-neon);
+      box-shadow: var(--ds-ring), var(--glass-shadow);
+    }
+    &:hover .ds-icon {
+      transform: scale(1.08) rotate(-4deg);
+      color: var(--ds-neon);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &:hover,
+    &:focus-within {
+      transform: none;
+    }
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
+/* glow-hover: kart olmayan etkileşimli öğeler (hap bağlantı, satır, rozet) için yalnızca parlama + hafif büyüme */
+@utility glow-hover {
+  transition:
+    transform var(--dur-ui) ease-in-out,
+    box-shadow var(--dur-ui) ease-in-out,
+    border-color var(--dur-ui) ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.02);
+      border-color: var(--ds-neon);
+      box-shadow: var(--ds-ring);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+/* reveal: kaydırınca süzülerek gelir (RevealObserver data-shown ekler). Gizleme yalnızca JS çalışıyorsa (html.js)
+   ve hareket azaltılmamışsa: JS'siz ya da hareketi azaltan kullanıcı içeriği hemen görür.
+   Sıralı giriş için style={{ '--reveal-delay': '120ms' }}. */
+@utility reveal {
+  transition:
+    opacity 700ms var(--ease-out) var(--reveal-delay, 0ms),
+    transform 700ms var(--ease-out) var(--reveal-delay, 0ms);
+
+  @media (prefers-reduced-motion: no-preference) {
+    :where(html.js) &:not([data-shown]) {
+      opacity: 0;
+      transform: translate3d(0, 32px, 0);
+    }
+  }
+}
+
 /* Seyahat rotası çizgileri: kesik çizgi çok yavaş akar */
 @keyframes dash-flow {
   to { stroke-dashoffset: -400; }
 }
 @utility animate-dash {
   animation: dash-flow 40s linear infinite;
+}
+
+/* tasarım09 §11: sonsuz kayan bant (iki kopya → -50%) */
+@keyframes marquee {
+  to { transform: translate3d(-50%, 0, 0); }
+}
+@utility animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+/* tasarım09 §12: CTA arkasında çok yavaş dönen ışık kümesi */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@utility animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
 }
 
 /* tasarım04: "kareli defter" — sabit ince ızgara (32 px). Kenarlarda yumuşakça kaybolur. */

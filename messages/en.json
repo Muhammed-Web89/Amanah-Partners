@@ -17,7 +17,9 @@
     "yes": "Yes",
     "no": "No",
     "readMore": "Read more",
-    "results": "{count, plural, one {# result} other {# results}}"
+    "results": "{count, plural, one {# result} other {# results}}",
+    "marqueePause": "Pause",
+    "marqueePlay": "Play"
   },
   "nav": {
     "primary": "Main menu",

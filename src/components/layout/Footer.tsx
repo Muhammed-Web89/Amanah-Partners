@@ -6,7 +6,9 @@ import type { StaticPathname } from '@/i18n/routing';
 import { Logo } from './Logo';
 import { TelegramLink } from './TelegramLink';
 
-const linkClass = 'text-sm text-ink-2 no-underline hover:text-ink hover:underline';
+// tasarım09 §14B: hover/odakta soldan sağa çizilen alt çizgi (background-size animasyonu; satır kırılsa da çalışır)
+const linkClass =
+  'text-sm text-ink-2 no-underline bg-[linear-gradient(var(--rm-neon),var(--rm-neon))] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] pb-0.5 transition-[background-size,color] duration-base ease-out hover:bg-[length:100%_1px] hover:text-ink focus-visible:bg-[length:100%_1px]';
 const headingClass = 'label-caps text-accent';
 
 type FooterLink = { href: StaticPathname; label: string };
@@ -31,7 +33,7 @@ export async function Footer() {
       title: t('company'),
       links: [
         { href: '/about', label: nav('about') },
-        ...(shows('faydalanName') ? [{ href: '/partners', label: t('partners') } as FooterLink] : []),
+        ...(shows('partnersPage') ? [{ href: '/partners', label: t('partners') } as FooterLink] : []),
         { href: '/official-accounts', label: t('officialAccounts') },
         { href: '/contact', label: nav('contact') },
       ],
@@ -57,8 +59,8 @@ export async function Footer() {
 
   return (
     // tasarım01 §1: buzlu cam alt bilgi; arkasında hareketsiz pastel zemin (cam efekti bir zemin olmadan görünmez)
-    <footer className="relative isolate overflow-hidden pt-section-sm pb-6">
-      <HeroBackdrop still />
+    <footer className="relative isolate overflow-hidden pt-2 pb-6">
+      <HeroBackdrop still fade="top" />
       <div className="container-page">
         <div className="glass rounded-lg">
           <div className="grid gap-10 px-6 py-10 sm:grid-cols-2 sm:px-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">

@@ -5,17 +5,20 @@ import { ExamBlock } from '@/components/blocks/ExamBlock';
 import { HeroBackdrop } from '@/components/hero/HeroBackdrop';
 import { HeroStory } from '@/components/hero/HeroStory';
 import { CompareGrid } from '@/components/home/CompareGrid';
+import { CountryCards } from '@/components/home/CountryCards';
+import { GuideCards, type GuideCard } from '@/components/home/GuideCards';
+import { PriceCta } from '@/components/home/PriceCta';
+import { Roadmap } from '@/components/home/Roadmap';
 import { ServiceModel } from '@/components/home/ServiceModel';
+import { UniversityMarquee } from '@/components/home/UniversityMarquee';
 import { WhyALevel } from '@/components/home/WhyALevel';
 import { consultationHref } from '@/components/layout/nav';
 import { TelegramLink } from '@/components/layout/TelegramLink';
 import { Accordion } from '@/components/ui/Accordion';
-import { PendingNote } from '@/components/ui/Notice';
 import { formatDate } from '@/components/ui/PageHeader';
-import { ProcessSteps } from '@/components/ui/ProcessSteps';
 import { Section } from '@/components/ui/Section';
 import { buttonClass } from '@/components/ui/button';
-import { ArrowLink, Card, FinePrint } from '@/components/ui/misc';
+import { ArrowLink, Card } from '@/components/ui/misc';
 import { shows, type VerifiedKey } from '@/config/site';
 import { Link } from '@/i18n/navigation';
 import type { StaticPathname } from '@/i18n/routing';
@@ -35,12 +38,16 @@ export async function generateMetadata({ params }: PageProps<'/[locale]'>) {
 
 export default async function HomePage({ params }: PageProps<'/[locale]'>) {
   const locale = await resolveLocale(params);
-  const [home, shared, faq, guides] = await Promise.all([
+  const [home, shared, faq, guides, howWeWork] = await Promise.all([
     getContent(locale, 'home'),
     getContent(locale, 'shared'),
     getContent(locale, 'faq'),
     getGuides(locale),
+    getContent(locale, 'how-we-work'),
   ]);
+  // Ana sayfadaki 6 adım = "Qanday ishlaymiz" sayfasındaki 6 adım, aynı sırada (açıklamalar oradan)
+  const sixSteps = howWeWork.blocks.find((b) => b.type === 'steps' && 'items' in b);
+  const stepBodies = sixSteps && 'items' in sixSteps ? (sixSteps.items as { body: string }[]).map((s) => s.body) : [];
   const t = await getTranslations('common');
 
   const faqItems = faq.categories
@@ -136,73 +143,45 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
       {/* 5.5 Neden Amanah Partners (tasarım05: Amanah sütunu öne çıkan cam grid) */}
       <CompareGrid {...home.compare} yes={t('yes')} no={t('no')} />
 
-      {/* 5.6 Nasıl çalışıyoruz özeti */}
-      <Section id="steps" eyebrow={home.steps.eyebrow} title={home.steps.title}>
-        <ProcessSteps variant="compact" steps={home.steps.items.map((title) => ({ title }))} />
-        <ArrowLink href="/how-we-work" className="mt-8">
-          {home.steps.link}
-        </ArrowLink>
-      </Section>
+      {/* 5.6 Nasıl çalışıyoruz özeti (tasarım07: kaydırmayla dolan dikey yol haritası).
+          Kart açıklamaları "Qanday ishlaymiz" sayfasındaki aynı sıradaki adımdan gelir. */}
+      <Roadmap
+        eyebrow={home.steps.eyebrow}
+        title={home.steps.title}
+        steps={home.steps.items.map((title, i) => ({ title, body: stepBodies[i] }))}
+      >
+        <ArrowLink href="/how-we-work">{home.steps.link}</ArrowLink>
+      </Roadmap>
 
-      {/* 5.7 Sınavlar nerede */}
-      <ExamBlock tone="file" showLink />
+      {/* 5.7 Sınavlar nerede (tasarım09 §9: iki sütunlu cam panel) */}
+      <ExamBlock variant="glass" showLink />
 
-      {/* 5.8 Hedef ülkeler */}
-      <Section id="countries" eyebrow={home.countries.eyebrow} title={home.countries.title}>
-        <ul className="grid border-t border-rule md:grid-cols-2 md:gap-x-10 lg:grid-cols-3">
-          {home.countries.items.map((c) => (
-            <li key={c.href} className="border-b border-rule py-5">
-              <Link href={c.href as StaticPathname} className="font-serif text-xl font-semibold text-ink no-underline hover:text-link">
-                {c.name}
-              </Link>
-              <p className="mt-1.5 text-ink-2">{fmt(c.text)}</p>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-5 text-sm text-ink-2">
-          {shared.countryNote} {t('updated')}: <time dateTime={home.countries.updated}>{formatDate(home.countries.updated, locale)}</time>
-        </p>
-      </Section>
+      {/* 5.8 Hedef ülkeler (tasarım09 §10: 3×2 cam ülke kartları) */}
+      <CountryCards
+        eyebrow={home.countries.eyebrow}
+        title={home.countries.title}
+        items={home.countries.items}
+        footnote={
+          <>
+            {shared.countryNote} {t('updated')}: <time dateTime={home.countries.updated}>{formatDate(home.countries.updated, locale)}</time>
+          </>
+        }
+      />
 
-      {/* 5.9 Üniversiteler [TEYİT 1] */}
+      {/* 5.9 Üniversiteler [TEYİT 1 · onaylandı] (tasarım09 §11: kayan cam kapsüller) */}
       {shows('universityList') && (
-        <Section id="universities" eyebrow={home.universities.eyebrow} title={home.universities.title} tone="file">
-          <PendingNote code="TEYİT 1">Faydalan Academy&apos;nin listeyi ortak kullanım için yazılı onayı bekleniyor.</PendingNote>
-          <ul className="grid gap-x-10 border-t border-rule sm:grid-cols-2">
-            {home.universities.list.map((u) => (
-              <li key={u} className="border-b border-rule py-3">
-                {u}
-              </li>
-            ))}
-          </ul>
-          <FinePrint className="mt-5">{home.universities.note}</FinePrint>
-        </Section>
+        <UniversityMarquee
+          eyebrow={home.universities.eyebrow}
+          title={home.universities.title}
+          list={home.universities.list}
+          note={home.universities.note}
+          pauseLabel={t('marqueePause')}
+          playLabel={t('marqueePlay')}
+        />
       )}
 
-      {/* 5.10 Uygun fiyat */}
-      <Section id="price" eyebrow={home.price.eyebrow} title={home.price.title}>
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,65ch)_1fr] lg:items-end">
-          <p className="text-lg text-ink-2">{fmt(home.price.body)}</p>
-          <div className="flex flex-col items-start gap-2">
-            <Link href={consultationHref} className={buttonClass('primary')}>
-              {home.price.button}
-            </Link>
-            <ArrowLink href="/fees">{home.price.link}</ArrowLink>
-          </div>
-        </div>
-      </Section>
-
-      {/* 5.11 Ekip: sayaç kartı yok, düz cümle (Aşama 1, karar 2) */}
-      <Section id="team" eyebrow={home.team.eyebrow} title={home.team.title} tone="file">
-        <p className="max-w-measure text-lg">{home.team.body}</p>
-        <ul className="mt-6 flex flex-wrap gap-2">
-          {home.team.points.map((p) => (
-            <li key={p} className="rounded-full border border-rule bg-paper px-3 py-1 text-sm text-ink-2">
-              {p}
-            </li>
-          ))}
-        </ul>
-      </Section>
+      {/* 5.10 Uygun fiyat (tasarım09 §12: vurgulu CTA paneli) */}
+      <PriceCta {...home.price} />
 
       {/* 5.12 SSS önizleme */}
       <Section id="faq" eyebrow={home.faq.eyebrow} title={home.faq.title}>
@@ -214,7 +193,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
                 <>
                   <p>{'verify' in item && shows(item.verify as VerifiedKey) && 'aVerified' in item ? item.aVerified : item.a}</p>
                   {faqLink(item) && (
-                    <ArrowLink href={faqLink(item)!.href as StaticPathname} className="mt-2">
+                    <ArrowLink href={faqLink(item)!.href as StaticPathname} variant="sweep" className="mt-2">
                       {faqLink(item)!.label}
                     </ArrowLink>
                   )}
@@ -222,39 +201,43 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
               ),
             }))}
           />
-          <ArrowLink href="/faq" className="mt-6">
+          <ArrowLink href="/faq" variant="pill" className="mt-6">
             {home.faq.all}
           </ArrowLink>
         </div>
       </Section>
 
-      {/* 5.13 Son yazılar: yazı yoksa bölüm gösterilmez */}
+      {/* 5.13 Son yazılar (tasarım09 §13: 3 sütunlu cam kartlar, kapaklı). 3'ten az yazı varsa boşluklar
+          sitedeki gerçek sayfalara giden kartlarla dolar; yazı hiç yoksa bölüm gösterilmez. */}
       {guides.length > 0 && (
-        <Section id="guides" eyebrow={home.guides.eyebrow} title={home.guides.title} tone="file">
-          <ul className="grid gap-4 md:grid-cols-3">
-            {guides.slice(0, 3).map((g) => (
-              <li key={g.id}>
-                <article className="relative h-full rounded-md border border-rule bg-paper p-5 hover:border-ink">
-                  <time dateTime={g.published} className="text-sm text-ink-2">
-                    {formatDate(g.published, locale)}
-                  </time>
-                  <h3 className="mt-2 text-xl">
-                    <Link
-                      href={{ pathname: '/guides/[slug]', params: { slug: g.slug } }}
-                      className="text-ink no-underline after:absolute after:inset-0"
-                    >
-                      {g.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-2 text-ink-2">{g.description}</p>
-                </article>
-              </li>
-            ))}
-          </ul>
-          <ArrowLink href="/guides" className="mt-6">
-            {home.guides.all}
-          </ArrowLink>
-        </Section>
+        <GuideCards
+          eyebrow={home.guides.eyebrow}
+          title={home.guides.title}
+          allLabel={home.guides.all}
+          readLabel={home.guides.read}
+          cards={[
+            ...guides.slice(0, 3).map(
+              (g): GuideCard => ({
+                key: g.id,
+                href: { pathname: '/guides/[slug]', params: { slug: g.slug } },
+                label: formatDate(g.published, locale),
+                dateTime: g.published,
+                title: g.title,
+                description: g.description,
+                icon: g.category === 'exams' ? 'exam' : 'guide',
+              }),
+            ),
+            {
+              key: 'how-we-work',
+              href: '/how-we-work',
+              label: howWeWork.header.eyebrow,
+              title: howWeWork.header.title,
+              description: howWeWork.header.lede,
+              icon: 'route',
+            } satisfies GuideCard,
+            { key: 'faq', href: '/faq', label: faq.header.eyebrow, title: faq.header.title, description: faq.meta.description, icon: 'faq' } satisfies GuideCard,
+          ].slice(0, 3)}
+        />
       )}
 
       <ConsultationBand />

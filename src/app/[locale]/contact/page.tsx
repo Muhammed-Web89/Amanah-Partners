@@ -93,7 +93,7 @@ export default async function ContactPage({ params }: PageProps<'/[locale]/conta
                 <>
                   <p>{'verify' in item && shows(item.verify as VerifiedKey) && 'aVerified' in item ? item.aVerified : item.a}</p>
                   {faqLink(item) && (
-                    <ArrowLink href={faqLink(item)!.href as StaticPathname} className="mt-2">
+                    <ArrowLink href={faqLink(item)!.href as StaticPathname} variant="sweep" className="mt-2">
                       {faqLink(item)!.label}
                     </ArrowLink>
                   )}

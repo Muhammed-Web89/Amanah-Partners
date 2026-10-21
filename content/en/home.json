@@ -218,7 +218,7 @@
   },
   "universities": {
     "eyebrow": "Universities",
-    "title": "Universities our students have gone on to",
+    "title": "Universities our students have got into",
     "list": [
       "University College London (UCL) · United Kingdom",
       "King’s College London · United Kingdom",
@@ -229,7 +229,7 @@
       "Sapienza University of Rome · Italy",
       "University of Padova · Italy"
     ],
-    "note": "Some of the universities where applications and admissions were handled through our shared education network (Amanah Partners and Faydalan Academy)."
+    "note": "Some of the universities where students from our shared team with Faydalan Academy most often go on to study."
   },
   "price": {
     "eyebrow": "Fees",
@@ -256,6 +256,7 @@
   "guides": {
     "eyebrow": "Guides",
     "title": "Latest guides",
-    "all": "All guides"
+    "all": "All guides",
+    "read": "Read more"
   }
 }

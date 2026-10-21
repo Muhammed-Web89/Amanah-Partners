@@ -46,6 +46,7 @@ export default async function FaqPage({ params }: PageProps<'/[locale]/faq'>) {
             searchLabel={t('search')}
             placeholder={t('searchPlaceholder')}
             emptyText={t('noResults')}
+            listClassName="grid gap-3"
             allLabel={guides('allCategories')}
             categoryLabel={guides('category')}
             categories={faq.categories.map((c) => ({ id: c.id, label: c.title }))}
@@ -64,7 +65,7 @@ export default async function FaqPage({ params }: PageProps<'/[locale]/faq'>) {
                           <>
                             <p>{answer(item)}</p>
                             {faqLink(item) && (
-                              <ArrowLink href={faqLink(item)!.href as StaticPathname} className="mt-2">
+                              <ArrowLink href={faqLink(item)!.href as StaticPathname} variant="sweep" className="mt-2">
                                 {faqLink(item)!.label}
                               </ArrowLink>
                             )}

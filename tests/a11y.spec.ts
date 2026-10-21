@@ -9,6 +9,17 @@ for (const theme of ['light', 'dark'] as const) {
     for (const path of theme === 'light' ? all : ['/uz', '/uz/aloqa', '/ru/programs/a-level', '/en/faq']) {
       test(path, async ({ page }) => {
         await page.goto(path);
+        // Kaydırmayla beliren kartlar (ana sayfa yol haritası) kullanıcı gibi sayfa sonuna kadar kaydırılınca açılır;
+        // açılmamış (geçici olarak saydam) hâlde kontrast ölçülmesin.
+        await page.evaluate(async () => {
+          for (let y = 0; y < document.body.scrollHeight; y += 400) {
+            window.scrollTo(0, y);
+            await new Promise((r) => setTimeout(r, 30));
+          }
+        });
+        await page.waitForTimeout(800); // giriş animasyonu (700 ms) bitsin
+        // Başa dön: sabit üst menü sayfadaki öğelerin üstüne binmesin (axe target-size)
+        await page.evaluate(() => window.scrollTo(0, 0));
         // Kapalı akordeonlar dahil tüm içerik denetlensin
         await page.evaluate(() => document.querySelectorAll('details').forEach((d) => (d.open = true)));
         const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze();

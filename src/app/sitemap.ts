@@ -8,7 +8,7 @@ import { getGuides } from '@/lib/guides';
 // Üç dil + hreflang alternatifleri. Teyit bekleyen sayfalar (BTEC, Hamkorlar) canlıda listelenmez.
 const exclude: StaticPathname[] = ['/contact/thank-you'];
 if (!shows('btec')) exclude.push('/programs/btec');
-if (!shows('faydalanName')) exclude.push('/partners');
+if (!shows('partnersPage')) exclude.push('/partners');
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const statics = (Object.keys(routing.pathnames) as Array<keyof typeof routing.pathnames>).filter(

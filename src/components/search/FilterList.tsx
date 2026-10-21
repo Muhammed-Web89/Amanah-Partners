@@ -27,6 +27,7 @@ export function FilterList({
   searchLabel,
   placeholder,
   emptyText,
+  listClassName,
 }: {
   items: Item[];
   categories?: Array<{ id: string; label: string }>;
@@ -35,6 +36,8 @@ export function FilterList({
   searchLabel: string;
   placeholder: string;
   emptyText: string;
+  /** Liste kabı (ör. SSS cam panelleri arasında boşluk: 'grid gap-3') */
+  listClassName?: string;
 }) {
   const t = useTranslations('common');
   const [query, setQuery] = useState('');
@@ -82,7 +85,7 @@ export function FilterList({
         {t('results', { count: visible.length })}
       </p>
       {visible.length ? (
-        <div>{visible.map((i) => <div key={i.key}>{i.node}</div>)}</div>
+        <div className={listClassName}>{visible.map((i) => <div key={i.key}>{i.node}</div>)}</div>
       ) : (
         <p className="rounded-md border border-dashed border-rule-strong bg-paper-2 p-6 text-ink-2">{emptyText}</p>
       )}

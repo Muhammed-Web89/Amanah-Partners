@@ -17,7 +17,9 @@
     "yes": "Bor",
     "no": "Yoʻq",
     "readMore": "Batafsil",
-    "results": "Natijalar: {count}"
+    "results": "Natijalar: {count}",
+    "marqueePause": "Toʻxtatish",
+    "marqueePlay": "Davom ettirish"
   },
   "nav": {
     "primary": "Asosiy menyu",
