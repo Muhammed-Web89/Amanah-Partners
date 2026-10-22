@@ -24,6 +24,27 @@ test('dil değiştirince aynı sayfanın karşılığına gider', async ({ page 
   await expect(page).toHaveURL(/\/ru\/destinations\/germany$/);
 });
 
+// Dil değişimi kök <html>'i yeniden kurar; seçilen tema (koyu/açık) her iki yönde de korunmalı.
+for (const [system, chosen] of [['light', 'dark'], ['dark', 'light']] as const) {
+  test(`dil değişince seçilen tema korunur · sistem ${system} → ${chosen}`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: system });
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('/uz/dasturlar');
+    await page.getByRole('button', { name: "Tungi rejimni yoqish yoki oʻchirish" }).click();
+    const html = page.locator('html');
+    const expectTheme = () => (chosen === 'dark' ? expect(html).toHaveClass(/\bdark\b/) : expect(html).not.toHaveClass(/\bdark\b/));
+    await expectTheme();
+    await page.getByRole('navigation', { name: 'Tilni tanlash' }).getByRole('link', { name: 'English' }).click();
+    await expect(page).toHaveURL(/\/en\/programs$/);
+    await expectTheme();
+    await page.getByRole('navigation', { name: 'Choose language' }).getByRole('link', { name: 'Русский' }).click();
+    await expect(page).toHaveURL(/\/ru\/programs$/);
+    await expectTheme();
+    await page.reload();
+    await expectTheme();
+  });
+}
+
 test('rehber yazısında dil değişimi doğru slug’a yönlendirir', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto('/uz/maqolalar/pearson-imtihonlari-qanday-otadi');

@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { MobileBar } from '@/components/layout/MobileBar';
 import { ThemeScript } from '@/components/layout/ThemeScript';
+import { ThemeSync } from '@/components/layout/ThemeSync';
 import { RevealObserver } from '@/components/ui/RevealObserver';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { isStaging, shows, site, telegramUrl } from '@/config/site';
@@ -106,6 +107,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<'/[
       </head>
       <body className="flex min-h-dvh flex-col pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <NextIntlClientProvider messages={clientMessages}>
+          <ThemeSync />
           <Header />
           <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">
             {children}
