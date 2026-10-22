@@ -16,14 +16,19 @@ type Props = {
 
 // Global tasarım sistemi (docs/11): yeni sayfaların bölüm kabı. Altta yavaş süzülen pastel ışık zemini
 // (HeroBackdrop), üstünde parlamalı başlık; içerik glass-card / glass-strong panellerle gelir.
-// Art arda gelen GlassSection'lar fade sayesinde dikişsiz birleşir.
+// Art arda gelen GlassSection'lar fade sayesinde dikişsiz birleşir. Başlıksız bölüm (ör. not, kapanış metni)
+// bir öncekinin devamıdır: üst boşluğu küçük.
 export function GlassSection({ id, eyebrow, title, intro, align = 'left', fade = 'both', className, children }: Props) {
   const headingId = `${id}-title`;
   return (
     <section
       id={id}
       aria-labelledby={title ? headingId : undefined}
-      className={cn('relative isolate overflow-hidden py-section', className)}
+      className={cn(
+        'relative isolate overflow-hidden',
+        eyebrow || title || intro ? 'py-section' : 'pt-2 pb-section-sm',
+        className,
+      )}
     >
       <HeroBackdrop fade={fade} icons={false} />
       <div className="container-page">

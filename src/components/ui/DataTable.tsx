@@ -17,20 +17,21 @@ type Props = {
 
 // Masaüstünde tablo. Mobilde (<768 px) yatay kaydırma yerine her satır bir blok olur;
 // sütun adı data-label ile hücrenin üstünde görünür.
+// docs/11: tablo cam panelde; başlık altında neon çizgi, satırlar hover'da aydınlanır. Anlam (table/th scope) korunur.
 export function DataTable({ caption, columns, rows, rowHeaders = true, highlight, note, className }: Props) {
   return (
-    <figure className={cn('w-full', className)}>
+    <figure className={cn('reveal glass w-full rounded-lg px-5 py-4 sm:px-7 sm:py-6', className)}>
       <table className="w-full border-collapse text-left max-md:block">
         <caption className="sr-only">{caption}</caption>
         <thead className="max-md:sr-only">
-          <tr className="border-b-2 border-ink">
+          <tr className="border-b-2 border-(--ds-neon)">
             {columns.map((col, i) => (
               <th
                 key={col || i}
                 scope="col"
                 className={cn(
                   'label-caps px-3 py-3 align-bottom text-ink-2 first:pl-0',
-                  i === highlight && 'bg-accent-soft text-accent first:pl-3',
+                  i === highlight && 'rounded-t-md bg-accent-soft text-accent first:pl-3',
                 )}
               >
                 {col}
@@ -40,7 +41,10 @@ export function DataTable({ caption, columns, rows, rowHeaders = true, highlight
         </thead>
         <tbody className="max-md:block">
           {rows.map((row, r) => (
-            <tr key={r} className="border-b border-rule max-md:block max-md:py-3">
+            <tr
+              key={r}
+              className="border-b border-(--rm-line) transition-colors duration-(--dur-ui) last:border-b-0 hover:bg-(--glass-thin-hover) max-md:block max-md:py-3"
+            >
               {row.map((cell, c) => {
                 const Cell = rowHeaders && c === 0 ? 'th' : 'td';
                 return (

@@ -1,14 +1,4 @@
-import {
-  Blocks,
-  Compass,
-  Hourglass,
-  MoveUpRight,
-  Puzzle,
-  Route,
-  Target,
-  Wallet,
-  type LucideIcon,
-} from 'lucide-react';
+import { Blocks, Compass, Hourglass, MoveUpRight, Puzzle, Route, Target, Wallet, type LucideIcon } from 'lucide-react';
 import { FinePrint } from '@/components/ui/misc';
 import { fmt } from '@/lib/typo';
 

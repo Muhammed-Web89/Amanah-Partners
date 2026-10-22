@@ -143,6 +143,19 @@
   }
 }
 
+/* glass-article (görev 15): makale okuma kartı. Daha opak zemin + güçlü bulanıklık; metin kontrastı yüksek kalır. */
+@utility glass-article {
+  background: var(--article-bg);
+  border: 1px solid var(--article-border);
+  box-shadow: inset 0 1px 0 var(--glass-highlight), 0 0 0 1px var(--glass-edge), var(--glass-depth);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(160%);
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: var(--c-paper);
+  }
+}
+
 /* glow-hover: kart olmayan etkileşimli öğeler (hap bağlantı, satır, rozet) için yalnızca parlama + hafif büyüme */
 @utility glow-hover {
   transition:

@@ -17,6 +17,12 @@ export type Guide = {
   updated: string;
   summary: string[];
   sources: Array<{ title: string; url: string }>;
+  /** İlgili site sayfaları: "Etiket | /programs/a-level" (dil öneki yok; Link yerelleştirir) */
+  related: Array<{ label: string; href: string }>;
+  /** Kodla çizilen kapak/üst illüstrasyon sahnesi (ArticleArt) */
+  art?: string;
+  /** İçindekiler: gövdedeki her ## başlığı (id ile) */
+  toc: Array<{ id: string; text: string }>;
   html: string;
 };
 
@@ -26,7 +32,8 @@ function parse(id: string, raw: string): Guide {
   const meta: Record<string, string> = {};
   const summary: string[] = [];
   const sources: Guide['sources'] = [];
-  let list: 'summary' | 'sources' | null = null;
+  const related: Guide['related'] = [];
+  let list: 'summary' | 'sources' | 'related' | null = null;
 
   for (const line of match[1].split('\n')) {
     const item = line.match(/^\s+-\s+(.*)$/);
@@ -34,13 +41,31 @@ function parse(id: string, raw: string): Guide {
     else if (item && list === 'sources') {
       const [title, url] = item[1].split(' | ');
       sources.push({ title: title.trim(), url: url.trim() });
+    } else if (item && list === 'related') {
+      const [label, href] = item[1].split(' | ');
+      related.push({ label: label.trim(), href: href.trim() });
     } else {
       const pair = line.match(/^(\w+):\s*(.*)$/);
       if (!pair) continue;
-      list = pair[1] === 'summary' || pair[1] === 'sources' ? pair[1] : null;
+      list = pair[1] === 'summary' || pair[1] === 'sources' || pair[1] === 'related' ? pair[1] : null;
       if (!list) meta[pair[1]] = pair[2].trim();
     }
   }
+
+  // ## başlıklarına sabit id (içindekiler ve bağlantı için): bolim-1, bolim-2…
+  const toc: Guide['toc'] = [];
+  const html = (marked.parse(match[2], { async: false }) as string).replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner: string) => {
+    const tocId = `bolim-${toc.length + 1}`;
+    const text = inner
+      .replace(/<[^>]+>/g, '')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&');
+    toc.push({ id: tocId, text });
+    return `<h2 id="${tocId}">${inner}</h2>`;
+  });
 
   return {
     id,
@@ -52,7 +77,10 @@ function parse(id: string, raw: string): Guide {
     updated: meta.updated ?? meta.published,
     summary,
     sources,
-    html: marked.parse(match[2], { async: false }),
+    related,
+    art: meta.art,
+    toc,
+    html,
   };
 }
 

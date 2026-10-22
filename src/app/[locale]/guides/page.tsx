@@ -1,9 +1,12 @@
 import { getTranslations } from 'next-intl/server';
+import { BookOpen } from 'lucide-react';
 import { ConsultationBand } from '@/components/blocks/ConsultationBand';
 import { consultationHref } from '@/components/layout/nav';
 import { FilterList } from '@/components/search/FilterList';
 import { PageHeader, formatDate } from '@/components/ui/PageHeader';
-import { Section } from '@/components/ui/Section';
+import { HeroBackdrop } from '@/components/hero/HeroBackdrop';
+import { isArticleArt } from '@/components/guides/ArticleArt';
+import { GuideCardView, GuideInkDefs } from '@/components/home/GuideCards';
 import { buttonClass } from '@/components/ui/button';
 import { EmptyState } from '@/components/ui/misc';
 import { Link } from '@/i18n/navigation';
@@ -11,7 +14,7 @@ import { getGuides } from '@/lib/guides';
 import { resolveLocale } from '@/lib/page';
 import { pageMetadata } from '@/lib/seo';
 
-const categories = ['exams', 'admission', 'visa', 'countries', 'documents'] as const;
+const categories = ['programs', 'exams', 'admission', 'visa', 'countries', 'documents'] as const;
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/guides'>) {
   const locale = await resolveLocale(params);
@@ -27,54 +30,59 @@ export default async function GuidesPage({ params }: PageProps<'/[locale]/guides
   const t = await getTranslations('guides');
   const common = await getTranslations('common');
 
+  // docs/11: ana sayfadaki makale cam kartları (kod çizimi kapak); arama ve kategori kapsülleri camda
   return (
     <>
-      <PageHeader crumbs={[{ label: nav('guides') }]} eyebrow={nav('guides')} title={nav('guides')} />
-      <Section>
-        {guides.length === 0 ? (
-          <EmptyState
-            title={t('emptyTitle')}
-            body={t('emptyBody')}
-            action={
-              <Link href={consultationHref} className={buttonClass('primary')}>
-                {common('consultation')}
-              </Link>
-            }
-          />
-        ) : (
-          <FilterList
-            searchLabel={t('search')}
-            placeholder={t('searchPlaceholder')}
-            emptyText={t('noResults')}
-            allLabel={t('allCategories')}
-            categoryLabel={t('category')}
-            categories={categories.map((id) => ({ id, label: t(`categories.${id}`) }))}
-            items={guides.map((g) => ({
-              key: g.id,
-              text: `${g.title} ${g.description}`,
-              category: g.category,
-              node: (
-                <article className="relative border-b border-rule py-6 first:border-t">
-                  <p className="text-sm text-ink-2">
-                    <span className="label-caps text-accent">{t(`categories.${g.category as (typeof categories)[number]}`)}</span>
-                    {' · '}
-                    <time dateTime={g.published}>{formatDate(g.published, locale)}</time>
-                  </p>
-                  <h2 className="mt-2 text-xl">
-                    <Link
-                      href={{ pathname: '/guides/[slug]', params: { slug: g.slug } }}
-                      className="text-ink no-underline after:absolute after:inset-0 hover:text-link"
-                    >
-                      {g.title}
-                    </Link>
-                  </h2>
-                  <p className="mt-2 max-w-measure text-ink-2">{g.description}</p>
-                </article>
-              ),
-            }))}
-          />
-        )}
-      </Section>
+      <PageHeader crumbs={[{ label: nav('guides') }]} eyebrow={nav('guides')} title={nav('guides')} icon={BookOpen} />
+      <section aria-label={nav('guides')} className="relative isolate overflow-hidden pt-2 pb-section">
+        <HeroBackdrop fade="both" icons={false} />
+        <GuideInkDefs />
+        <div className="container-page">
+          {guides.length === 0 ? (
+            <EmptyState
+              title={t('emptyTitle')}
+              body={t('emptyBody')}
+              action={
+                <Link href={consultationHref} className={buttonClass('glow')}>
+                  {common('consultation')}
+                </Link>
+              }
+            />
+          ) : (
+            <FilterList
+              searchLabel={t('search')}
+              placeholder={t('searchPlaceholder')}
+              emptyText={t('noResults')}
+              allLabel={t('allCategories')}
+              categoryLabel={t('category')}
+              listClassName="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+              categories={categories.map((id) => ({ id, label: t(`categories.${id}`) }))}
+              items={guides.map((g, i) => ({
+                key: g.id,
+                text: `${g.title} ${g.description}`,
+                category: g.category,
+                node: (
+                  <GuideCardView
+                    heading="h2"
+                    index={i}
+                    readLabel={common('readMore')}
+                    card={{
+                      key: g.id,
+                      href: { pathname: '/guides/[slug]', params: { slug: g.slug } },
+                      label: formatDate(g.published, locale),
+                      dateTime: g.published,
+                      title: g.title,
+                      description: g.description,
+                      icon: g.category === 'exams' ? 'exam' : 'guide',
+                      art: isArticleArt(g.art) ? g.art : undefined,
+                    }}
+                  />
+                ),
+              }))}
+            />
+          )}
+        </div>
+      </section>
       <ConsultationBand />
     </>
   );

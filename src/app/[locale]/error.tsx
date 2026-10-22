@@ -14,10 +14,10 @@ export default function ErrorPage({ reset }: { error: Error; reset: () => void }
       body={t('errorBody')}
       actions={
         <>
-          <button type="button" onClick={reset} className={buttonClass('primary')}>
+          <button type="button" onClick={reset} className={buttonClass('glow')}>
             {t('retry')}
           </button>
-          <Link href="/" className={buttonClass('secondary')}>
+          <Link href="/" className={buttonClass('glass')}>
             {t('toHome')}
           </Link>
           <Link href="/contact" className={buttonClass('text')}>

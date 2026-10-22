@@ -159,7 +159,9 @@ export function Roadmap({ eyebrow, title, steps, children }: Props) {
                   className={cn(
                     'glass-roadmap col-start-2 row-start-1 rounded-lg p-6 transition-[opacity,transform] duration-700 ease-out sm:p-7',
                     right ? 'md:col-start-3' : 'md:col-start-1',
-                    hidden ? cn('translate-y-8 opacity-0', right ? 'md:translate-x-10' : 'md:-translate-x-10') : 'translate-x-0 translate-y-0 opacity-100',
+                    hidden
+                      ? cn('translate-y-8 opacity-0', right ? 'md:translate-x-10' : 'md:-translate-x-10')
+                      : 'translate-x-0 translate-y-0 opacity-100',
                   )}
                 >
                   <div className="flex items-center gap-4">
@@ -174,7 +176,10 @@ export function Roadmap({ eyebrow, title, steps, children }: Props) {
                       className="grid size-11 place-items-center rounded-lg border border-[var(--glass-border)] shadow-[inset_0_1px_0_var(--glass-highlight),0_6px_16px_-8px_var(--rm-neon-glow)]"
                       style={{ background: 'linear-gradient(140deg, var(--tile-from), var(--tile-to))' }}
                     >
-                      <Icon strokeWidth={1.5} className="size-5 text-[var(--rm-neon)] drop-shadow-[0_0_6px_var(--rm-neon-glow)]" />
+                      <Icon
+                        strokeWidth={1.5}
+                        className="size-5 text-[var(--rm-neon)] drop-shadow-[0_0_6px_var(--rm-neon-glow)]"
+                      />
                     </span>
                   </div>
                   <h3 className="mt-4 text-lg leading-snug font-semibold sm:text-xl">

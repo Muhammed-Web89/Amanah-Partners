@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
+import { Scale } from 'lucide-react';
+import { HeroBackdrop } from '@/components/hero/HeroBackdrop';
 import { Notice } from '@/components/ui/Notice';
 import { PageHeader } from '@/components/ui/PageHeader';
 import type { StaticPathname } from '@/i18n/routing';
@@ -38,23 +40,27 @@ export default async function LegalPage({ params }: PageProps<'/[locale]/[legal]
 
   return (
     <>
-      <PageHeader crumbs={[{ label: footer('legal') }, { label: header.title }]} {...header}>
+      <PageHeader crumbs={[{ label: footer('legal') }, { label: header.title }]} icon={Scale} {...header}>
         <Notice tone="draft" title="Staging" className="mt-6">
           {draftNotice}
         </Notice>
       </PageHeader>
-      <div className="container-page py-section-sm">
-        <div className="max-w-measure space-y-10">
-          {page.sections.map((s) => (
-            <section key={s.title}>
-              <h2 className="text-xl">{s.title}</h2>
-              <div className="mt-3 space-y-3">
-                {s.paragraphs.map((p) => (
-                  <p key={p}>{p}</p>
-                ))}
-              </div>
-            </section>
-          ))}
+      {/* docs/11: uzun hukuk metni tek, neredeyse opak cam panelde; bölümler ince çizgiyle ayrılır */}
+      <div className="relative isolate overflow-hidden pt-2 pb-section">
+        <HeroBackdrop fade="both" icons={false} />
+        <div className="container-page">
+          <div className="glass divide-y divide-(--rm-line) rounded-lg px-6 [--glass-fill:var(--glass-bg-strong)] sm:px-10 lg:max-w-[52rem]">
+            {page.sections.map((s) => (
+              <section key={s.title} className="py-8">
+                <h2 className="text-xl">{s.title}</h2>
+                <div className="mt-3 space-y-3">
+                  {s.paragraphs.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
       </div>
     </>

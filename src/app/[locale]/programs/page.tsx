@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { GraduationCap } from 'lucide-react';
 import { BlockPage } from '@/components/blocks/BlockPage';
 import { getContent } from '@/lib/content';
 import { resolveLocale } from '@/lib/page';
@@ -14,5 +15,5 @@ export default async function ProgramsPage({ params }: PageProps<'/[locale]/prog
   const locale = await resolveLocale(params);
   const { index } = await getContent(locale, 'programs');
   const nav = await getTranslations('nav');
-  return <BlockPage header={index.header} blocks={index.blocks} crumbs={[{ label: nav('programs') }]} />;
+  return <BlockPage header={index.header} blocks={index.blocks} crumbs={[{ label: nav('programs') }]} icon={GraduationCap} />;
 }

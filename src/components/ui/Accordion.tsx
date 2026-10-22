@@ -31,7 +31,10 @@ function toggle(e: MouseEvent<HTMLElement>) {
   } else {
     details.dataset.closing = '';
     const h = body.offsetHeight;
-    inner.animate({ opacity: [1, 0], transform: ['none', 'translateY(-6px)'] }, { duration: 180, easing: 'ease-in', fill: 'forwards' });
+    inner.animate(
+      { opacity: [1, 0], transform: ['none', 'translateY(-6px)'] },
+      { duration: 180, easing: 'ease-in', fill: 'forwards' },
+    );
     const a = body.animate({ height: [`${h}px`, '0px'] }, { duration: 300, easing: EASE, fill: 'forwards' });
     a.onfinish = () => {
       details.open = false;

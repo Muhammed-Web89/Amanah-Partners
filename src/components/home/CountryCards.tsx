@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
-import type { ComponentType, ReactNode, SVGProps } from 'react';
+import type { ComponentType, CSSProperties, ReactNode, SVGProps } from 'react';
 import { HeroBackdrop } from '@/components/hero/HeroBackdrop';
 import { Link } from '@/i18n/navigation';
 import type { StaticPathname } from '@/i18n/routing';
@@ -8,7 +8,7 @@ import { BigBen, Brandenburg, Colosseum, Liberty, MapleLeaf, Windmill } from './
 
 // tasarım09 §10: "A-Level bilan qayerga?" — ince çizgili liste yerine 3×2 bağımsız cam kart (bağlantı).
 // Hover: kart yükselir, arkasında ülkenin bayrak renklerinde yumuşak neon parlama, açıklama aydınlanır.
-const countries: Record<string, { Icon: ComponentType<SVGProps<SVGSVGElement>>; flag: string }> = {
+export const countries: Record<string, { Icon: ComponentType<SVGProps<SVGSVGElement>>; flag: string }> = {
   uk: { Icon: BigBen, flag: '#012169, #ffffff, #C8102E' },
   usa: { Icon: Liberty, flag: '#B22234, #ffffff, #3C3B6E' },
   germany: { Icon: Brandenburg, flag: '#000000, #DD0000, #FFCE00' },
@@ -18,33 +18,43 @@ const countries: Record<string, { Icon: ComponentType<SVGProps<SVGSVGElement>>; 
 };
 
 type Props = {
-  eyebrow: string;
-  title: string;
+  eyebrow?: string;
+  title?: string; // yoksa bölüm başlığı çizilmez (Davlatlar sayfasında H1 zaten var)
   items: { href: string; name: string; text: string }[];
   footnote: ReactNode;
 };
 
 export function CountryCards({ eyebrow, title, items, footnote }: Props) {
   return (
-    <section id="countries" aria-labelledby="countries-title" className="relative isolate overflow-hidden py-section">
+    <section
+      id="countries"
+      aria-labelledby={title ? 'countries-title' : undefined}
+      className="relative isolate overflow-hidden py-section"
+    >
       <HeroBackdrop fade="both" icons={false} />
       <div className="container-page">
-        <header className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
-          <p className="label-caps text-accent [text-shadow:0_0_16px_var(--glass-border)]">{eyebrow}</p>
-          <h2
-            id="countries-title"
-            className="mt-3 text-[clamp(1.875rem,1.3rem+2.2vw,3rem)] leading-tight font-bold [text-shadow:0_0_32px_var(--glass-border)]"
-          >
-            {fmt(title)}
-          </h2>
-        </header>
+        {title && (
+          <header className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
+            <p className="label-caps text-accent [text-shadow:0_0_16px_var(--glass-border)]">{eyebrow}</p>
+            <h2
+              id="countries-title"
+              className="mt-3 text-[clamp(1.875rem,1.3rem+2.2vw,3rem)] leading-tight font-bold [text-shadow:0_0_32px_var(--glass-border)]"
+            >
+              {fmt(title)}
+            </h2>
+          </header>
+        )}
 
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {items.map((c) => {
+          {items.map((c, i) => {
             const slug = c.href.split('/').pop() ?? '';
             const { Icon, flag } = countries[slug] ?? countries.uk;
             return (
-              <li key={c.href} className="group/card relative isolate">
+              <li
+                key={c.href}
+                className="reveal group/card relative isolate"
+                style={{ '--reveal-delay': `${(i % 3) * 90}ms` } as CSSProperties}
+              >
                 {/* Bayrak renklerinde parlama (yalnızca hover/odak) */}
                 <span
                   aria-hidden="true"

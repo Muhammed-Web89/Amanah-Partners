@@ -25,7 +25,11 @@ function Mark({ value, hero, yes, no }: { value: string; hero: boolean; yes: str
   if (value === 'yes')
     return hero ? (
       <span className="grid size-9 place-items-center rounded-full bg-paper shadow-[0_0_0_1px_var(--check),0_0_16px_-2px_var(--check-glow)]">
-        <Check aria-hidden="true" strokeWidth={3} className="size-5 text-[var(--check)] drop-shadow-[0_0_4px_var(--check-glow)]" />
+        <Check
+          aria-hidden="true"
+          strokeWidth={3}
+          className="size-5 text-[var(--check)] drop-shadow-[0_0_4px_var(--check-glow)]"
+        />
         <span className="sr-only">{yes}</span>
       </span>
     ) : (
@@ -62,23 +66,36 @@ export function CompareGrid({ eyebrow, title, intro, caption, columns, rows, not
           >
             {fmt(title)}
           </h2>
-          <p className="mx-auto mt-4 max-w-measure text-lg text-ink-2 [text-shadow:0_0_20px_var(--glass-border)]">
-            {fmt(intro)}
-          </p>
+          <p className="mx-auto mt-4 max-w-measure text-lg text-ink-2 [text-shadow:0_0_20px_var(--glass-border)]">{fmt(intro)}</p>
         </header>
 
         <div role="table" aria-label={caption} className={cn('relative grid gap-3 md:gap-x-4 md:gap-y-0', cols)}>
           {/* Sütun zeminleri (yalnızca geniş ekran, dekoratif): rakipler soluk ve kenarlıksız, Amanah taşan parlak kart */}
-          <div aria-hidden="true" style={span} className="pointer-events-none col-start-2 hidden rounded-lg bg-[var(--glass-thin)] opacity-70 md:block" />
-          <div aria-hidden="true" style={span} className="pointer-events-none col-start-3 hidden rounded-lg bg-[var(--glass-thin)] opacity-70 md:block" />
           <div
             aria-hidden="true"
-            style={{ ...span, background: 'linear-gradient(180deg, var(--c-accent-soft), var(--glass-bg-strong) 40%, var(--glass-bg-strong))' }}
+            style={span}
+            className="pointer-events-none col-start-2 hidden rounded-lg bg-[var(--glass-thin)] opacity-70 md:block"
+          />
+          <div
+            aria-hidden="true"
+            style={span}
+            className="pointer-events-none col-start-3 hidden rounded-lg bg-[var(--glass-thin)] opacity-70 md:block"
+          />
+          <div
+            aria-hidden="true"
+            style={{
+              ...span,
+              background: 'linear-gradient(180deg, var(--c-accent-soft), var(--glass-bg-strong) 40%, var(--glass-bg-strong))',
+            }}
             className="glass pointer-events-none col-start-4 hidden scale-105 rounded-lg border-[var(--neon)] shadow-[0_0_0_1px_var(--neon),0_0_40px_-6px_var(--neon),var(--glass-shadow)] md:block"
           />
 
           {/* Başlık satırı: mobilde yalnızca ekran okuyucu için (hücrelerde görünür etiket var) */}
-          <div role="row" style={{ gridRow: 1 }} className="sr-only md:not-sr-only md:relative md:col-span-full md:grid md:grid-cols-subgrid">
+          <div
+            role="row"
+            style={{ gridRow: 1 }}
+            className="sr-only md:not-sr-only md:relative md:col-span-full md:grid md:grid-cols-subgrid"
+          >
             <span role="columnheader" className="md:px-5 md:py-6" />
             {[rivalA, rivalB].map((name) => (
               <span role="columnheader" key={name} className="text-center text-sm font-semibold text-ink-2 md:px-3 md:py-6">
@@ -118,7 +135,10 @@ export function CompareGrid({ eyebrow, title, intro, caption, columns, rows, not
                   >
                     <Mark value={value} hero={hero} yes={yes} no={no} />
                     {/* Mobilde kurum adı her hücrede (başlık satırı gizli) */}
-                    <span aria-hidden="true" className={cn('text-[0.6875rem] leading-tight md:hidden', hero ? 'font-semibold text-ink' : 'text-ink-2')}>
+                    <span
+                      aria-hidden="true"
+                      className={cn('text-[0.6875rem] leading-tight md:hidden', hero ? 'font-semibold text-ink' : 'text-ink-2')}
+                    >
                       {[rivalA, rivalB, ours][c]}
                     </span>
                   </span>

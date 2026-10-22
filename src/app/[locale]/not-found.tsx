@@ -12,10 +12,10 @@ export default async function NotFound() {
       body={t('notFoundBody')}
       actions={
         <>
-          <Link href="/" className={buttonClass('primary')}>
+          <Link href="/" className={buttonClass('glow')}>
             {t('toHome')}
           </Link>
-          <Link href="/contact" className={buttonClass('secondary')}>
+          <Link href="/contact" className={buttonClass('glass')}>
             {t('toContact')}
           </Link>
         </>

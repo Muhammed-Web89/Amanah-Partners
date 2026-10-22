@@ -166,12 +166,18 @@
     "emptyTitle": "Guides are on the way",
     "emptyBody": "There are no guides in this section yet. If you have a question, ask it in your free consultation.",
     "categories": {
+      "programs": "Programmes",
       "exams": "Exams",
       "admission": "Admission",
       "visa": "Visa",
       "countries": "Countries",
       "documents": "Documents"
-    }
+    },
+    "toc": "Contents",
+    "related": "Related pages",
+    "readingTime": "{count} min read",
+    "ctaTitle": "Still have questions?",
+    "ctaBody": "In a free consultation we choose the right programme and country together, based on the student’s situation."
   },
   "faq": {
     "search": "Search questions",

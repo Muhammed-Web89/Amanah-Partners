@@ -23,9 +23,7 @@ export function Logo({ className, size = 'md' }: { className?: string; size?: 'm
       <LogoMark className={size === 'lg' ? 'h-10 w-auto' : 'h-8 w-auto'} />
       <span className="sr-only">Amanah Partners</span>
       <span aria-hidden="true" className="flex flex-col items-center leading-none">
-        <span className={cn('font-sans font-semibold tracking-[0.2em]', size === 'lg' ? 'text-2xl' : 'text-xl')}>
-          AMANAH
-        </span>
+        <span className={cn('font-sans font-semibold tracking-[0.2em]', size === 'lg' ? 'text-2xl' : 'text-xl')}>AMANAH</span>
         <span className="mt-1 flex items-center gap-1.5 font-sans text-[0.5625rem] font-medium tracking-[0.38em] text-ink-2">
           <span className="h-px w-3 bg-accent-light" />
           PARTNERS

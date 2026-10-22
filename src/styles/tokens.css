@@ -100,6 +100,9 @@
   --ds-lift: -5px; /* hover'da kalkma */
   --ds-ring: 0 0 0 1px var(--ds-neon), 0 0 28px -6px var(--ds-glow);
   --dur-ui: 300ms; /* kart/düğme hover geçişi */
+  /* Makale okuma kartı (görev 15): uzun metin için neredeyse opak cam — ink ≥ 15:1 */
+  --article-bg: rgb(255 255 255 / 0.93);
+  --article-border: rgb(122 132 148 / 0.22);
 
   /* Hareket */
   --dur-fast: 120ms; /* renk, hover */
@@ -173,6 +176,8 @@
   --faq-glow: 0 0 0 0 transparent;
   --faq-glow-hover: 0 0 22px -8px rgb(103 232 249 / 0.5);
   --faq-inset: inset 0 1px 0 rgb(168 204 218 / 0.14);
+  --article-bg: rgb(12 21 34 / 0.92); /* koyu ve opak: ink (#e6edf3 civarı) ≥ 13:1 */
+  --article-border: rgb(168 204 218 / 0.18);
   --check: #4ade80;
   --check-glow: rgb(74 222 128 / 0.4);
   --shadow-overlay: 0 -2px 16px -4px rgb(0 0 0 / 0.5);

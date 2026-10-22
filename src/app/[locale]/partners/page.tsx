@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
+import { Handshake } from 'lucide-react';
 import { BlockPage } from '@/components/blocks/BlockPage';
 import { PendingNote } from '@/components/ui/Notice';
 import { shows } from '@/config/site';
@@ -24,7 +25,7 @@ export default async function PartnersPage({ params }: PageProps<'/[locale]/part
       <div className="container-page pt-6">
         <PendingNote code="TEYİT 1b">Faydalan Academy onayı alındı; listedeki her partnerin kendi onayı bekleniyor.</PendingNote>
       </div>
-      <BlockPage header={page.header} blocks={page.blocks} crumbs={[{ label: footer('partners') }]} />
+      <BlockPage header={page.header} blocks={page.blocks} crumbs={[{ label: footer('partners') }]} icon={Handshake} />
     </>
   );
 }

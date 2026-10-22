@@ -10,7 +10,11 @@ type Props = { eyebrow: string; title: string; body: string; button: string; lin
 
 export function PriceCta({ eyebrow, title, body, button, link }: Props) {
   return (
-    <section id="price" aria-labelledby="price-title" className="relative isolate overflow-x-clip bg-linear-to-b from-paper-2 from-60% to-paper py-section">
+    <section
+      id="price"
+      aria-labelledby="price-title"
+      className="relative isolate overflow-x-clip bg-linear-to-b from-paper-2 from-60% to-paper py-section"
+    >
       <div className="container-page">
         <div className="relative isolate mx-auto max-w-4xl">
           {/* Dönen ışık kümesi (dekoratif) */}

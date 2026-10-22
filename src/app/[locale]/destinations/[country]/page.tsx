@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { BlockPage } from '@/components/blocks/BlockPage';
+import { countries as countryArt } from '@/components/home/CountryCards';
 import type { StaticPathname } from '@/i18n/routing';
 import { getContent } from '@/lib/content';
 import { resolveLocale } from '@/lib/page';
@@ -29,13 +30,14 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/destinat
 }
 
 export default async function CountryPage({ params }: PageProps<'/[locale]/destinations/[country]'>) {
-  const { page } = await load(params);
+  const { page, country } = await load(params);
   const nav = await getTranslations('nav');
   return (
     <BlockPage
       header={page.header}
       blocks={page.blocks}
       crumbs={[{ label: nav('destinations'), href: '/destinations' }, { label: page.header.title }]}
+      icon={countryArt[country]?.Icon}
     />
   );
 }

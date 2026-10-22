@@ -16,7 +16,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   const t = useTranslations('form');
   return (
-    <button type="submit" disabled={pending} aria-busy={pending || undefined} className={buttonClass('primary', 'w-full sm:w-auto')}>
+    <button type="submit" disabled={pending} aria-busy={pending || undefined} className={buttonClass('glow', 'w-full sm:w-auto')}>
       {pending && <LoaderCircle aria-hidden="true" className="size-5 animate-spin" />}
       {pending ? t('submitting') : t('submit')}
     </button>
@@ -38,7 +38,8 @@ export function ConsultationForm() {
   const ordered = fieldOrder.filter((f) => state.errors[f]).map((f) => [f, state.errors[f]!] as const);
   const v = state.values;
   const str = (k: string) => (typeof v[k] === 'string' ? (v[k] as string) : undefined);
-  const err = (k: keyof FormState['errors']) => (state.errors[k] ? t(`errors.${state.errors[k]}` as 'errors.contact') : undefined);
+  const err = (k: keyof FormState['errors']) =>
+    state.errors[k] ? t(`errors.${state.errors[k]}` as 'errors.contact') : undefined;
 
   useEffect(() => {
     if (tsRef.current) tsRef.current.value = String(Date.now());
@@ -80,7 +81,16 @@ export function ConsultationForm() {
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2">
-        <TextField name="studentName" label={t('studentName')} required {...labels} autoComplete="name" maxLength={100} defaultValue={str('studentName')} error={err('studentName')} />
+        <TextField
+          name="studentName"
+          label={t('studentName')}
+          required
+          {...labels}
+          autoComplete="name"
+          maxLength={100}
+          defaultValue={str('studentName')}
+          error={err('studentName')}
+        />
         <SelectField
           name="grade"
           label={t('grade')}
@@ -144,11 +154,17 @@ export function ConsultationForm() {
       />
 
       {/* 18 yaş altı: veli bilgisi (CSS: .consultation-form:has(#age-adult:checked) .minor-only → gizli) */}
-      <fieldset className="minor-only grid gap-6 rounded-md border border-accent-line bg-accent-soft p-4 sm:p-5">
+      <fieldset className="minor-only grid gap-6 rounded-lg border border-(--glass-border) bg-(--inner-card) p-4 shadow-[inset_0_1px_0_var(--glass-highlight)] sm:p-5">
         <legend className="px-1 font-serif text-lg font-semibold">{t('parentTitle')}</legend>
         <p className="-mt-2 text-sm text-ink-2">{t('parentHint')}</p>
         <div className="grid gap-6 sm:grid-cols-2">
-          <TextField name="parentName" label={t('parentName')} maxLength={100} defaultValue={str('parentName')} error={err('parentName')} />
+          <TextField
+            name="parentName"
+            label={t('parentName')}
+            maxLength={100}
+            defaultValue={str('parentName')}
+            error={err('parentName')}
+          />
           <TextField
             name="parentPhone"
             label={t('parentPhone')}
@@ -164,11 +180,36 @@ export function ConsultationForm() {
       </fieldset>
 
       <div className="grid gap-6 sm:grid-cols-2">
-        <TextField name="contact" label={t('contact')} required {...labels} hint={t('contactHint')} maxLength={40} defaultValue={str('contact')} error={err('contact')} />
-        <TextField name="city" label={t('city')} {...labels} autoComplete="address-level2" maxLength={80} defaultValue={str('city')} error={err('city')} />
+        <TextField
+          name="contact"
+          label={t('contact')}
+          required
+          {...labels}
+          hint={t('contactHint')}
+          maxLength={40}
+          defaultValue={str('contact')}
+          error={err('contact')}
+        />
+        <TextField
+          name="city"
+          label={t('city')}
+          {...labels}
+          autoComplete="address-level2"
+          maxLength={80}
+          defaultValue={str('city')}
+          error={err('city')}
+        />
       </div>
 
-      <TextArea name="message" label={t('message')} {...labels} hint={t('messageHint')} maxLength={1000} defaultValue={str('message')} error={err('message')} />
+      <TextArea
+        name="message"
+        label={t('message')}
+        {...labels}
+        hint={t('messageHint')}
+        maxLength={1000}
+        defaultValue={str('message')}
+        error={err('message')}
+      />
 
       {/* Honeypot: ekran dışında, ekran okuyucudan ve sekme sırasından gizli */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">

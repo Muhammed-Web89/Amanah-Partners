@@ -5,8 +5,9 @@ import { cn } from '@/lib/cn';
 // Form alanları: etiket alana bağlı (htmlFor), yardımcı metin ve hata aria-describedby ile,
 // hata durumunda aria-invalid. Durumlar: default, hover, focus-visible, error, disabled.
 
+// docs/11: cam alan — neredeyse opak cam zemin (okunurluk), hover/odakta neon kenar + parlama. Kenar rule-strong ≥ 3:1.
 const control =
-  'w-full rounded-sm border bg-paper px-3 py-2.5 text-ink transition-colors duration-fast placeholder:text-ink-2 hover:border-ink disabled:cursor-not-allowed disabled:bg-paper-2 disabled:text-ink-2 aria-invalid:border-danger aria-invalid:border-2';
+  'w-full rounded-md border bg-(--glass-bg-strong) px-3.5 py-2.5 text-ink transition-[border-color,box-shadow] duration-(--dur-ui) placeholder:text-ink-2 hover:border-(--ds-neon) focus:border-(--ds-neon) focus:shadow-(--ds-ring) disabled:cursor-not-allowed disabled:bg-paper-2 disabled:text-ink-2 aria-invalid:border-danger aria-invalid:border-2';
 
 type Base = {
   name: string;
@@ -23,7 +24,19 @@ export function describedBy(name: string, hint?: string, error?: string) {
   return [hint && `${name}-hint`, error && `${name}-error`].filter(Boolean).join(' ') || undefined;
 }
 
-function Label({ htmlFor, label, required, requiredLabel, optionalLabel }: { htmlFor?: string; label: string; required?: boolean; requiredLabel?: string; optionalLabel?: string }) {
+function Label({
+  htmlFor,
+  label,
+  required,
+  requiredLabel,
+  optionalLabel,
+}: {
+  htmlFor?: string;
+  label: string;
+  required?: boolean;
+  requiredLabel?: string;
+  optionalLabel?: string;
+}) {
   const Tag = htmlFor ? 'label' : 'span';
   return (
     <Tag htmlFor={htmlFor} className="mb-1.5 block font-semibold text-ink">
@@ -96,7 +109,16 @@ export function TextField({
   );
 }
 
-export function TextArea({ name, label, hint, error, optionalLabel, className, defaultValue, maxLength }: Base & { defaultValue?: string; maxLength?: number }) {
+export function TextArea({
+  name,
+  label,
+  hint,
+  error,
+  optionalLabel,
+  className,
+  defaultValue,
+  maxLength,
+}: Base & { defaultValue?: string; maxLength?: number }) {
   return (
     <div className={className}>
       <Label htmlFor={name} label={label} optionalLabel={optionalLabel} />
@@ -199,7 +221,7 @@ export function ChoiceGroup({
               key={o.value}
               htmlFor={id}
               className={cn(
-                'flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border bg-paper px-3 py-2 transition-colors duration-fast hover:border-ink has-checked:border-ink has-checked:bg-paper-2 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-focus',
+                'flex min-h-12 cursor-pointer items-center gap-3 rounded-md border bg-(--glass-bg-strong) px-3.5 py-2 transition-[border-color,box-shadow,background-color] duration-(--dur-ui) hover:border-(--ds-neon) has-checked:border-(--ds-neon) has-checked:bg-accent-soft has-checked:shadow-(--ds-ring) has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-focus',
                 error ? 'border-danger' : 'border-rule-strong',
               )}
             >
@@ -239,7 +261,12 @@ export function ConsentBox({
 }) {
   return (
     <div className={className}>
-      <div className={cn('flex gap-3 rounded-sm border p-3', error ? 'border-2 border-danger' : 'border-rule')}>
+      <div
+        className={cn(
+          'flex gap-3 rounded-md border bg-(--glass-bg-strong) p-3.5',
+          error ? 'border-2 border-danger' : 'border-rule-strong',
+        )}
+      >
         <input
           id={name}
           name={name}

@@ -6,7 +6,7 @@ import { cn } from '@/lib/cn';
 type Tone = 'info' | 'pending' | 'draft';
 
 const styles: Record<Tone, string> = {
-  info: 'border-rule bg-paper-2 text-ink',
+  info: 'glass border-(--glass-border) text-ink', // docs/11: cam not
   pending: 'border-accent-line bg-accent-soft text-ink',
   draft: 'border-danger bg-danger-soft text-ink',
 };
@@ -17,16 +17,32 @@ const icons = { info: Info, pending: FileClock, draft: CircleAlert };
  * info: ziyaretçiye görünen bilgi notu (ör. "Koşullar üniversiteye göre değişir").
  * pending / draft: ekip notu — yalnızca staging'de görünür, canlıda hiç render edilmez.
  */
-export function Notice({ tone = 'info', title, children, className }: { tone?: Tone; title?: string; children?: ReactNode; className?: string }) {
+export function Notice({
+  tone = 'info',
+  title,
+  children,
+  className,
+}: {
+  tone?: Tone;
+  title?: string;
+  children?: ReactNode;
+  className?: string;
+}) {
   if (tone !== 'info' && !isStaging) return null;
   const Icon = icons[tone];
   return (
     <div
       role={tone === 'info' ? 'note' : undefined}
       lang={tone === 'info' ? undefined : 'tr'}
-      className={cn('flex gap-3 rounded-md border p-4 text-sm', styles[tone], className)}
+      className={cn('flex gap-3 rounded-lg border p-4 text-sm', styles[tone], className)}
     >
-      <Icon aria-hidden="true" className={cn('mt-0.5 size-4.5 shrink-0', tone === 'draft' ? 'text-danger' : 'text-accent')} />
+      <Icon
+        aria-hidden="true"
+        className={cn(
+          'mt-0.5 size-4.5 shrink-0',
+          tone === 'draft' ? 'text-danger' : tone === 'info' ? 'text-(--ds-neon)' : 'text-accent',
+        )}
+      />
       <div>
         {title && <p className="font-semibold">{title}</p>}
         {children && <div className={cn(title && 'mt-1', 'text-ink-2')}>{children}</div>}

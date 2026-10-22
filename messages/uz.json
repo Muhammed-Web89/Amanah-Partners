@@ -166,12 +166,18 @@
     "emptyTitle": "Maqolalar tayyorlanmoqda",
     "emptyBody": "Hozircha bu boʻlimda maqola yoʻq. Savolingiz boʻlsa, uni bepul konsultatsiyada bering.",
     "categories": {
+      "programs": "Dasturlar",
       "exams": "Imtihonlar",
       "admission": "Qabul",
       "visa": "Viza",
       "countries": "Davlatlar",
       "documents": "Hujjatlar"
-    }
+    },
+    "toc": "Mundarija",
+    "related": "Mavzuga oid sahifalar",
+    "readingTime": "{count} daqiqa oʻqish",
+    "ctaTitle": "Savolingiz qoldimi?",
+    "ctaBody": "Bepul konsultatsiyada oʻquvchining holatiga qarab mos dastur va davlatni birga aniqlaymiz."
   },
   "faq": {
     "search": "Savollar boʻyicha qidirish",

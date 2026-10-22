@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { BlockPage } from '@/components/blocks/BlockPage';
+import { programIcons } from '@/components/blocks/icons';
 import { PendingNote } from '@/components/ui/Notice';
 import { shows, type VerifiedKey } from '@/config/site';
 import type { StaticPathname } from '@/i18n/routing';
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/programs
 }
 
 export default async function ProgramPage({ params }: PageProps<'/[locale]/programs/[program]'>) {
-  const { page } = await load(params);
+  const { page, program } = await load(params);
   const nav = await getTranslations('nav');
   return (
     <>
@@ -47,6 +48,7 @@ export default async function ProgramPage({ params }: PageProps<'/[locale]/progr
         header={page.header}
         blocks={page.blocks}
         crumbs={[{ label: nav('programs'), href: '/programs' }, { label: page.header.title }]}
+        icon={programIcons[program]}
       />
     </>
   );

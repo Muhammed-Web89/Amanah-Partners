@@ -48,9 +48,7 @@ export function UniversityMarquee({ eyebrow, title, list, note, pauseLabel, play
         {notice}
       </div>
 
-      <div
-        className="group/marquee relative overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)] motion-reduce:[mask-image:none]"
-      >
+      <div className="group/marquee relative overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)] motion-reduce:[mask-image:none]">
         <div
           className={cn(
             'flex w-max gap-4 animate-marquee group-hover/marquee:[animation-play-state:paused] group-focus-within/marquee:[animation-play-state:paused]',

@@ -16,6 +16,7 @@ export function normalize(text: string) {
 type Item = { key: string; text: string; category?: string; node: ReactNode };
 
 /**
+ * docs/11: arama kutusu ve kategori düğmeleri cam kapsül; seçili kategori dolu.
  * İstemci tarafı arama + kategori filtresi. JavaScript yoksa tüm liste görünür (sunucuda üretilir).
  * Sonuç sayısı aria-live ile duyurulur.
  */
@@ -54,14 +55,17 @@ export function FilterList({
             {searchLabel}
           </label>
           <div className="relative">
-            <Search aria-hidden="true" className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
+            <Search
+              aria-hidden="true"
+              className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-(--ds-neon)"
+            />
             <input
               id={id}
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={placeholder}
-              className="min-h-12 w-full rounded-sm border border-rule-strong bg-paper py-2 pr-3 pl-9 text-ink placeholder:text-ink-2"
+              className="min-h-12 w-full rounded-full border border-rule-strong bg-(--glass-bg-strong) py-2 pr-4 pl-10 text-ink shadow-(--glass-shadow) backdrop-blur-md transition-[border-color,box-shadow] duration-(--dur-ui) placeholder:text-ink-2 hover:border-(--ds-neon) focus:border-(--ds-neon) focus:shadow-(--ds-ring)"
             />
           </div>
         </div>
@@ -73,7 +77,7 @@ export function FilterList({
                 type="button"
                 aria-pressed={category === c.id}
                 onClick={() => setCategory(c.id)}
-                className="min-h-10 rounded-full border border-rule-strong px-4 text-sm text-ink transition-colors duration-fast hover:bg-paper-2 aria-pressed:border-ink aria-pressed:bg-action aria-pressed:text-action-text"
+                className="glass glow-hover min-h-11 rounded-full px-4 text-sm font-medium text-ink aria-pressed:border-transparent aria-pressed:bg-action aria-pressed:text-action-text aria-pressed:shadow-[0_8px_24px_-10px_var(--ds-glow)]"
               >
                 {c.label}
               </button>
@@ -85,9 +89,13 @@ export function FilterList({
         {t('results', { count: visible.length })}
       </p>
       {visible.length ? (
-        <div className={listClassName}>{visible.map((i) => <div key={i.key}>{i.node}</div>)}</div>
+        <div className={listClassName}>
+          {visible.map((i) => (
+            <div key={i.key}>{i.node}</div>
+          ))}
+        </div>
       ) : (
-        <p className="rounded-md border border-dashed border-rule-strong bg-paper-2 p-6 text-ink-2">{emptyText}</p>
+        <p className="glass rounded-lg p-6 text-ink-2">{emptyText}</p>
       )}
     </div>
   );

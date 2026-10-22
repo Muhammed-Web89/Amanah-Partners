@@ -56,7 +56,7 @@ export function IllustrationDefs() {
   return (
     <svg aria-hidden="true" width="0" height="0" className="absolute">
       <defs>
-        <linearGradient id="ill-ink" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="ill-ink" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="24" y2="24">
           <stop offset="0" stopColor="var(--ink-grad-from)" />
           <stop offset="1" stopColor="var(--ink-grad-to)" />
         </linearGradient>

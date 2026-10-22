@@ -5,6 +5,7 @@ import { ExamBlock } from '@/components/blocks/ExamBlock';
 import { HeroBackdrop } from '@/components/hero/HeroBackdrop';
 import { HeroStory } from '@/components/hero/HeroStory';
 import { CompareGrid } from '@/components/home/CompareGrid';
+import { isArticleArt } from '@/components/guides/ArticleArt';
 import { CountryCards } from '@/components/home/CountryCards';
 import { GuideCards, type GuideCard } from '@/components/home/GuideCards';
 import { PriceCta } from '@/components/home/PriceCta';
@@ -111,7 +112,13 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
       <Section id="audience" eyebrow={home.audience.eyebrow} title={home.audience.title} tone="file">
         <div className="grid gap-4 md:grid-cols-2">
           {home.audience.cards.map((card) => (
-            <Card key={card.title} eyebrow={card.eyebrow} title={card.title} href={card.href as StaticPathname} linkLabel={card.link}>
+            <Card
+              key={card.title}
+              eyebrow={card.eyebrow}
+              title={card.title}
+              href={card.href as StaticPathname}
+              linkLabel={card.link}
+            >
               {card.body}
             </Card>
           ))}
@@ -154,7 +161,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
       </Roadmap>
 
       {/* 5.7 Sınavlar nerede (tasarım09 §9: iki sütunlu cam panel) */}
-      <ExamBlock variant="glass" showLink />
+      <ExamBlock showLink />
 
       {/* 5.8 Hedef ülkeler (tasarım09 §10: 3×2 cam ülke kartları) */}
       <CountryCards
@@ -163,7 +170,8 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         items={home.countries.items}
         footnote={
           <>
-            {shared.countryNote} {t('updated')}: <time dateTime={home.countries.updated}>{formatDate(home.countries.updated, locale)}</time>
+            {shared.countryNote} {t('updated')}:{' '}
+            <time dateTime={home.countries.updated}>{formatDate(home.countries.updated, locale)}</time>
           </>
         }
       />
@@ -216,17 +224,16 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
           allLabel={home.guides.all}
           readLabel={home.guides.read}
           cards={[
-            ...guides.slice(0, 3).map(
-              (g): GuideCard => ({
-                key: g.id,
-                href: { pathname: '/guides/[slug]', params: { slug: g.slug } },
-                label: formatDate(g.published, locale),
-                dateTime: g.published,
-                title: g.title,
-                description: g.description,
-                icon: g.category === 'exams' ? 'exam' : 'guide',
-              }),
-            ),
+            ...guides.slice(0, 3).map((g): GuideCard => ({
+              key: g.id,
+              href: { pathname: '/guides/[slug]', params: { slug: g.slug } },
+              label: formatDate(g.published, locale),
+              dateTime: g.published,
+              title: g.title,
+              description: g.description,
+              icon: g.category === 'exams' ? 'exam' : 'guide',
+              art: isArticleArt(g.art) ? g.art : undefined,
+            })),
             {
               key: 'how-we-work',
               href: '/how-we-work',
@@ -235,7 +242,14 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
               description: howWeWork.header.lede,
               icon: 'route',
             } satisfies GuideCard,
-            { key: 'faq', href: '/faq', label: faq.header.eyebrow, title: faq.header.title, description: faq.meta.description, icon: 'faq' } satisfies GuideCard,
+            {
+              key: 'faq',
+              href: '/faq',
+              label: faq.header.eyebrow,
+              title: faq.header.title,
+              description: faq.meta.description,
+              icon: 'faq',
+            } satisfies GuideCard,
           ].slice(0, 3)}
         />
       )}

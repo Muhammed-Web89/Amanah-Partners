@@ -48,6 +48,30 @@ Cam yüzey token'ları (`--glass-*`, `--glass-strong-*`, `--pastel-1..4`) ve koy
 - **`reveal`**: kaydırınca süzülerek gelme.
 - **Mevcut özel bileşenler:** `Roadmap` (adımlar), `CompareGrid` (karşılaştırma), `Accordion` (`glass-faq`), `PriceCta`, `GuideCards`, `CountryCards`.
 
-## 5. Durum
+## 5. Durum (22 Ekim 2026)
 
-Çekirdek sistem hazır. Ana sayfa bu dili zaten kullanıyor. İç sayfalar (Dasturlar, Narxlar, Davlatlar, Maqolalar, Biz haqimizda, Aloqa…) hâlâ eski `Section`/`Blocks` düzeninde; her biri kullanıcının talimatıyla sırayla bu sisteme taşınacak.
+Sitenin tüm sayfaları bu sisteme taşındı:
+
+| Sayfa | Nasıl |
+|---|---|
+| Tüm iç sayfa başlıkları | `PageHeader`: hareketli zemin + rotalar, cam breadcrumb, parlamalı H1, sağda sayfanın konusunu gösteren 3D cam karo (`icon`) |
+| Blok sayfaları (Dasturlar, 8 program, Qanday ishlaymiz, Narxlar, 6 davlat, Biz haqimizda, Hamkorlar) | `Blocks` → her blok `GlassSection`; kartlar `glass-card` (+ program simgesi), tablo/ledger/liste/metin cam panelde, adımlar parlayan numaralı cam kartlar, finder numaralı cam kartlar + cam kapsül seçenekler. Başlıksız blok önceki bölümün devamı (küçük üst boşluk) |
+| Sınav ve haftalık program blokları | `ExamBlock` artık her yerde ana sayfadaki cam kart; `WeeklyBlock` cam bölüm + rapor cam kartı |
+| Davlatlar | Ana sayfanın `CountryCards` cam kartları (başlıksız) |
+| Maqolalar | `GuideCardView` kartları (illüstrasyonlu kapak), cam arama kutusu ve kategori kapsülleri |
+| Makale okuma sayfası (görev 15) | Aşağıda |
+| Savollar | Mevcut `glass-faq` akordeon + cam arama/filtre |
+| Aloqa | Form `glass-strong` panelde, yan bilgiler `glass-card`; form alanları cam (`fields.tsx`), gönder düğmesi `glow` |
+| Yasal sayfalar | Tek, neredeyse opak cam metin paneli |
+| Rahmat, 404, 500 | Ortalanmış `glass-strong` panel, `glow`/`glass` düğmeler |
+
+## 6. Makale okuma şablonu (görev 15)
+
+- **Okuma kartı:** `glass-article` (yeni token `--article-bg`: açıkta %93 beyaz, koyuda %92 lacivert). Uzun metin için bilerek daha opak; gövde `ink`, 17–18 px, satır aralığı 1.75.
+- **Üst illüstrasyon:** `ArticleArt` (`src/components/guides/ArticleArt.tsx`) kodla çizilir: `programs` (IGCSE → A-Level → universitet basamakları), `countries` (Toshkentdan 6 davlatga rotalar; `CountryIcons`), `exams` (IELTS/TOEFL ve SAT kesişimi). Aynı çizim kart kapağında da kullanılır. Makale ön bilgisinde `art:` alanıyla seçilir.
+- **Asimetrik düzen:** solda okuma kartı, sağda (lg+) yapışkan içindekiler (`ArticleToc`, okunan bölüm neon çizgiyle işaretli) ve mini konsultatsiya kartı.
+- **Kart içi sıra:** "Qisqa javob" özeti → gövde (`##` başlıklar neon sol çizgili, otomatik `bolim-n` id) → ilgili sayfalar (`related:`, cam kapsül bağlantılar) → kaynaklar.
+- **Diğer:** üstte okuma ilerleme çubuğu (`ReadingProgress`); başlık etiketinde kategori ve okuma süresi.
+- **Yeni ön bilgi alanları:** `art`, `related` (`Etiket | /programs/a-level`, dil öneki yok). Yeni kategori: `programs` (Dasturlar).
+- **Makaleler:** `a-level-igcse`, `destinations-guide`, `exams-guide`, her biri uz/ru/en. Sitedeki mevcut bilgilerle uyumlu hâle getirildi; kesin sonuç vaadi yok (ör. "doğrudan yerleştirir" yerine "doğrudan başvuru imkânı; kararı üniversite verir").
+- **Hata düzeltmesi:** simge degradeleri `userSpaceOnUse` (0–24) oldu. `objectBoundingBox` düz çizgilerde boyanmıyordu: Landmark sütunları ve kart/başlık karolarındaki bazı simge çizgileri görünmüyordu.
