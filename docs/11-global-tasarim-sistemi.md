@@ -31,7 +31,7 @@ Bunlar tasarım kurallarının önüne geçer; çatışma olursa bu bölüm kaza
 
 | Token | Değer | Not |
 |---|---|---|
-| `--ds-neon` | `--rm-neon` (açık `#3d9cc9`, koyu `#67e8f9`) | Hover kenarı, ikon vurgusu |
+| `--ds-neon` | `--rm-neon` (açık `#1497a6`, koyu `#4fd8e0`: turkuaz) | Hover kenarı, ikon vurgusu |
 | `--ds-glow` | `--rm-neon-glow` | Dış parlama |
 | `--ds-ring` | 1 px neon kenar + 28 px parlama | Kart ve düğme hover gölgesi |
 | `--ds-lift` | `-5px` | Hover'da kalkma |
@@ -75,3 +75,29 @@ Sitenin tüm sayfaları bu sisteme taşındı:
 - **Yeni ön bilgi alanları:** `art`, `related` (`Etiket | /programs/a-level`, dil öneki yok). Yeni kategori: `programs` (Dasturlar).
 - **Makaleler:** `a-level-igcse`, `destinations-guide`, `exams-guide`, her biri uz/ru/en. Sitedeki mevcut bilgilerle uyumlu hâle getirildi; kesin sonuç vaadi yok (ör. "doğrudan yerleştirir" yerine "doğrudan başvuru imkânı; kararı üniversite verir").
 - **Hata düzeltmesi:** simge degradeleri `userSpaceOnUse` (0–24) oldu. `objectBoundingBox` düz çizgilerde boyanmıyordu: Landmark sütunları ve kart/başlık karolarındaki bazı simge çizgileri görünmüyordu.
+
+## 7. Renk paleti: turkuaz vurgu (görev 16, 24 Ekim 2026)
+
+**Kural:** Işık ve vurgu renklerinde mor/violet/lavanta, pembe ve şeftali **kullanılmaz** (eğitim yerine "AI/Web3" havası veriyordu). Vurgu ve parlama, logoyla ve tablolardaki yeşil tiklerle uyumlu turkuaz/camgöbeği ailesindendir. Lacivert/gece mavisi zemin, logo renkleri, bağlantı mavisi ve odak halkası değişmez.
+
+| Token | Açık | Koyu | Kullanım |
+|---|---|---|---|
+| `--c-accent` | `#0e6b75` (6.2:1) | `#7fdadf` (10.8:1) | Etiket, vurgu metni |
+| `--c-accent-line` | `#2b8f99` | `#4fb8c0` | Rota çizgisi, anlamlı grafik (≥ 3:1) |
+| `--c-accent-soft` | `#e3f4f5` | `#12303a` | Not zemini, seçili seçenek |
+| `--rm-neon` / `--ds-neon` | `#1497a6` | `#4fd8e0` | Hover kenarı, neon çizgi, ikon |
+| `--rm-neon-glow` / `--ds-glow` | `rgb(20 151 166 / .5)` | `rgb(79 216 224 / .55)` | Dış parlama, düğme gölgesi |
+| `--c-action` (koyu) | — (lacivert `#13202f`) | `#7fdadf` | Birincil düğme |
+| `--pastel-1…4` | `#c9e0ec` buz · `#cdeef0` aqua · `#d3eee4` nane · `#d8eff5` gök | `#1b3a52` gece · `#0f3a44` koyu turkuaz · `#14393a` · `#12344a` okyanus | Arka plan ışık kümeleri, kapak/illüstrasyon degradeleri |
+| `--ink-grad-*` | `#2b8f99 → #13202f` | `#a5ecef → #4fb8c0` | 3D karo simgeleri |
+
+Renkler yalnızca `tokens.css`'te değişir; bileşenler token kullandığı için (`HeroBackdrop`, `PriceCta` dönen ışık, kapaklar, `ArticleArt`, hover'lar) kod değişikliği gerekmedi. İstisna: ülke kartlarındaki bayrak renkleri (gerçek bayraklar) korunur.
+
+## 8. Mobil açılış ekranı (24 Ekim 2026)
+
+Yalnızca < 768 px (`max-md:` / `md:hidden`); tablet ve masaüstü değişmedi.
+
+- **Kısa başlık ve tek cümle:** `content/*/home.json → hero.mobileTitle / hero.mobileSubtitle`. Uzun başlık ve paragraf mobilde `display:none`, ekran okuyucu yalnızca görünen başlığı okur. Uzbekçe alt metinde "kiring" yerine "hujjat topshiring" yazıldı: kabul kararını universitet verir, söz verilmez.
+- **"Universitetgacha 5 qadam" dikey listesi** (hero `RouteDiagram`) mobilde gizli. 6 adımlı yol haritası (`Roadmap`) ve Qanday ishlaymiz sayfası kalır.
+- **3D illüstrasyon paneli** (yüzen cam kare + kep ikonu): 1024 px altında, yani metnin altına düştüğü her düzende kaldırıldı. Geniş ekranda metnin yanında kalır ve kaydırma hikâyesinin adım görsellerini taşır.
+- **"Bepul konsultatsiyaga yoziling":** mobilde tam genişlik, 56 px yükseklik, yuvarlak, `--ds-glow` gölgeli. Kontrast lacivert/beyaz 16.5:1, koyu temada turkuaz/lacivert 10.8:1. İkincil düğme de tam genişlik.

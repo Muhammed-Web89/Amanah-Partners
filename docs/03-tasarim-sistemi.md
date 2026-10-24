@@ -35,59 +35,59 @@ Hesaplama: WCAG 2.x göreli parlaklık formülü (`scripts/contrast.py`). Gövde
 
 | Çift | Ön plan | Zemin | Oran | Hedef | Sonuç |
 |---|---|---|---|---|---|
-| Gövde metni (ink) | `#14233C` | paper `#FFFFFF` | 15.73 | 4.5 | ✓ |
-| Gövde metni (ink) | `#14233C` | paper2 `#F4F5F7` | 14.42 | 4.5 | ✓ |
-| Gövde metni (ink) | `#14233C` | paper3 `#EAEDF1` | 13.39 | 4.5 | ✓ |
+| Gövde metni (ink) | `#13202F` | paper `#FFFFFF` | 16.47 | 4.5 | ✓ |
+| Gövde metni (ink) | `#13202F` | paper2 `#F1F6F9` | 15.13 | 4.5 | ✓ |
+| Gövde metni (ink) | `#13202F` | paper3 `#E4EDF3` | 13.88 | 4.5 | ✓ |
 | İkincil metin (ink-2) | `#4A5568` | paper `#FFFFFF` | 7.53 | 4.5 | ✓ |
-| İkincil metin (ink-2) | `#4A5568` | paper2 `#F4F5F7` | 6.90 | 4.5 | ✓ |
-| İkincil metin (ink-2) | `#4A5568` | paper3 `#EAEDF1` | 6.41 | 4.5 | ✓ |
+| İkincil metin (ink-2) | `#4A5568` | paper2 `#F1F6F9` | 6.91 | 4.5 | ✓ |
+| İkincil metin (ink-2) | `#4A5568` | paper3 `#E4EDF3` | 6.35 | 4.5 | ✓ |
 | Bağlantı | `#1D4E89` | paper `#FFFFFF` | 8.39 | 4.5 | ✓ |
-| Bağlantı | `#1D4E89` | paper2 `#F4F5F7` | 7.69 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#8A5F17` | paper `#FFFFFF` | 5.63 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#8A5F17` | paper2 `#F4F5F7` | 5.16 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#8A5F17` | goldsoft `#F7F0E3` | 4.97 | 4.5 | ✓ |
-| Altın çizgi (rota, anlamlı grafik) | `#A8792C` | paper `#FFFFFF` | 3.86 | 3.0 | ✓ |
-| Altın çizgi (rota, anlamlı grafik) | `#A8792C` | paper2 `#F4F5F7` | 3.54 | 3.0 | ✓ |
+| Bağlantı | `#1D4E89` | paper2 `#F1F6F9` | 7.71 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#0E6B75` | paper `#FFFFFF` | 6.22 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#0E6B75` | paper2 `#F1F6F9` | 5.71 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#0E6B75` | accentsoft `#E3F4F5` | 5.48 | 4.5 | ✓ |
+| Turkuaz çizgi (rota, anlamlı grafik) | `#2B8F99` | paper `#FFFFFF` | 3.82 | 3.0 | ✓ |
+| Turkuaz çizgi (rota, anlamlı grafik) | `#2B8F99` | paper2 `#F1F6F9` | 3.51 | 3.0 | ✓ |
 | Form alanı sınırı | `#7A8494` | paper `#FFFFFF` | 3.78 | 3.0 | ✓ |
-| Form alanı sınırı | `#7A8494` | paper2 `#F4F5F7` | 3.47 | 3.0 | ✓ |
+| Form alanı sınırı | `#7A8494` | paper2 `#F1F6F9` | 3.47 | 3.0 | ✓ |
 | Odak halkası | `#1D4E89` | paper `#FFFFFF` | 8.39 | 3.0 | ✓ |
-| Odak halkası | `#1D4E89` | paper2 `#F4F5F7` | 7.69 | 3.0 | ✓ |
+| Odak halkası | `#1D4E89` | paper2 `#F1F6F9` | 7.71 | 3.0 | ✓ |
 | Hata metni | `#A3312A` | paper `#FFFFFF` | 6.93 | 4.5 | ✓ |
 | Hata metni | `#A3312A` | dangersoft `#FBECEA` | 6.04 | 4.5 | ✓ |
 | Başarı / Onaylı metni | `#1F6658` | paper `#FFFFFF` | 6.77 | 4.5 | ✓ |
 | Başarı / Onaylı metni | `#1F6658` | successsoft `#E4F1ED` | 5.84 | 4.5 | ✓ |
-| Birincil düğme metni | `#FFFFFF` | btn `#14233C` | 15.73 | 4.5 | ✓ |
-| Birincil düğme metni | `#FFFFFF` | btnhover `#253A5E` | 11.38 | 4.5 | ✓ |
-| Birincil düğme zemini (bileşen sınırı) | `#14233C` | paper `#FFFFFF` | 15.73 | 3.0 | ✓ |
+| Birincil düğme metni | `#FFFFFF` | btn `#13202F` | 16.47 | 4.5 | ✓ |
+| Birincil düğme metni | `#FFFFFF` | btnhover `#23364D` | 12.31 | 4.5 | ✓ |
+| Birincil düğme zemini (bileşen sınırı) | `#13202F` | paper `#FFFFFF` | 16.47 | 3.0 | ✓ |
 
 ### Koyu tema
 
 | Çift | Ön plan | Zemin | Oran | Hedef | Sonuç |
 |---|---|---|---|---|---|
-| Gövde metni (ink) | `#E8ECF2` | paper `#0E1726` | 15.15 | 4.5 | ✓ |
-| Gövde metni (ink) | `#E8ECF2` | paper2 `#142035` | 13.75 | 4.5 | ✓ |
-| Gövde metni (ink) | `#E8ECF2` | paper3 `#1C2A42` | 12.14 | 4.5 | ✓ |
-| İkincil metin (ink-2) | `#AEB8C7` | paper `#0E1726` | 8.96 | 4.5 | ✓ |
-| İkincil metin (ink-2) | `#AEB8C7` | paper2 `#142035` | 8.14 | 4.5 | ✓ |
-| İkincil metin (ink-2) | `#AEB8C7` | paper3 `#1C2A42` | 7.18 | 4.5 | ✓ |
-| Bağlantı | `#93B9EC` | paper `#0E1726` | 8.89 | 4.5 | ✓ |
-| Bağlantı | `#93B9EC` | paper2 `#142035` | 8.07 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#DDB56E` | paper `#0E1726` | 9.33 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#DDB56E` | paper2 `#142035` | 8.47 | 4.5 | ✓ |
-| Altın etiket/vurgu metni | `#DDB56E` | goldsoft `#2A2418` | 8.00 | 4.5 | ✓ |
-| Altın çizgi (rota, anlamlı grafik) | `#B78C45` | paper `#0E1726` | 5.86 | 3.0 | ✓ |
-| Altın çizgi (rota, anlamlı grafik) | `#B78C45` | paper2 `#142035` | 5.32 | 3.0 | ✓ |
-| Form alanı sınırı | `#7584A0` | paper `#0E1726` | 4.76 | 3.0 | ✓ |
-| Form alanı sınırı | `#7584A0` | paper2 `#142035` | 4.32 | 3.0 | ✓ |
-| Odak halkası | `#93B9EC` | paper `#0E1726` | 8.89 | 3.0 | ✓ |
-| Odak halkası | `#93B9EC` | paper2 `#142035` | 8.07 | 3.0 | ✓ |
-| Hata metni | `#F2978F` | paper `#0E1726` | 8.21 | 4.5 | ✓ |
+| Gövde metni (ink) | `#E8ECF2` | paper `#0F1A28` | 14.78 | 4.5 | ✓ |
+| Gövde metni (ink) | `#E8ECF2` | paper2 `#142336` | 13.38 | 4.5 | ✓ |
+| Gövde metni (ink) | `#E8ECF2` | paper3 `#1B2D44` | 11.77 | 4.5 | ✓ |
+| İkincil metin (ink-2) | `#AEB8C7` | paper `#0F1A28` | 8.74 | 4.5 | ✓ |
+| İkincil metin (ink-2) | `#AEB8C7` | paper2 `#142336` | 7.92 | 4.5 | ✓ |
+| İkincil metin (ink-2) | `#AEB8C7` | paper3 `#1B2D44` | 6.96 | 4.5 | ✓ |
+| Bağlantı | `#93B9EC` | paper `#0F1A28` | 8.67 | 4.5 | ✓ |
+| Bağlantı | `#93B9EC` | paper2 `#142336` | 7.85 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#7FDADF` | paper `#0F1A28` | 10.84 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#7FDADF` | paper2 `#142336` | 9.82 | 4.5 | ✓ |
+| Turkuaz etiket/vurgu metni | `#7FDADF` | accentsoft `#12303A` | 8.61 | 4.5 | ✓ |
+| Turkuaz çizgi (rota, anlamlı grafik) | `#4FB8C0` | paper `#0F1A28` | 7.47 | 3.0 | ✓ |
+| Turkuaz çizgi (rota, anlamlı grafik) | `#4FB8C0` | paper2 `#142336` | 6.76 | 3.0 | ✓ |
+| Form alanı sınırı | `#7584A0` | paper `#0F1A28` | 4.64 | 3.0 | ✓ |
+| Form alanı sınırı | `#7584A0` | paper2 `#142336` | 4.20 | 3.0 | ✓ |
+| Odak halkası | `#93B9EC` | paper `#0F1A28` | 8.67 | 3.0 | ✓ |
+| Odak halkası | `#93B9EC` | paper2 `#142336` | 7.85 | 3.0 | ✓ |
+| Hata metni | `#F2978F` | paper `#0F1A28` | 8.01 | 4.5 | ✓ |
 | Hata metni | `#F2978F` | dangersoft `#3A1F22` | 6.86 | 4.5 | ✓ |
-| Başarı / Onaylı metni | `#86CDBD` | paper `#0E1726` | 9.82 | 4.5 | ✓ |
+| Başarı / Onaylı metni | `#86CDBD` | paper `#0F1A28` | 9.58 | 4.5 | ✓ |
 | Başarı / Onaylı metni | `#86CDBD` | successsoft `#15302C` | 7.70 | 4.5 | ✓ |
-| Birincil düğme metni | `#0E1726` | btn `#DDB56E` | 9.33 | 4.5 | ✓ |
-| Birincil düğme metni | `#0E1726` | btnhover `#E8C88B` | 11.17 | 4.5 | ✓ |
-| Birincil düğme zemini (bileşen sınırı) | `#DDB56E` | paper `#0E1726` | 9.33 | 3.0 | ✓ |
+| Birincil düğme metni | `#0F1A28` | btn `#7FDADF` | 10.84 | 4.5 | ✓ |
+| Birincil düğme metni | `#0F1A28` | btnhover `#A5ECEF` | 13.22 | 4.5 | ✓ |
+| Birincil düğme zemini (bileşen sınırı) | `#7FDADF` | paper `#0F1A28` | 10.84 | 3.0 | ✓ |
 
 ## 4. Bileşen kütüphanesi · *Ürün tasarımcısı + frontend*
 
@@ -131,3 +131,7 @@ Altın vurgu kaldırıldı; renkler `Logo.jpeg`'den alındı. `gold*` token'lar�
 | `action` (koyu) | — | `#a8ccda` | Koyu temada birincil düğme |
 
 Logo: `src/components/layout/Logo.tsx` (SVG işaret + AMANAH / PARTNERS), favicon `src/app/icon.svg`, OG görseli aynı işareti kullanır. Kontrol: `python3 scripts/contrast.py` → tüm çiftler geçer.
+
+## Güncelleme (24 Ekim 2026): turkuaz vurgu (görev 16)
+
+Mor/lavanta ve şeftali ışıklar kaldırıldı. Vurgu ve parlama artık turkuaz/camgöbeği: açıkta `accent #0e6b75`, `accent-line #2b8f99`, neon `#1497a6`; koyuda `accent #7fdadf`, neon `#4fd8e0`, birincil düğme `#7fdadf`. Pastel ışıklar buz mavisi, aqua, nane ve deniz köpüğü (koyuda gece mavisi, koyu turkuaz, okyanus). Lacivert zemin ve logo renkleri değişmedi. Kontrast tablosu yukarıda yeniden üretildi (`scripts/contrast.py`), tüm çiftler ✓. Ayrıntı: docs/11 §7.

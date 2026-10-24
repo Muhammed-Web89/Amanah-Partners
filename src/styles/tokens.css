@@ -15,10 +15,10 @@
   --c-ink-2: #4a5568; /* ikincil — 7.5:1 */
   --c-link: #1d4e89; /* 8.4:1 */
 
-  /* Vurgu: logodaki buz mavisi (#a8ccda) ailesi */
-  --c-accent: #3f6680; /* etiket ve vurgu metni — 6.1:1 */
-  --c-accent-line: #5e88a0; /* rota çizgisi, anlamlı grafik — ≥3:1 */
-  --c-accent-soft: #e6f0f6; /* not kutusu zemini */
+  /* Vurgu (görev 16): turkuaz / camgöbeği — mor yok. Logo buz mavisi yalnızca logo ve dekorda kalır. */
+  --c-accent: #0e6b75; /* etiket ve vurgu metni — 6.2:1 (accent-soft üzerinde 5.5:1) */
+  --c-accent-line: #2b8f99; /* rota çizgisi, anlamlı grafik — 3.5:1 (paper-2) */
+  --c-accent-soft: #e3f4f5; /* not kutusu zemini */
   --c-accent-light: #a8ccda; /* logo mavisi: yalnızca dekoratif çizgi ve yüzey */
   --c-logo-a: #13202f; /* logo dış Λ */
   --c-logo-b: #7ba8bf; /* logo iç Λ */
@@ -51,44 +51,44 @@
   --glass-edge: rgb(19 32 47 / 0.08);
   --glass-shadow: 0 1px 1px rgb(19 32 47 / 0.04), 0 12px 40px -12px rgb(19 32 47 / 0.18);
 
-  /* Pastel arka plan: logo mavisi + yumuşak lavanta, nane, şeftali */
+  /* Pastel arka plan (görev 16): buz mavisi, aqua, nane, deniz köpüğü — turkuaz ailesi, mor/şeftali yok */
   --pastel-1: #c9e0ec;
-  --pastel-2: #e2dbf4;
+  --pastel-2: #cdeef0;
   --pastel-3: #d3eee4;
-  --pastel-4: #f6e6d6;
-  --beam: rgb(168 204 218 / 0.55); /* fotoğraf arkasındaki ışık hüzmesi */
+  --pastel-4: #d8eff5;
+  --beam: rgb(150 216 222 / 0.55); /* fotoğraf arkasındaki ışık hüzmesi */
 
   /* tasarım04: kareli defter zemini ve ince cam paneller (metin ink/ink-2, zemin paper-2 üzerinde ≥ 7:1) */
-  --grid-line: rgb(63 102 128 / 0.09);
+  --grid-line: rgb(14 107 117 / 0.09);
   --glass-thin: rgb(255 255 255 / 0.1);
   --glass-thin-hover: rgb(255 255 255 / 0.42);
-  --neon: #6fb3d6; /* hover kenar parlaması */
+  --neon: #3fb6c2; /* hover kenar parlaması */
   /* tasarım06: belirgin cam (hikâye metin kartı + ilerleme çubuğu) ve 3D illüstrasyon karoları */
   --glass-strong-from: rgb(255 255 255 / 0.82);
   --glass-strong-to: rgb(255 255 255 / 0.5);
   --glass-highlight: rgb(255 255 255 / 0.95);
   --glass-depth: 0 24px 60px -24px rgb(19 32 47 / 0.35), 0 8px 20px -12px rgb(19 32 47 / 0.2);
   --tile-from: #ffffff;
-  --tile-to: #d7e8f1;
-  --tile-edge: #b9d3e0; /* karo kalınlığı (3D kenar) */
-  --ink-grad-from: #5e88a0;
+  --tile-to: #d5eef0;
+  --tile-edge: #b3dde2; /* karo kalınlığı (3D kenar) */
+  --ink-grad-from: #2b8f99;
   --ink-grad-to: #13202f;
   /* tasarım07: yol haritası kartları ve neon ilerleme çizgisi */
   --rm-card-bg: rgb(255 255 255 / 0.38);
   --rm-card-border: rgb(122 132 148 / 0.35); /* ince gri */
   --rm-card-glow: 0 0 0 0 transparent;
-  --rm-line: rgb(94 136 160 / 0.22);
-  --rm-neon: #3d9cc9;
-  --rm-neon-glow: rgb(61 156 201 / 0.55);
+  --rm-line: rgb(43 143 153 / 0.22);
+  --rm-neon: #1497a6; /* turkuaz neon — grafik ≥ 3:1 */
+  --rm-neon-glow: rgb(20 151 166 / 0.5);
   --inner-card: rgb(19 32 47 / 0.05); /* cam içinde daha koyu iç panel */
   /* tasarım08: SSS cam panelleri — kapalı: hafif cam, hover: parlar, açık: cam belirginleşir */
   --faq-bg: rgb(255 255 255 / 0.42);
   --faq-bg-hover: rgb(255 255 255 / 0.62);
   --faq-bg-open: rgb(255 255 255 / 0.78);
   --faq-border: rgb(122 132 148 / 0.28);
-  --faq-border-hover: rgb(61 156 201 / 0.55);
+  --faq-border-hover: rgb(20 151 166 / 0.55);
   --faq-glow: 0 0 0 0 transparent;
-  --faq-glow-hover: 0 0 22px -8px rgb(61 156 201 / 0.55);
+  --faq-glow-hover: 0 0 22px -8px rgb(20 151 166 / 0.5);
   --faq-inset: inset 0 1px 0 rgb(255 255 255 / 0.9);
   --check: #15803d; /* tasarım05: Amanah sütunundaki canlı yeşil tik (grafik, ≥ 3:1) */
   --check-glow: rgb(22 163 74 / 0.45);
@@ -120,9 +120,9 @@
   --c-ink: #e8ecf2;
   --c-ink-2: #aeb8c7;
   --c-link: #93b9ec;
-  --c-accent: #a8ccda;
-  --c-accent-line: #7ba8bf;
-  --c-accent-soft: #16293c;
+  --c-accent: #7fdadf; /* turkuaz — 10.8:1 */
+  --c-accent-line: #4fb8c0;
+  --c-accent-soft: #12303a;
   --c-accent-light: #5f8aa3;
   --c-logo-a: #b4d4e1;
   --c-logo-b: #5f7488;
@@ -132,52 +132,52 @@
   --c-danger-soft: #3a1f22;
   --c-success: #86cdbd;
   --c-success-soft: #15302c;
-  --c-action: #a8ccda;
-  --c-action-hover: #c2dde8;
-  --c-action-active: #8fb8cc;
+  --c-action: #7fdadf; /* turkuaz düğme, metin paper 10.8:1 */
+  --c-action-hover: #a5ecef;
+  --c-action-active: #5fc8cf;
   --c-action-text: #0f1a28;
   --c-focus: #93b9ec;
   --shadow-raised: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 16px -4px rgb(0 0 0 / 0.45);
   --glass-bg: rgb(15 26 40 / 0.58);
   --glass-bg-strong: rgb(15 26 40 / 0.84);
-  --glass-border: rgb(168 204 218 / 0.16);
+  --glass-border: rgb(127 218 223 / 0.16);
   --glass-edge: rgb(0 0 0 / 0.25);
   --glass-shadow: 0 1px 1px rgb(0 0 0 / 0.2), 0 16px 48px -12px rgb(0 0 0 / 0.55);
-  --pastel-1: #1b3a52;
-  --pastel-2: #2a2650;
+  --pastel-1: #1b3a52; /* gece mavisi */
+  --pastel-2: #0f3a44; /* koyu turkuaz (eskiden mor #2a2650) */
   --pastel-3: #14393a;
-  --pastel-4: #3a2d2a;
-  --beam: rgb(123 168 191 / 0.35);
-  --grid-line: rgb(168 204 218 / 0.07);
+  --pastel-4: #12344a; /* okyanus mavisi (eskiden kahve #3a2d2a) */
+  --beam: rgb(79 190 200 / 0.3);
+  --grid-line: rgb(127 218 223 / 0.07);
   --glass-thin: rgb(255 255 255 / 0.04);
   --glass-thin-hover: rgb(255 255 255 / 0.09);
-  --neon: #a8ccda;
+  --neon: #7fdadf;
   --glass-strong-from: rgb(30 48 72 / 0.82);
   --glass-strong-to: rgb(15 26 40 / 0.6);
-  --glass-highlight: rgb(168 204 218 / 0.35);
+  --glass-highlight: rgb(127 218 223 / 0.3);
   --glass-depth: 0 24px 60px -24px rgb(0 0 0 / 0.7), 0 8px 20px -12px rgb(0 0 0 / 0.5);
   --tile-from: #24405e;
   --tile-to: #142336;
   --tile-edge: #0b1520;
-  --ink-grad-from: #c2dde8;
-  --ink-grad-to: #7ba8bf;
+  --ink-grad-from: #a5ecef;
+  --ink-grad-to: #4fb8c0;
   --rm-card-bg: rgb(25 30 45 / 0.6);
-  --rm-card-border: rgb(103 232 249 / 0.4); /* parlayan ince cyan */
-  --rm-card-glow: 0 0 18px -6px rgb(103 232 249 / 0.45);
-  --rm-line: rgb(168 204 218 / 0.16);
-  --rm-neon: #67e8f9;
-  --rm-neon-glow: rgb(103 232 249 / 0.6);
+  --rm-card-border: rgb(79 216 224 / 0.4); /* parlayan ince turkuaz */
+  --rm-card-glow: 0 0 18px -6px rgb(79 216 224 / 0.45);
+  --rm-line: rgb(127 218 223 / 0.16);
+  --rm-neon: #4fd8e0; /* turkuaz neon */
+  --rm-neon-glow: rgb(79 216 224 / 0.55);
   --inner-card: rgb(5 10 20 / 0.45);
   --faq-bg: rgb(20 30 48 / 0.5);
   --faq-bg-hover: rgb(28 42 66 / 0.62);
   --faq-bg-open: rgb(36 56 88 / 0.72); /* açıkken biraz daha açık lacivert */
-  --faq-border: rgb(168 204 218 / 0.16);
-  --faq-border-hover: rgb(103 232 249 / 0.45);
+  --faq-border: rgb(127 218 223 / 0.16);
+  --faq-border-hover: rgb(79 216 224 / 0.45);
   --faq-glow: 0 0 0 0 transparent;
-  --faq-glow-hover: 0 0 22px -8px rgb(103 232 249 / 0.5);
-  --faq-inset: inset 0 1px 0 rgb(168 204 218 / 0.14);
+  --faq-glow-hover: 0 0 22px -8px rgb(79 216 224 / 0.5);
+  --faq-inset: inset 0 1px 0 rgb(127 218 223 / 0.14);
   --article-bg: rgb(12 21 34 / 0.92); /* koyu ve opak: ink (#e6edf3 civarı) ≥ 13:1 */
-  --article-border: rgb(168 204 218 / 0.18);
+  --article-border: rgb(127 218 223 / 0.18);
   --check: #4ade80;
   --check-glow: rgb(74 222 128 / 0.4);
   --shadow-overlay: 0 -2px 16px -4px rgb(0 0 0 / 0.5);

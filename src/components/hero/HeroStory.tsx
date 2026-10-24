@@ -109,7 +109,7 @@ export function HeroStory({ label, stops, details, children }: Props) {
 
         <div
           className={cn(
-            'container-page grid w-full gap-10 py-8 sm:py-12 lg:items-center lg:py-6',
+            'container-page grid w-full gap-6 py-6 sm:gap-10 sm:py-12 lg:items-center lg:py-6',
             // Statik düzende sol sütun, hikâyedeki "metin + çubuk" genişliğine eşit: sığma ölçümü iki düzende aynı
             story
               ? 'grid-cols-[minmax(0,1fr)_11rem_minmax(0,24rem)] gap-8 xl:grid-cols-[minmax(0,1fr)_12rem_minmax(0,27rem)] xl:gap-12'
@@ -164,22 +164,23 @@ export function HeroStory({ label, stops, details, children }: Props) {
             />
           )}
 
+          {/* Dar ekran (< 1024 px, metnin altına düşen düzen): yüzen cam kare ve 3D ikon tamamen kaldırıldı.
+              Mobilde (< 768 px) "Universitetgacha 5 qadam" listesi de gizli (süreç aşağıdaki 6 adımlı yol haritasında
+              ve Qanday ishlaymiz sayfasında anlatılır), bu yüzden sütunun tamamı gizlenir: boş ızgara aralığı kalmaz. */}
           {/* Sağ: cam sahne üzerinde adım illüstrasyonu (çapraz geçiş). Statik düzende açılış sahnesi + yol kutusu. */}
-          <div className={cn('relative', story && 'col-start-3 row-start-1')}>
+          <div className={cn('relative max-md:hidden', story && 'col-start-3 row-start-1')}>
             <div
               aria-hidden="true"
-              className="absolute -inset-12 -z-10 rounded-full blur-3xl"
+              className="absolute -inset-12 -z-10 rounded-full blur-3xl max-lg:hidden"
               style={{ background: 'radial-gradient(closest-side, var(--beam), transparent 75%)' }}
             />
-            <div className="glass-strong relative mx-auto aspect-square w-full max-w-[22rem] overflow-hidden rounded-lg sm:max-w-md lg:max-w-none">
+            <div className="glass-strong relative mx-auto aspect-square w-full overflow-hidden rounded-lg max-lg:hidden">
               <IllustrationDefs />
               {scenes.map((scene, i) => (
                 <StepIllustration key={i} scene={scene} active={i === (story ? active + 1 : 0)} />
               ))}
             </div>
-            {!story && (
-              <RouteDiagram label={label} stops={stops} details={details} className="glass animate-rise-in mt-6 lg:hidden" />
-            )}
+            {!story && <RouteDiagram label={label} stops={stops} details={details} className="glass animate-rise-in lg:hidden" />}
           </div>
 
           {/* Statik düzen, geniş ekran (hareketi azalt / alçak ekran): adımlar yatay şeritte.

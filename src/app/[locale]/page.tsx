@@ -60,18 +60,29 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
       {/* 5.1 Hero + kaydırma hikâyesi (tasarım01 §2): ilk ekranda ne sunulduğu ve kime sunulduğu (prompt §7) */}
       <HeroStory label={home.hero.routeLabel} stops={home.hero.route} details={home.hero.routeSteps}>
         <p className="label-caps border-t border-ink pt-3 text-ink-2">{home.hero.eyebrow}</p>
+        {/* Mobil (< 768 px, görev "Mobil hero"): kısa ve vurucu başlık + tek cümle. Uzun metin yalnızca md ve üstünde.
+            Gizlenen sürüm display:none: ekran okuyucu yalnızca görünen başlığı okur. */}
         <h1 id="hero-title" className="mt-5 text-display lg:text-[clamp(1.875rem,0.75rem+1.5vw,2.5rem)]">
-          {fmt(home.hero.title)}
+          <span className="md:hidden">{fmt(home.hero.mobileTitle)}</span>
+          <span className="max-md:hidden">{fmt(home.hero.title)}</span>
         </h1>
-        <p className="mt-5 max-w-measure text-lg text-ink-2">{fmt(home.hero.subtitle)}</p>
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-          <Link href={consultationHref} className={buttonClass('primary')}>
+        <p className="mt-4 text-lg text-ink-2 md:hidden">{fmt(home.hero.mobileSubtitle)}</p>
+        <p className="mt-5 max-w-measure text-lg text-ink-2 max-md:hidden">{fmt(home.hero.subtitle)}</p>
+        <div className="mt-7 flex flex-col gap-3 max-md:mt-6 sm:flex-row sm:flex-wrap sm:items-center">
+          {/* Mobilde tam genişlik, 56 px yüksek, parlayan birincil düğme (kolay dokunma) */}
+          <Link
+            href={consultationHref}
+            className={buttonClass(
+              'primary',
+              'max-md:min-h-14 max-md:w-full max-md:rounded-full max-md:text-lg max-md:shadow-[0_12px_32px_-10px_var(--ds-glow)]',
+            )}
+          >
             {t('consultation')}
           </Link>
-          <Link href="/programs" className={buttonClass('secondary')}>
+          <Link href="/programs" className={buttonClass('secondary', 'max-md:rounded-full')}>
             {home.hero.secondary}
           </Link>
-          <TelegramLink className={buttonClass('text', 'sm:ml-2')} showUsername>
+          <TelegramLink className={buttonClass('text', 'sm:ml-2 max-md:justify-center')} showUsername>
             <Send aria-hidden="true" className="size-4" />
             {t('telegramWrite')}
           </TelegramLink>
